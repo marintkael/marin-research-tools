@@ -107,7 +107,9 @@ Summary:
 - No scraping of personal user data. No DM-content access. No
   aggregate-and-resell. No ad targeting. No LLM-training-data export.
 - Public failure log: every draft blocked by the linter is logged with its
-  reason, so the policy boundary is auditable from the outside.
+  reason and summarised in the quarterly research write-ups on
+  https://marin-t-kael.de/research, so the policy boundary is auditable
+  from the outside.
 
 ## License
 

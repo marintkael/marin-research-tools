@@ -20,4 +20,3 @@ classifiers = [
 [project.urls]
 Homepage = "https://marin-t-kael.de"
 Research = "https://marin-t-kael.de/research"
-Repository = "https://github.com/marintkael/marin-research-tools"
