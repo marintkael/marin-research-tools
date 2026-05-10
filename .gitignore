@@ -1,0 +1,35 @@
+# Operator-private secrets and state
+.env
+.env.*
+*.token
+*.secret
+
+# Operator-private policy rules (never committed)
+policies/private_rules.py
+policies/*.private.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+
+# Working state of the drafter (operator-local)
+_health/
+reddit_drafts_LATEST.md
+reddit_drafts_history.jsonl
+reddit_comp_author_buzz.json
+reddit_marin_phase.txt
