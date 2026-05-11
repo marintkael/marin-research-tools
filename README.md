@@ -1,44 +1,61 @@
 # marin-research-tools
 
-> Pre-publication tooling for an AI-augmented author practice.
+> Open methodology tooling for the **Marin T. Kael Research Programme** —
+> KI-Zitations-Feldlabor (AI Citation Behavior Lab).
 >
-> Public companion to the research project at
-> **https://marin-t-kael.de/research**.
+> Public companion to **https://marin-t-kael.de/research**.
 
-These are the small, opinionated scripts that sit between drafting and
-publication for the German-language high-fantasy saga *Prägungen des Reiches*
-(opening volume *Das vierte Feld*, scheduled for 2026-09-22).
+These are the small, opinionated scripts that sit between author practice
+and publication for the German-language high-fantasy saga *Prägungen des
+Reiches* (opening volume *Das vierte Feld*, scheduled for 22 September 2026).
 
-The repository exists because the author intends to use AI-assisted tooling
-openly and document the practice, instead of hiding it. Everything here is
-public so reviewers, readers and platform operators can audit the boundary
-between author work and tooling.
+The repository exists because the research programme observes — empirically
+and openly — how language-model-based search systems, AI answer engines and
+knowledge graphs ingest, understand and cite an author identity. The
+programme operates in two phases:
+
+- **Phase 1 (May 2026 → Q3 / 2027) — Measurement-instrument validation.**
+  Eight measurement surfaces (Wikidata, Google Knowledge Graph, Bing
+  Webmaster KI, Google Search Console, Google AI Overviews, Goodreads /
+  Hardcover, Reddit, language-model browser probes) are sampled daily.
+  Test-retest reliability, intra-set consistency, CUSUM drift-detection
+  across model updates and coverage mapping per identity cluster are
+  quantified. A public codebook (v0.x → v1.0) operationalises what counts
+  as a 'correct citation'.
+
+- **Phase 2 (from Q3 / 2027 onward) — Pre-registered action-effect studies**
+  on the then-validated apparatus. Effect measures appropriate for an
+  n-of-1 design (Interrupted Time Series, Bayesian Structural Time Series,
+  hierarchical Bayes), not pre/post Cohen's d on single actions.
+
+Everything in this repository is public so methodology reviewers can
+reproduce the measurement.
 
 ## What is in this repository
 
 - **`style_lint.py`** — a content-policy and style linter that runs over
   drafts before they leave the author's workstation. It is the gate that
   catches canon contradictions, persona drift and platform-rule violations
-  (Reddit self-promotion CTAs, AI-voice patterns, spoiler leaks). Designed to
-  be called both from the command line and as a Python library.
+  (Reddit self-promotion CTAs, voice drift, spoiler leaks). Designed to be
+  called both from the command line and as a Python library.
 - **`reddit_comment_drafter.py`** — a *drafter*, not a poster. It reads
   public Reddit data, produces draft comments via a language model and
-  emits them into a Markdown review file. The Reddit Data API is not used to
-  submit content. Every draft is reviewed and posted manually by a human in
-  Reddit's normal web UI.
+  emits them into a Markdown review file. The Reddit Data API is not used
+  to submit content. Every draft is reviewed and posted manually by a
+  human in Reddit's normal web UI.
 - **`policies/`** — documentation and example of the operator-private
   pattern layer. The framework supports loading additional patterns from a
   local file referenced via the `STYLE_LINT_PRIVATE_RULES` environment
-  variable; this is where the operator-specific real-name firewall and
+  variable; this is where the operator-specific pseudonym firewall and
   internal-system-leak patterns live in actual deployments. They are not
   included in this public repository because the patterns themselves would
   defeat the purpose of having them.
-- **`docs/`** — the public research framework (four observation fields) and
-  the responsible-build commitments that govern this tooling.
+- **`docs/`** — the public research framework (four Phase-1 investigation
+  lines) and the responsible-build commitments that govern this tooling.
 
 ## What is *not* in this repository
 
-- No real-name firewall patterns (operator-specific, loaded from a private
+- No pseudonym-firewall patterns (operator-specific, loaded from a private
   `.env`).
 - No internal system or vendor names (operator-specific, loaded from a
   private `.env`).
@@ -46,28 +63,29 @@ between author work and tooling.
 - No production paths or operator-specific runtime layout.
 - No automation that posts, comments, votes or DMs on the author's behalf.
 
-## Why exist?
+## Why this exists
 
-The genre fiction publishing market is in the early phase of AI-assisted
-authorship becoming common. Most of that practice today is hidden. This
-project takes the opposite stance: the tooling is named, scoped and
-audit-able, and the operator publishes quarterly findings on what worked,
-what was blocked, and what drifted.
+The genre fiction publishing market is being reshaped by AI search systems,
+knowledge graphs and answer engines. Most claims about how author
+visibility works there are anecdotal. This programme takes the opposite
+stance: measure the surfaces empirically, validate the measurement
+apparatus before claiming effects, publish methods + raw data + failure
+logs openly, and let other author identities replicate the protocol.
 
-Four observation fields, all documented at
+The four Phase-1 investigation lines documented at
 [marin-t-kael.de/research](https://marin-t-kael.de/research):
 
-1. **Knowledge graph synchronisation** — how structured statements about a
-   literary work propagate through Wikidata, knowledge graphs and AI
-   training corpora.
-2. **AI citation fidelity** — when language models are asked directly about
-   the work, what do they know, what do they hallucinate, what self-corrects
-   over months.
-3. **Reader-community participation** — can an author with AI-assisted
-   preparation contribute substantively to genre conversations without
-   degrading the discourse?
-4. **Voice consistency under tooling** — when outbound communication runs
-   through pipelines, how is voice held stable; which drift patterns recur?
+1. **Citation inventory** — what does each measurement surface currently
+   show of the defined author identity, mapped as coverage per
+   identity cluster (person / work / genre / world-mechanic).
+2. **Measurement-instrument validation** — how reliable is each surface
+   under test-retest, what is its drift characteristic across model
+   updates, which surfaces are redundant?
+3. **Codebook iteration** — public versions of the annotation schema
+   (v0.x → v1.0) with documented edge-cases and inter-rater agreement
+   from Q4 / 2026.
+4. **Open materials** — methods, code, raw data, failure logs all openly
+   licensed.
 
 ## Usage
 
@@ -86,10 +104,10 @@ if result["blocked"]:
 ```
 
 The Reddit drafter expects a small JSON file describing recent
-high-engagement threads about comparable authors. The ingestion script that
-produces this file is straightforward (public `.json` endpoint on Reddit)
-and is left as an exercise rather than included here, to keep the surface
-small and reviewable.
+high-engagement threads about comparable authors. The ingestion script
+that produces this file is straightforward (public `.json` endpoint on
+Reddit) and is left as an exercise rather than included here, to keep the
+surface small and reviewable.
 
 ## Operator commitments
 
@@ -103,13 +121,29 @@ Summary:
 - Daily public-write volume across all platforms combined: 2–3 maximum.
 - Daily read volume: under 1,000 GET, well below rate limits.
 - User-Agent string: `marin-t-kael:research-tooling:v0.1 (by /u/marintkael)`.
-- 429/503 responses → exponential backoff. All rate-limit headers respected.
+- 429 / 503 responses → exponential backoff. All rate-limit headers respected.
 - No scraping of personal user data. No DM-content access. No
   aggregate-and-resell. No ad targeting. No LLM-training-data export.
 - Public failure log: every draft blocked by the linter is logged with its
   reason and summarised in the quarterly research write-ups on
   https://marin-t-kael.de/research, so the policy boundary is auditable
   from the outside.
+
+## Cite this
+
+If you use these tools in a published replication or methods comparison,
+please cite the corresponding DOI release on Zenodo. The current Phase-1
+release set:
+
+- **Methodology Note 01** — Baseline-Messung: Autor-Identität im
+  Zitations-Verhalten von Sprachmodellen. DOI:
+  [10.5281/zenodo.20125934](https://doi.org/10.5281/zenodo.20125934)
+- **Vor-Registrierung Q0** — Pre-Launch-Instrument-Validierung. DOI:
+  [10.5281/zenodo.20125967](https://doi.org/10.5281/zenodo.20125967)
+- **Codebuch v0.1** — Annotations-Schema. DOI:
+  [10.5281/zenodo.20125976](https://doi.org/10.5281/zenodo.20125976)
+- **marin-research-tools v0.1** — this repository. DOI: forthcoming with
+  the v0.1 tag release.
 
 ## License
 
