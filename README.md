@@ -135,9 +135,10 @@ Two automated layers run against every commit and every release tag:
 
 - **Pre-commit** — install with `pip install pre-commit && pre-commit install`.
   Runs [gitleaks](https://github.com/gitleaks/gitleaks) with the custom
-  `.gitleaks.toml` config in this repo (Zenodo / GitHub-PAT / Wikidata-
-  OAuth / OpenAI / Anthropic / generic-token-assignment / PEM-private-key
-  patterns), plus standard file-hygiene hooks (trailing whitespace,
+  `.gitleaks.toml` config in this repo (secret-scan rules for Zenodo
+  tokens, GitHub PATs, Wikidata OAuth tokens, OpenAI API keys, Anthropic
+  API keys, IndexNow keys, generic token-assignments, and PEM private
+  keys), plus standard file-hygiene hooks (trailing whitespace,
   large-file detection, private-key detection, merge-conflict markers).
 - **Pre-tag** — the operator runs a three-layer scan before any tag is
   pushed: an A1-firewall layer (style_lint with the operator-private
