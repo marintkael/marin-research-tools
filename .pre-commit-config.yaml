@@ -1,0 +1,39 @@
+# Pre-commit hooks for marin-research-tools
+#
+# Install:
+#   pip install pre-commit
+#   pre-commit install
+#
+# These hooks run on `git commit` and block commits that contain secrets
+# or violate basic file-hygiene rules.
+#
+# A second, stricter scan runs at tag-time via
+# scripts/marin/verify_tag_safety.py (operator-side, not committed here)
+# which checks the entire about-to-be-tagged tree before any release.
+
+repos:
+  # -------------------------------------------------------------------------
+  # Layer 1 — Secret detection (gitleaks)
+  # -------------------------------------------------------------------------
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+        name: gitleaks (custom config)
+        args: ["--config=.gitleaks.toml", "--verbose"]
+
+  # -------------------------------------------------------------------------
+  # Layer 2 — File hygiene
+  # -------------------------------------------------------------------------
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      - id: detect-private-key
+      - id: check-case-conflict

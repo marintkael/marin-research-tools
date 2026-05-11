@@ -1,0 +1,92 @@
+# gitleaks configuration for marin-research-tools
+#
+# Two layers of detection:
+#   1. The full extends-default ruleset (≈ 80 known secret patterns:
+#      AWS keys, GitHub PATs, OpenAI keys, Slack tokens, Stripe keys, …)
+#   2. A small set of project-specific rules that catch this programme's
+#      stack-leak shapes.
+#
+# Runs:
+#   - Pre-commit: see .pre-commit-config.yaml
+#   - Pre-tag: scripts/marin/verify_tag_safety.py wraps gitleaks against
+#     the about-to-be-tagged tree.
+
+title = "marin-research-tools secret scan"
+
+[extend]
+useDefault = true
+
+# ---------------------------------------------------------------------------
+# Project-specific rules
+# ---------------------------------------------------------------------------
+
+[[rules]]
+id = "zenodo-access-token"
+description = "Zenodo Personal Access Token leak"
+regex = '''(?i)(?:zenodo|ZENODO)[_\-\s]*(?:PROD|SANDBOX|TEST)?[_\-]*(?:TOKEN|API[_\-]?KEY|ACCESS[_\-]?TOKEN|PAT)[\s]*[:=][\s]*['"]?([A-Za-z0-9_\-\.]{16,})['"]?'''
+tags = ["zenodo", "secret"]
+
+[[rules]]
+id = "github-pat-fine-grained"
+description = "GitHub Personal Access Token (fine-grained)"
+regex = '''github_pat_[A-Za-z0-9_]{20,}'''
+tags = ["github", "pat", "secret"]
+
+[[rules]]
+id = "github-classic-token"
+description = "GitHub Classic Personal Access Token"
+regex = '''ghp_[A-Za-z0-9]{20,}'''
+tags = ["github", "pat", "secret"]
+
+[[rules]]
+id = "wikidata-oauth-token"
+description = "Wikidata OAuth 2.0 access token / consumer-secret leak"
+regex = '''(?i)(?:WIKIDATA|wikidata)[_\-\s]*(?:OAUTH|CONSUMER|TOKEN|ACCESS[_\-]?TOKEN|SECRET)[\s]*[:=][\s]*['"]?([A-Za-z0-9_\-\.]{16,})['"]?'''
+tags = ["wikidata", "oauth", "secret"]
+
+[[rules]]
+id = "openai-key"
+description = "OpenAI API key"
+regex = '''(?i)sk-[a-zA-Z0-9_\-]{20,}'''
+tags = ["openai", "secret"]
+
+[[rules]]
+id = "anthropic-key"
+description = "Anthropic Claude API key"
+regex = '''(?i)sk-ant-[a-zA-Z0-9_\-]{20,}'''
+tags = ["anthropic", "secret"]
+
+[[rules]]
+id = "indexnow-key"
+description = "IndexNow secret key"
+regex = '''(?i)(?:INDEXNOW|indexnow)[_\-\s]*(?:KEY|TOKEN)[\s]*[:=][\s]*['"]?([A-Za-z0-9]{16,})['"]?'''
+tags = ["indexnow", "secret"]
+
+[[rules]]
+id = "generic-token-assignment"
+description = "Generic token / secret / api-key / password assignment with substantial value"
+regex = '''(?i)(?:secret|password|passwd|pwd|api[_\-]?key|access[_\-]?key|auth[_\-]?token|bearer)[\s]*[:=][\s]*['"]?([A-Za-z0-9_\-\.]{20,})['"]?'''
+tags = ["generic", "secret"]
+
+[[rules]]
+id = "private-key-block"
+description = "PEM-encoded private key block"
+regex = '''-----BEGIN ((RSA|EC|OPENSSH|DSA|PGP)\s+)?PRIVATE KEY-----'''
+tags = ["pem", "private-key", "secret"]
+
+# ---------------------------------------------------------------------------
+# Allowlist
+# ---------------------------------------------------------------------------
+
+[allowlist]
+description = "Public-by-design strings — these are not secrets. NOTE: do NOT use 'paths' to whitelist entire files — that would skip secret detection in those files. Use 'regexes' to whitelist specific public-by-design strings only."
+regexes = [
+  # ORCID-iD is public-by-design
+  '''0009-0006-2105-8190''',
+  # DOIs are public-by-design
+  '''10\.5281/zenodo\.[0-9]+''',
+  # Public Wikidata QIDs for Marin's items
+  '''Q1397208\d{2}''',
+  # Programme placeholder strings in operator_patterns_example.py
+  '''PLACEHOLDER_(REAL_NAME_[AB]|INTERNAL_SYSTEM_NAME)''',
+]
