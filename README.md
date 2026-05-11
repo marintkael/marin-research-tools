@@ -129,6 +129,29 @@ Summary:
   https://marin-t-kael.de/research, so the policy boundary is auditable
   from the outside.
 
+## Release process
+
+This repository uses a two-tier release process:
+
+- **`v0.1` (current) — Setup release.** Published manually to Zenodo on
+  11 May 2026 as part of the Phase-1 nullpoint publication set
+  (Methodology Note 01, Pre-Registration Q0, Codebook v0.1,
+  marin-research-tools v0.1, Wikidata snapshot T+0). DOI:
+  [10.5281/zenodo.20126017](https://doi.org/10.5281/zenodo.20126017).
+  Treated as bootstrap — no Concept-DOI parent, single Version-DOI only.
+- **`v0.2` onwards — GitHub → Zenodo integration.** Every Git tag pushed
+  to this repository automatically triggers a Zenodo deposit through the
+  Zenodo OAuth integration. Each new tag receives a fresh Version-DOI in
+  a dedicated Concept-DOI family that starts at `v0.2`. The first such
+  release is forthcoming.
+
+When citing the *current* state of the tooling, use the v0.1 Version-DOI
+above. When citing a *specific later version*, use the Version-DOI from
+that release's Zenodo record. When citing the tooling *in general
+without commitment to a version*, use the Concept-DOI of the v0.2-onwards
+family (will be issued automatically by Zenodo with the first integrated
+release).
+
 ## Cite this
 
 If you use these tools in a published replication or methods comparison,
@@ -142,8 +165,10 @@ release set:
   [10.5281/zenodo.20125967](https://doi.org/10.5281/zenodo.20125967)
 - **Codebuch v0.1** — Annotations-Schema. DOI:
   [10.5281/zenodo.20125976](https://doi.org/10.5281/zenodo.20125976)
-- **marin-research-tools v0.1** — this repository. DOI: forthcoming with
-  the v0.1 tag release.
+- **marin-research-tools v0.1** — this repository (setup release). DOI:
+  [10.5281/zenodo.20126017](https://doi.org/10.5281/zenodo.20126017)
+- **Wikidata Identitäts-Snapshot T+0** — Nullpoint dataset. DOI:
+  [10.5281/zenodo.20126038](https://doi.org/10.5281/zenodo.20126038)
 
 ## License
 
