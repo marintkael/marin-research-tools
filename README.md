@@ -129,6 +129,28 @@ Summary:
   https://marin-t-kael.de/research, so the policy boundary is auditable
   from the outside.
 
+## Security and secret hygiene
+
+Two automated layers run against every commit and every release tag:
+
+- **Pre-commit** — install with `pip install pre-commit && pre-commit install`.
+  Runs [gitleaks](https://github.com/gitleaks/gitleaks) with the custom
+  `.gitleaks.toml` config in this repo (Zenodo / GitHub-PAT / Wikidata-
+  OAuth / OpenAI / Anthropic / generic-token-assignment / PEM-private-key
+  patterns), plus standard file-hygiene hooks (trailing whitespace,
+  large-file detection, private-key detection, merge-conflict markers).
+- **Pre-tag** — the operator runs a three-layer scan before any tag is
+  pushed: an A1-firewall layer (style_lint with the operator-private
+  rules), the gitleaks scan, and a tree-hygiene check that fails on any
+  `.env`, `.token`, `.secret`, `.pem`, `.key` file in the tree. Only when
+  all three layers pass does the tag get created and pushed.
+
+The operator-private layer (real-name firewall, internal-system-name
+patterns) is loaded at runtime from a file referenced via the
+`STYLE_LINT_PRIVATE_RULES` environment variable. That file is never
+committed — the patterns themselves are the strings the rules are meant
+to suppress.
+
 ## Release process
 
 This repository uses a two-tier release process:
