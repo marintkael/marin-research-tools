@@ -1,0 +1,30 @@
+id: prereg-q2-common-crawl-snapshot-inclusion
+field: 2
+hypothesis: |
+  Inclusion of the author's identity surface in the Common-Crawl
+  CC-MAIN-2026-21 snapshot (May 2026) increases the LLM citation score
+  in the next-cycle model releases that train on or retrieve from that
+  snapshot.
+operationalisation:
+  source: |
+    marin-t-kael.de with /llms.txt + /ai.txt + /about.txt deployed
+    pre-snapshot, plus backlink layer (Wikidata, ORCID, Zenodo, GitHub).
+  comparator: |
+    Cross-LLM Trust Graph total score across 9 LLMs; segmented by
+    LLMs known to use Common-Crawl training data (mistral, llama3*,
+    phi-2) versus search-augmented LLMs (openai_search, gemini).
+  measurement: |
+    pre/post delta in total Trust Graph score (May vs. October 2026,
+    after expected next training-cycle releases). Effect attributed
+    to CC inclusion only on training-only LLMs.
+sampling:
+  start: 2026-05-13
+  end: 2026-12-31
+  cadence: weekly snapshot check via cc-index + daily Cross-LLM Trust
+    Graph run
+stopping_rule: next major model-cycle release of mistral/llama (whichever
+  is later) plus 30 days observation window
+analysis: pre/post effect-size in Trust Graph score · separated by
+  retrieval-vs-training LLMs · CUSUM drift baseline subtracted
+status: active (files deployed T+2)
+version: v1.0 · 2026-05-13

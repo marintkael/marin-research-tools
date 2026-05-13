@@ -1,0 +1,29 @@
+id: prereg-q3-cross-llm-trust-graph-drift
+field: 2
+hypothesis: |
+  Source-attribution profile per LLM (over 12 source patterns:
+  wikipedia, wikidata, orcid, zenodo, goodreads, amazon, official_site,
+  github, press, reddit, inference, no_source) drifts less than 1
+  trust point over 90 days under unchanged identity surfaces. This
+  establishes the stability anchor for Interrupted Time Series effect
+  detection in Phase 2.
+operationalisation:
+  source: source_attribution_parser.py applied to every answer in the
+    Cross-LLM Trust Graph daily run
+  comparator: |
+    rolling 7-day mean of trust_weight sum per LLM versus baseline week
+    (2026-05-14 to 2026-05-20). Drift defined as |Δmean| > 1.0.
+  measurement: |
+    daily total trust_weight per LLM (sum across 10 questions × 12
+    source patterns, with -1 ≤ weight ≤ +2 per match).
+sampling:
+  start: 2026-05-14
+  end: 2026-08-14
+  cadence: daily 04:00 UTC (cron, runs concurrently with ai_citation
+    stage of the research pipeline)
+stopping_rule: 90 days continuous tracking or earlier saturation
+  (drift < 0.2 point for 30 days)
+analysis: per-LLM time series · CUSUM drift detection · model-update
+  events flagged as known interventions
+status: active (live from T+3 after cron 04:00 UTC)
+version: v1.0 · 2026-05-13

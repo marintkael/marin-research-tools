@@ -1,0 +1,34 @@
+id: prereg-q4-reddit-karma-mention-cluster
+field: 1
+hypothesis: |
+  Sustained substantive Reddit comment activity producing >200 comment
+  karma across 6 genre-relevant subreddits within 90 days increases
+  the author's mention-cluster visibility, observable through (a)
+  Reddit's own mention-search surface and (b) downstream Common-Crawl
+  ingestion that feeds LLM training data.
+operationalisation:
+  source: |
+    one substantive comment per subreddit per week, manually posted via
+    the normal Reddit web UI under /u/marintkael (no automation). Six
+    target subreddits: r/Fantasy, r/printSF, r/Fantasy_Bookclub,
+    r/MalazanFans, r/RobinHobb, r/wotbooks.
+  comparator: |
+    Reddit mention-search baseline (week 0) versus rolling 4-week
+    window; plus snapshot of comment-thread URLs in CC-MAIN-2026-26
+    (June snapshot).
+  measurement: |
+    (a) karma total across target subreddits, (b) number of independent
+    mention threads referencing the author identity across all of
+    Reddit, (c) Common-Crawl URL count for /u/marintkael profile.
+sampling:
+  start: 2026-05-11
+  end: 2026-08-09
+  cadence: weekly comment activity · daily Reddit mention-search probe
+  holdout: 30-day pause between subreddit onboardings (1, 2, 3 active
+    at T+0; subs 4, 5, 6 onboarded T+30 / T+60 / T+90 respectively)
+    for karma-build isolation
+stopping_rule: 90 days post-start or karma-target reached in all 6 subs
+analysis: per-subreddit karma curve · mention-cluster ITS with subreddit
+  onboarding events as known interventions
+status: active (running in r/Fantasy since T+0; 7 more subs from T+3)
+version: v1.0 · 2026-05-13
