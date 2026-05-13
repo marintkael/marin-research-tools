@@ -1,0 +1,27 @@
+id: prereg-q1-wikidata-co-occurrence
+field: 1
+hypothesis: |
+  P136 genre statements (Q3294789 High Fantasy and related sub-genre
+  qualifiers) on the author entity increase author–genre co-occurrence
+  in the Cross-LLM Trust Graph CompCluster score within one quarter
+  of statement publication.
+operationalisation:
+  source: wikidata.org/entity/Q139720807 (6–8 added P-statements
+    covering P136 genre, P50 author, P407 language, P31 instance-of,
+    P407 language-of-work-or-name, P1476 title, plus P407 sub-qualifiers)
+  comparator: Cross-LLM Trust Graph CompCluster score across 9 LLMs
+    (openai, openai_search, claude, gemini, mistral, llama3, llama3.1,
+    llama3.2, phi-2)
+  measurement: |
+    delta in CompCluster mean score (questions C1, C2) between
+    T0 (statement publication) and T+90d; aggregated per LLM.
+sampling:
+  start: 2026-05-14
+  end: 2026-12-31
+  cadence: daily 04:00 UTC (Cross-LLM Trust Graph run)
+stopping_rule: 90 days post statement publication or saturation
+  (CompCluster mean score stable ±0.1 for 14 days)
+analysis: descriptive statistics · per-LLM delta plot · Bayesian
+  Structural Time Series with statement-publication date as intervention
+status: registered (execution Q3 / 2026)
+version: v1.0 · 2026-05-13

@@ -1,0 +1,17 @@
+id: prereg-q0-wikidata-to-google-kg-latency
+field: 1
+hypothesis: |
+  Structured statements from Wikidata reach the Google Knowledge Graph
+  within ≤14 days of entity publication.
+operationalisation:
+  source: wikidata.org/entity/Q139720807
+  comparator: kgsearch.googleapis.com (Knowledge Graph Search API)
+  measurement: ratio (matched canonical statements / total queried)
+sampling:
+  start: 2026-05-11
+  end: 2026-09-22
+  cadence: daily 04:00 UTC
+stopping_rule: 134 surveys or saturation (no new hit in 14 days)
+analysis: descriptive statistics · visualisation of latency distribution
+status: active (latency ≈ 40 h observed T+0 → T+2)
+version: v1.0 · 2026-05-13

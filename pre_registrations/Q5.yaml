@@ -1,0 +1,34 @@
+id: prereg-q5-zenodo-doi-cadence-wikipedia-notability
+field: 4
+hypothesis: |
+  A sustained Zenodo DOI cadence of one Methodology Note per quarter
+  (with linked Concept-DOI parent and ORCID-linked author attribution)
+  raises the cumulative citation surface above the Wikipedia
+  notability threshold for academic authors, observable through
+  Wikipedia article-existence probes and CC-MAIN article coverage.
+operationalisation:
+  source: |
+    Zenodo Concept-DOI 10.5281/zenodo.20125933 (Methodology Note 01),
+    targeted cadence MN-01 v1.x + v2.x (May 2026), MN-02 (Q3 / 2026,
+    ca. 15 July), MN-03 (Q4 / 2026). Each release carries ORCID
+    0009-0006-2105-8190 as creator and is cross-linked with the
+    author's Wikidata entity Q139720807 (P953 / P356).
+  comparator: |
+    monthly probe against en.wikipedia.org and de.wikipedia.org for an
+    article matching the author identity; quarterly probe of CC-MAIN
+    snapshots for Wikipedia-namespace coverage.
+  measurement: |
+    binary article-existence flag per Wikipedia surface · CC-MAIN URL
+    count in Wikipedia namespace · cumulative Zenodo DOI count and
+    cumulative citation/view counts from Zenodo API.
+sampling:
+  start: 2026-05-11
+  end: 2027-09-30
+  cadence: monthly Wikipedia probe · quarterly CC-MAIN probe · per-DOI
+    Zenodo API check at publication T+0 and T+30d
+stopping_rule: Wikipedia article published OR end of Phase 1 (Q3 / 2027)
+  whichever comes first
+analysis: cumulative-DOI-count vs. notability-threshold curve · qualitative
+  audit of any Wikipedia article-deletion discussion
+status: registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15)
+version: v1.0 · 2026-05-13
