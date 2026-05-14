@@ -1,0 +1,64 @@
+# Pre-Registration Q6 · Hardcover Reader-Activity-Engineering
+# Methodology Note 01 v2.4 §4.1 (DOI 10.5281/zenodo.20181330)
+
+id: Q6
+title: "Hardcover Reader-Activity-Engineering"
+introduced_in_version: v2.3
+methodology_note_doi: "10.5281/zenodo.20179846"
+superseded_by_version: v2.4
+current_methodology_note_doi: "10.5281/zenodo.20181330"
+status: active
+start_date: 2026-05-14
+expected_evaluation_window_days: 90
+
+hypothesis:
+  statement: >
+    Konsistente Reader-Activity auf Hardcover (Reviews, Mark-as-Read,
+    Want-to-Read) erzeugt ein Reader-Authentizitäts-Signal, das das
+    Cross-Linking zu Goodreads und den LLM-Trust-Cluster
+    "reading community" verstärkt.
+  null_hypothesis: >
+    Reader-Activity-Engineering auf Hardcover hat keinen messbaren Effekt
+    auf den LLM-Trust-Cluster-Score "reading community" innerhalb von 90 Tagen.
+
+intervention:
+  surface: hardcover.app
+  account: "@marintkael"
+  operational_form: >
+    Curated comp-cluster selection (Bennett, Hobb, Kuang, Erikson, Miéville,
+    Sanderson, Bancroft, Jimenez, Wang, Kay, Bujold, etc.), variable ratings
+    3–5 stars (not statically 5), reviews 80–280 words with concrete
+    praise + criticism mix. Low-volume sustained pacing.
+  excluded:
+    - Any reference to own works ("Das vierte Feld", "Prägungen des Reiches")
+      in review content — A1 pseudonym firewall applies generally,
+      Q6 is not exempt
+    - Any mass-burst posting that would trigger spam-pattern detection
+
+measurement:
+  primary:
+    surface: cross-llm trust graph
+    cluster: "reading community"
+    metric: cluster-score-drift over rolling 30-day window
+    method: CUSUM on snapshot deltas
+  secondary:
+    - surface: hardcover snapshot pipeline
+      fields: [books_read, reviews_written, lists_created, follower_count]
+      cadence: daily 04:00 UTC
+    - surface: goodreads cross-linking
+      method: HTML-snapshot inbound-link audit (weekly)
+
+confounds:
+  - Reader-activity overlaps with Q4 (Reddit-mention-cluster) — both feed
+    the "reading community" cluster but via different surfaces
+  - Hardcover algorithm changes (untracked); document at runtime when
+    detected
+
+stop_criteria:
+  hard:
+    - Account restriction / shadowban by Hardcover → immediate pause
+    - Any A1 pseudonym firewall breach in review content → immediate pause
+      + retroactive review of all prior posted activity
+  soft:
+    - 30-day rolling reader-authenticity-cluster score remains within
+      noise band → discuss in Q3/2026 report
