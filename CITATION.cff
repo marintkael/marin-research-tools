@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: marin-research-tools
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: "Marin T."
+    family-names: "Kael"
+    orcid: "https://orcid.org/0009-0006-2105-8190"
+    affiliation: "Independent Researcher"
+abstract: "Phase-1 instrument-validation toolchain for the Marin T. Kael research programme: how LLM-based search systems, AI answer engines, and knowledge graphs read, understand, and cite an author identity."
+keywords:
+  - answer engine optimization
+  - generative engine optimization
+  - knowledge graph propagation
+  - author identity
+  - citation tracking
+  - single-case research design
+license: MIT
+repository-code: "https://github.com/marintkael/marin-research-tools"
+url: "https://marin-t-kael.de/research"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20189713"
+    description: "Concept DOI (resolves to latest version)"
