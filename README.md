@@ -13,12 +13,12 @@ The repository exists because the research programme observes — empirically
 and openly — how language-model-based search systems, AI answer engines and
 knowledge graphs ingest, understand and cite an author identity.
 
-## Active 3-phase design (v2.2)
+## Active 3-phase design (v2.4)
 
-As of Methodology Note 01 v2.2 (13 May 2026) the programme runs an explicit
+As of Methodology Note 01 v2.4 (14 May 2026) the programme runs an explicit
 three-phase design:
 
-- **Phase 1 (May → Sep 2026)** — active pre-launch interventions Q0–Q5 on
+- **Phase 1 (May → Sep 2026)** — active pre-launch interventions Q0–Q6 on
   identity surfaces (Wikidata co-occurrence, Zenodo DOI cadence,
   Common-Crawl optimisation, Reddit karma building, Cross-LLM Trust Graph),
   running in parallel with daily measurement-instrument validation across
@@ -41,9 +41,9 @@ three-phase design:
 Everything in this repository is public so methodology reviewers can
 reproduce the measurement.
 
-## Active Pre-Registrations Q0–Q5
+## Active Pre-Registrations Q0–Q6
 
-Six independent, formally pre-registered probes run in temporal parallel
+Seven independent, formally pre-registered probes run in temporal parallel
 across Phase 1. Full YAML specifications live under
 [`pre_registrations/`](pre_registrations/); the table below is a compact
 overview.
@@ -56,8 +56,9 @@ overview.
 | **Q3** | Source-attribution profile per LLM drifts < 1 trust point over 90 days (stability anchor for ITS) | Cross-LLM Trust Graph tracking (12 patterns × 9 LLMs) | source-attribution score per LLM | active (live from T+3 after cron 04:00 UTC) |
 | **Q4** | Reddit comment karma > 200 in 6 subreddits over 90 days increases mention-cluster visibility | Reddit karma building (1× substantive comment / sub / week) | Reddit mention-cluster · public log | active (running in r/Fantasy since T+0; 7 more subs from T+3) |
 | **Q5** | Zenodo DOI cadence (1 MN / quarter) triggers Wikipedia notability threshold crossing | Zenodo DOI salvo (MN-01 v1.x + v2.x, MN-02 Q3, MN-03 Q4) | Wikipedia article-existence probe (CC-MAIN coverage) | registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15) |
+| **Q6** | Consistent reader-activity on Hardcover produces a reader-authenticity signal that strengthens cross-linking to Goodreads and the LLM trust cluster 'reading community' | Hardcover reader-activity engineering: curated comp-cluster selection, variable ratings 3–5 stars, reviews 80–280 words | Hardcover snapshot pipeline · books_read · reviews_written · cross-LLM trust graph cluster 'reading community' | active (since T+3, low-volume sustained) — **new in v2.3** |
 
-Q0–Q5 are formally independent but run in temporal parallel — inter-Q
+Q0–Q6 are formally independent but run in temporal parallel — inter-Q
 confounds are explicitly named in each quarterly report.
 
 ## What is in this repository
