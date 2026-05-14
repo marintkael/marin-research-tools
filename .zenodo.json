@@ -1,0 +1,37 @@
+{
+  "title": "marin-research-tools",
+  "description": "Phase-1 instrument-validation toolchain for the Marin T. Kael research programme: how LLM-based search systems, AI answer engines, and knowledge graphs read, understand, and cite an author identity. Open methodology, pre-registered, n-of-1 single-case design.",
+  "creators": [
+    {
+      "name": "Kael, Marin T.",
+      "orcid": "0009-0006-2105-8190",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "answer engine optimization",
+    "generative engine optimization",
+    "knowledge graph propagation",
+    "author identity",
+    "citation tracking",
+    "single-case research design",
+    "open methodology",
+    "AI citation fidelity"
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://marin-t-kael.de/research",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.wikidata.org/entity/Q139720807",
+      "relation": "isReferencedBy",
+      "scheme": "url"
+    }
+  ]
+}
