@@ -56,7 +56,7 @@ overview.
 | **Q3** | Source-attribution profile per LLM drifts < 1 trust point over 90 days (stability anchor for ITS) | Cross-LLM Trust Graph tracking (12 patterns × 9 LLMs) | source-attribution score per LLM | active (live from T+3 after cron 04:00 UTC) |
 | **Q4** | Reddit comment karma > 200 in 6 subreddits over 90 days increases mention-cluster visibility | Reddit karma building (1× substantive comment / sub / week) | Reddit mention-cluster · public log | active (running in r/Fantasy since T+0; 7 more subs from T+3) |
 | **Q5** | Zenodo DOI cadence (1 MN / quarter) triggers Wikipedia notability threshold crossing | Zenodo DOI salvo (MN-01 v1.x + v2.x, MN-02 Q3, MN-03 Q4) | Wikipedia article-existence probe (CC-MAIN coverage) | registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15) |
-| **Q6** | Consistent reader-activity on Hardcover produces a reader-authenticity signal that strengthens cross-linking to Goodreads and the LLM trust cluster 'reading community' | Hardcover reader-activity engineering: curated comp-cluster selection, variable ratings 3–5 stars, reviews 80–280 words | Hardcover snapshot pipeline · books_read · reviews_written · cross-LLM trust graph cluster 'reading community' | active (since T+3, low-volume sustained) — **new in v2.3** |
+| **Q6** | Consistent reader-activity on Hardcover produces a reader-authenticity signal that strengthens cross-linking to Goodreads and the LLM trust cluster 'reading community' | Reader-account activity volume on Hardcover (reviews, mark-as-read, want-to-read). Activity volume is the variable; attributes of individual reviews (rating, length, voice) are operator-form and outside the research design. | Hardcover snapshot pipeline · books_read · reviews_written · cross-LLM trust graph cluster 'reading community' | active (since T+3, low-volume sustained) — **new in v2.3, refactored in v0.3** |
 
 Q0–Q6 are formally independent but run in temporal parallel — inter-Q
 confounds are explicitly named in each quarterly report.
@@ -64,15 +64,10 @@ confounds are explicitly named in each quarterly report.
 ## What is in this repository
 
 - **`style_lint.py`** — a content-policy and style linter that runs over
-  drafts before they leave the author's workstation. It is the gate that
-  catches canon contradictions, persona drift and platform-rule violations
-  (Reddit self-promotion CTAs, voice drift, spoiler leaks). Designed to be
-  called both from the command line and as a Python library.
-- **`reddit_comment_drafter.py`** — a *drafter*, not a poster. It reads
-  public Reddit data, produces draft comments via a language model and
-  emits them into a Markdown review file. The Reddit Data API is not used
-  to submit content. Every draft is reviewed and posted manually by a
-  human in Reddit's normal web UI.
+  outbound material before it leaves the author's workstation. It is the
+  gate that catches canon contradictions, persona drift and platform-rule
+  violations (Reddit self-promotion CTAs, voice drift, spoiler leaks).
+  Designed to be called both from the command line and as a Python library.
 - **`source_attribution_parser.py`** — Python port of the Cross-LLM Trust
   Graph source-attribution parser. Twelve source patterns
   (Wikipedia / Wikidata / ORCID / Zenodo / Goodreads / Amazon / official
@@ -139,11 +134,11 @@ The four Phase-1 investigation lines documented at
 ## Usage
 
 ```bash
-# Lint a draft string
+# Lint an outbound string
 python3 style_lint.py --text "Marin T. Kael's debut..." --surface reddit
 
 # Lint a file
-python3 style_lint.py --file path/to/draft.md --strict
+python3 style_lint.py --file path/to/text.md --strict
 
 # Parse source-attribution from a single LLM answer
 echo "According to Wikipedia and ORCID..." | \
@@ -151,19 +146,13 @@ echo "According to Wikipedia and ORCID..." | \
 
 # As a library
 from style_lint import check
-result = check(comment_text, surface="reddit")
+result = check(text, surface="reddit")
 if result["blocked"]:
-    print("CANNOT POST"); print(result["violations"])
+    print("BLOCKED"); print(result["violations"])
 
 from source_attribution_parser import parse_sources
 rows = parse_sources(answer_text, llm_id="claude", question_id="D2")
 ```
-
-The Reddit drafter expects a small JSON file describing recent
-high-engagement threads about comparable authors. The ingestion script
-that produces this file is straightforward (public `.json` endpoint on
-Reddit) and is left as an exercise rather than included here, to keep the
-surface small and reviewable.
 
 ## Operator commitments
 
@@ -180,10 +169,10 @@ Summary:
 - 429 / 503 responses → exponential backoff. All rate-limit headers respected.
 - No scraping of personal user data. No DM-content access. No
   aggregate-and-resell. No ad targeting. No LLM-training-data export.
-- Public failure log: every draft blocked by the linter is logged with its
-  reason and summarised in the quarterly research write-ups on
-  https://marin-t-kael.de/research, so the policy boundary is auditable
-  from the outside.
+- Public failure log: every outbound piece blocked by the linter is
+  logged with its reason and summarised in the quarterly research
+  write-ups on https://marin-t-kael.de/research, so the policy boundary is
+  auditable from the outside.
 
 ## Security and secret hygiene
 
