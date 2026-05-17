@@ -1,34 +1,39 @@
-# Pre-Registration Q6 · Hardcover Reader-Activity-Engineering
-# Methodology Note 01 v2.4 §4.1 (DOI 10.5281/zenodo.20181330)
+# Pre-Registration Q6 · Hardcover Reader-Activity-Volume
+# Methodology Note 01 v3.0 §4.1 (DOI 10.5281/zenodo.20262362)
+#
+# Refactor v0.3 (2026-05-17): Activity volume is the variable.
+# Attributes of individual reviews (rating distribution, length, voice)
+# are operator-form and outside the research design.
 
 id: Q6
-title: "Hardcover Reader-Activity-Engineering"
+title: "Hardcover Reader-Activity-Volume"
 introduced_in_version: v2.3
-methodology_note_doi: "10.5281/zenodo.20179846"
-superseded_by_version: v2.4
-current_methodology_note_doi: "10.5281/zenodo.20181330"
+methodology_note_doi: "10.5281/zenodo.20262362"
+superseded_by_version: v3.0
+current_methodology_note_doi: "10.5281/zenodo.20262362"
 status: active
 start_date: 2026-05-14
 expected_evaluation_window_days: 90
 
 hypothesis:
   statement: >
-    Konsistente Reader-Activity auf Hardcover (Reviews, Mark-as-Read,
-    Want-to-Read) erzeugt ein Reader-Authentizitäts-Signal, das das
-    Cross-Linking zu Goodreads und den LLM-Trust-Cluster
-    "reading community" verstärkt.
+    Sustained reader-account activity on Hardcover (reviews, mark-as-read,
+    want-to-read events over time) produces a reader-authenticity signal
+    that strengthens cross-linking to Goodreads and the LLM trust cluster
+    "reading community".
   null_hypothesis: >
-    Reader-Activity-Engineering auf Hardcover hat keinen messbaren Effekt
-    auf den LLM-Trust-Cluster-Score "reading community" innerhalb von 90 Tagen.
+    Reader-account activity volume on Hardcover has no measurable effect
+    on the LLM-trust-cluster score "reading community" within 90 days.
 
 intervention:
   surface: hardcover.app
   account: "@marintkael"
   operational_form: >
-    Curated comp-cluster selection (Bennett, Hobb, Kuang, Erikson, Miéville,
-    Sanderson, Bancroft, Jimenez, Wang, Kay, Bujold, etc.), variable ratings
-    3–5 stars (not statically 5), reviews 80–280 words with concrete
-    praise + criticism mix. Low-volume sustained pacing.
+    Sustained reader-account activity volume (reviews, mark-as-read,
+    want-to-read events). Activity volume is the variable; attributes of
+    individual reviews (rating, length, voice, tone) are operator-form
+    and not part of the research design. Low-volume sustained pacing to
+    avoid spam-pattern detection.
   excluded:
     - Any reference to own works ("Das vierte Feld", "Prägungen des Reiches")
       in review content — A1 pseudonym firewall applies generally,
