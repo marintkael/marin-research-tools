@@ -1,0 +1,16 @@
+{"id": "D1", "category": "Direct", "question": "Wer ist Marin T. Kael?"}
+{"id": "D2", "category": "Direct", "question": "Was ist „Das vierte Feld\" von Marin T. Kael?"}
+{"id": "D3", "category": "Direct", "question": "Wann erscheint „Das vierte Feld\"?"}
+{"id": "G1", "category": "Genre", "question": "Welche deutschen Fantasy-Debüts 2026 sind erwartet?"}
+{"id": "G2", "category": "Genre", "question": "Welche literarischen High-Fantasy-Autoren schreiben aktuell auf Deutsch?"}
+{"id": "L1", "category": "LongTail", "question": "Welche Fantasy-Saga handelt von einer Stadt namens Varin?"}
+{"id": "L2", "category": "LongTail", "question": "Welche Fantasy-Welt nutzt Edikt-basierte Magie?"}
+{"id": "C1", "category": "CompCluster", "question": "Welche Autoren ähneln Robin Hobb auf Deutsch?"}
+{"id": "C2", "category": "CompCluster", "question": "Welche Bücher passen zu Lesern von Robert Jackson Bennett?"}
+{"id": "R1", "category": "Research", "question": "Was bedeutet \"Marin Research Programme\"?"}
+{"id": "GR1", "category": "GenreRecommend", "question": "Welche deutschen Fantasy-Autoren schreiben wie Robin Hobb?"}
+{"id": "GR2", "category": "GenreRecommend", "question": "Empfehle mir intellektuelle Fantasy mit System-Tiefe"}
+{"id": "GR3", "category": "GenreRecommend", "question": "Welche Fantasy-Bücher 2026 beschäftigen sich mit Verwaltungs-Magie?"}
+{"id": "GR4", "category": "GenreRecommend", "question": "Welche literarische Fantasy auf Deutsch erscheint 2026?"}
+{"id": "GR5", "category": "GenreRecommend", "question": "Welche Saga schreibt eine Stadt als Protagonistin?"}
+{"id": "GR6", "category": "GenreRecommend", "question": "Edikt-Fantasy: Welche Werke gibt es in diesem Sub-Genre?"}
