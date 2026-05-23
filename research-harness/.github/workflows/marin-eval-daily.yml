@@ -1,0 +1,57 @@
+name: Marin Daily Eval (lm-evaluation-harness)
+
+on:
+  schedule:
+    # Daily 04:30 UTC — 30 min after Cloudflare-Cron 04:00 to avoid overlap
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+    # Manual trigger for ad-hoc runs
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install harness + deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install "lm-eval[api]==0.4.12" requests
+
+      - name: Run all models
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MARIN_RESEARCH_TRIGGER_TOKEN: ${{ secrets.MARIN_RESEARCH_TRIGGER_TOKEN }}
+        run: |
+          cd research-harness
+          # Note: GitHub Actions runs API LLMs only (no /tmp/marin_sweep claude_web data).
+          # Claude_web sweeps run separately via Atlas Chrome-MCP, push manually.
+          python run_all_models.py \
+            --skip claude_sonnet_4_6_web,claude_opus_4_7_web \
+            --output results/snapshot_$(date +%Y%m%d).json
+
+      - name: Push snapshot to D1
+        if: success()
+        env:
+          MARIN_RESEARCH_TRIGGER_TOKEN: ${{ secrets.MARIN_RESEARCH_TRIGGER_TOKEN }}
+        run: |
+          cd research-harness
+          python push_snapshot_to_d1.py --snapshot results/snapshot_$(date +%Y%m%d).json
+
+      - name: Upload snapshot artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: marin-eval-snapshot-${{ github.run_id }}
+          path: research-harness/results/snapshot_*.json
+          retention-days: 90

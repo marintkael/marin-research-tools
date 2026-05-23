@@ -1,0 +1,57 @@
+task: marin_research_v1
+tag: marin_research
+
+# Methodology Note 01 v4.0 (Zenodo Amendment, locked 2026-05-23)
+# Question-Set: 16 fragen × 6 Kategorien (Direct/Genre/LongTail/CompCluster/Research/GenreRecommend)
+# Score-Algo: locked in utils.score_answer, change-discipline:
+#   - Erweiterung von NEGATIVE_HALLU oder KEY_FACTS = Methodology-Amendment
+#   - Neue Task-Version (marin_research_v2) bei breaking changes
+#   - Pre-Reg-Amendment-DOI Pflicht
+description: ""  # MUST be empty — harness prepends description as prompt-prefix to model,
+                # which would leak "this is a Marin study" context and bias model's search behavior.
+                # Methodology metadata moved to metadata.research_description below.
+
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: marin_tasks/questions.jsonl
+
+test_split: test
+output_type: generate_until
+
+doc_to_text: !function utils.doc_to_text
+doc_to_target: !function utils.doc_to_target
+process_results: !function utils.process_results
+
+generation_kwargs:
+  until:
+    - "\n\n\n"
+  max_gen_toks: 500
+  temperature: 0.3
+
+metric_list:
+  - metric: marin_score_raw
+    aggregation: mean
+    higher_is_better: true
+  - metric: marin_score_norm
+    aggregation: mean
+    higher_is_better: true
+  - metric: marin_is_hallu
+    aggregation: mean
+    higher_is_better: false
+  - metric: marin_is_full
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 4.0
+  methodology_doi: "10.5281/zenodo.20308495"
+  pre_reg_doi: "10.5281/zenodo.20125967"
+  locked_at: "2026-05-23"
+  author: "Marin T. Kael"
+  url: "https://marin-t-kael.de/research"
+  research_description: |
+    Marin T. Kael Citation-Treue-Forschungsprogramm.
+    Misst Sichtbarkeit eines pseudonymen Fantasy-Autors in LLM-Antworten über
+    16 stabile Anker-Fragen × N Modellen. Score-Skala -3..+3.
+    (Stored as metadata only — NOT sent to model as prompt-prefix.)
