@@ -35,7 +35,7 @@ jobs:
         run: |
           cd research-harness
           # Note: GitHub Actions runs API LLMs only (no /tmp/marin_sweep claude_web data).
-          # Claude_web sweeps run separately via Atlas Chrome-MCP, push manually.
+          # Claude_web sweeps are produced separately and pushed via the same push_snapshot_to_d1.py script.
           python run_all_models.py \
             --skip claude_sonnet_4_6_web,claude_opus_4_7_web \
             --output results/snapshot_$(date +%Y%m%d).json

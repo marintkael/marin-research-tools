@@ -23,7 +23,7 @@ v4.0 is an **infrastructure migration**, not a methodological reformulation. The
 
 ## Why this matters for replication
 
-v3.0 was tied to Marcel's Cloudflare Workers stack — score-algorithm changes required deploy, reproducibility required runtime access to Cloudflare. v4.0 makes the methodology a **standalone Python artifact** that any external researcher can replicate:
+v3.0 was tied to the operational Cloudflare Workers stack — score-algorithm changes required deploy, reproducibility required runtime access to Cloudflare. v4.0 makes the methodology a **standalone Python artifact** that any external researcher can replicate:
 
 ```bash
 git clone https://github.com/marintkael/marin-research-tools
@@ -65,7 +65,7 @@ Locked constants live in `marin_tasks/utils.py` top section. Editing them requir
 ## Limitations
 
 1. **OpenAI search-preview rate-limits:** account-level ~5 req/min hard limit. Daily-cron-runs work; ad-hoc re-runs trigger 429s. Custom adapter implements 3-retry exponential backoff.
-2. **Claude API doesn't expose claude.ai web-search:** Anthropic's `web_search` API tool ≠ claude.ai's grounded chat. We use browser-MCP manual sweeps (Atlas via Brave-Marin) and import results via `claude_web_importer` adapter. Not 100% automated.
+2. **Claude API doesn't expose claude.ai web-search:** Anthropic's `web_search` API tool ≠ claude.ai's grounded chat. We use manual web-sweeps against claude.ai (16 questions × 2 model-tiers per cycle) and import the resulting JSON snapshots through the `claude_web_importer` adapter. Not 100% automated by design — the manual sweep is part of the protocol.
 3. **Gemini 2.5-flash grounding:** Google-Search-Tool may return inconsistent results across runs (search-result-ordering variance). Multi-day averaging mitigates this.
 
 ## Reproducibility checklist

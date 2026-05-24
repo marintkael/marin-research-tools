@@ -3,8 +3,8 @@ Claude-Web-Importer — non-API model that replays previously-scraped
 claude.ai answers from local JSON files.
 
 Use case: claude.ai's web-search-grounded chat is not available as API.
-Atlas runs Manual-Sweeps via Brave-Marin browser MCP, saves results
-as /tmp/marin_sweep/{QID}_{MODEL}.json. This adapter reads them.
+A manual sweep against the claude.ai web interface saves results as
+/tmp/marin_sweep/{QID}_{MODEL}.json. This adapter reads them.
 
 This gives lm-evaluation-harness a reproducible interface to claude_web data.
 """

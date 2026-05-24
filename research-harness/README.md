@@ -68,7 +68,7 @@ push_snapshot_to_d1.py              D1-Push (compatible with /__push_claude_web)
 | claude-sonnet-4.6 (web) | Anthropic | ✓ via claude.ai | `claude_web_importer` (manual sweep) |
 | claude-opus-4.7 (web) | Anthropic | ✓ via claude.ai | `claude_web_importer` (manual sweep) |
 
-**Note:** Anthropic API doesn't expose claude.ai's grounded web-search. Atlas runs Manual-Sweeps via Brave-Marin browser MCP (16 fragen × 2 tiers = 32 calls in ~15 min), saves to `/tmp/marin_sweep/{QID}_{TIER}.json`. The `claude_web_importer` reads these snapshots back into the harness pipeline.
+**Note:** Anthropic API doesn't expose claude.ai's grounded web-search. Sweeps are performed manually against the claude.ai web interface (16 questions × 2 model-tiers = 32 calls per cycle), saved to `/tmp/marin_sweep/{QID}_{TIER}.json`. The `claude_web_importer` reads these snapshots back into the harness pipeline.
 
 ## Change-Discipline (locked)
 
@@ -86,7 +86,7 @@ GitHub Actions runs daily 04:30 UTC (`.github/workflows/marin-eval-daily.yml`):
 3. Push snapshot to Cloudflare D1 via worker `/__push_claude_web`
 4. Upload artifact for 90 days
 
-Claude-web (Sonnet + Opus) runs separately via Atlas Manual-Sweep, pushed via same script.
+Claude-web (Sonnet + Opus) runs separately as a manual web-sweep, pushed via the same script.
 
 ## Replication
 
@@ -103,6 +103,5 @@ python run_all_models.py --skip claude_sonnet_4_6_web,claude_opus_4_7_web
 ## Provenance
 
 - Migration date: 2026-05-23
-- Migrated by: Atlas (Marcel Kristhofen's personal AI system, autonomous mode)
-- Replaced: in-Worker JavaScript score-algorithm (cache.nosync/marin/research-pipeline/src/stages/ai_citation.js v3.0.3)
-- Score-parity verified: 27/27 historical datapoints match legacy 1:1
+- Replaced: in-Worker JavaScript score-algorithm (v3.0.3) with the lm-evaluation-harness Python implementation
+- Score-parity verified: 27/27 historical datapoints match the legacy v3.0 scoring 1:1

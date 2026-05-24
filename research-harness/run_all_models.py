@@ -13,13 +13,18 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-# Auto-load .env from foundation root (single source of truth)
+# Auto-load .env from common locations (env vars override .env)
 def load_env():
     candidates = [
-        Path("/Users/marcelkristhofen/Documents/Claude/personal-ai-foundation/.env"),
         Path.cwd() / ".env",
         Path(__file__).parent / ".env",
+        Path(__file__).parent.parent / ".env",
+        Path.home() / ".marin-research" / ".env",
     ]
+    # Optional: MARIN_ENV_FILE explicit override
+    extra = os.environ.get("MARIN_ENV_FILE")
+    if extra:
+        candidates.insert(0, Path(extra).expanduser())
     for env_file in candidates:
         if env_file.exists():
             for line in env_file.read_text(encoding="utf-8").splitlines():
