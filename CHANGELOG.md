@@ -3,6 +3,38 @@
 All notable changes to this repository are documented in this file. Each
 release is permanently archived on Zenodo and gets its own DOI.
 
+## v0.4.3 — 2026-05-24
+
+### Changed
+- `research-harness/marin_tasks/marin_research_v1.yaml` — `methodology_doi`
+  pointer updated from the v3.0 Methodology Note (`10.5281/zenodo.20308495`,
+  now retained as `methodology_doi_prev`) to the new v4.0 Methodology Note
+  (`10.5281/zenodo.20364173`). Added `software_doi` (`10.5281/zenodo.20364157`)
+  for v0.4.2 cross-reference. Pure pointer update — no methodology change.
+- `research-harness/METHODOLOGY_NOTE_v4.0.md` — header now lists the v4.0
+  Amendment DOI and the v0.4.2 software DOI.
+- `research-harness/README.md` — Methodology section updated to reference
+  the v4.0 Methodology Note DOI as the current Amendment and the v0.4.2
+  software DOI for the implementation.
+
+### Note on v0.4.2
+
+v0.4.2 (DOI 10.5281/zenodo.20364157) carries an internal YAML pointer to
+the v3.0 Methodology Note because the v4.0 Note DOI did not yet exist at
+its publication moment. That snapshot is historically correct and remains
+permanently citable; v0.4.3+ point to the v4.0 Note DOI.
+
+## v0.4.2 — 2026-05-24
+
+### Changed
+- `style_lint.py` — module docstring rephrased to use generic
+  "high-volume outbound publishing pipelines" language. Behaviour, rules,
+  and patterns are unchanged.
+
+### Zenodo
+- Published as DOI `10.5281/zenodo.20364157` (new version of the v0.4
+  concept; supersedes `10.5281/zenodo.20360519`).
+
 ## v0.4.1 — 2026-05-24
 
 ### Changed (housekeeping)

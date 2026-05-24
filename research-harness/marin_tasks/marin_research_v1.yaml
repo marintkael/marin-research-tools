@@ -45,7 +45,9 @@ metric_list:
 
 metadata:
   version: 4.0
-  methodology_doi: "10.5281/zenodo.20308495"
+  methodology_doi: "10.5281/zenodo.20364173"          # Methodology Note 01 v4.0 (this version)
+  methodology_doi_prev: "10.5281/zenodo.20308495"     # Methodology Note 01 v3.0 (superseded)
+  software_doi: "10.5281/zenodo.20364157"             # marin-research-tools v0.4.2 (this release)
   pre_reg_doi: "10.5281/zenodo.20125967"
   locked_at: "2026-05-23"
   author: "Marin T. Kael"
