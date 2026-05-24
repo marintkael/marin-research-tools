@@ -3,6 +3,60 @@
 All notable changes to this repository are documented in this file. Each
 release is permanently archived on Zenodo and gets its own DOI.
 
+## v0.4.1 — 2026-05-24
+
+### Changed (housekeeping)
+- `research-harness/README.md`, `research-harness/METHODOLOGY_NOTE_v4.0.md`,
+  `research-harness/marin_models/claude_web_importer.py`,
+  `research-harness/.github/workflows/marin-eval-daily.yml` — descriptive
+  text simplified to remove internal toolchain names that are not part of
+  the public methodology. Behaviour is unchanged; the harness still reads
+  the same `/tmp/marin_sweep/{QID}_{TIER}.json` files for the claude_web
+  importer.
+- `research-harness/run_all_models.py`,
+  `research-harness/push_snapshot_to_d1.py` — `.env` loader generalised
+  to search `cwd / file-dir / file-parent-dir / ~/.marin-research/` plus
+  an optional `MARIN_ENV_FILE` env-var. Previously a single hardcoded
+  developer-machine path was the first candidate; the new layout works
+  unchanged on any researcher's machine.
+
+### Note for v0.4
+
+v0.4 (DOI 10.5281/zenodo.20360519) is the same toolchain and produces
+the same scores; v0.4.1 only cleans up presentation. Cite v0.4.1 for any
+new replication work.
+
+## v0.4 — 2026-05-23
+
+### Added (infrastructure migration)
+- `research-harness/` — full migration of the operational score-algorithm
+  from in-Worker JavaScript (v3.0.3) to a standalone Python package on
+  top of [EleutherAI lm-evaluation-harness v0.4.12](https://github.com/EleutherAI/lm-evaluation-harness).
+- `research-harness/marin_tasks/marin_research_v1.yaml` — task config
+  (locked), 16 anchor questions × 6 categories, score scale -3..+3.
+- `research-harness/marin_tasks/utils.py` — score functions
+  (`MARIN_SPECIFIC`, `KEY_FACTS`, `NEGATIVE_HALLU` patterns) ported 1:1
+  from the legacy worker code. 27/27 historical datapoints match
+  byte-identical between legacy v3.0 and v4.0 scoring.
+- `research-harness/marin_models/` — three custom adapters:
+  `openai_search_preview` (with 3-retry exponential backoff for the
+  account-level rate-limit), `gemini_grounded` (Google-Search-Tool), and
+  `claude_web_importer` (replays manual claude.ai web-sweep JSONs).
+- `research-harness/.github/workflows/marin-eval-daily.yml` — daily CI
+  cron at 04:30 UTC, runs API LLMs and pushes a snapshot to D1.
+- `research-harness/METHODOLOGY_NOTE_v4.0.md` — Amendment to the
+  Pre-Registration DOI 10.5281/zenodo.20125967 documenting the
+  infrastructure migration and the change-discipline (patch / minor /
+  major) protocol going forward.
+
+### Why this matters
+
+v3.0 was tied to the operational Cloudflare Workers stack — score
+changes required a deploy, reproducibility required runtime access to
+the worker. v4.0 makes the methodology a standalone Python artifact
+that any external researcher can replicate on their laptop in under
+five minutes.
+
 ## v0.3 — 2026-05-17
 
 ### Removed (design refactor)
