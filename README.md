@@ -13,6 +13,28 @@ The repository exists because the research programme observes — empirically
 and openly — how language-model-based search systems, AI answer engines and
 knowledge graphs ingest, understand and cite an author identity.
 
+## Reproduce in GitHub Codespaces
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/marintkael/marin-research-tools)
+
+Click the badge for a ready-to-use Python 3.11 dev container with
+`lm-eval[api]==0.4.12` (the locked harness version) and required Python
+packages pre-installed. After the container starts, add your LLM provider
+API keys under *Settings → Codespaces → Secrets* (`OPENAI_API_KEY`,
+`GEMINI_API_KEY`, `ANTHROPIC_API_KEY`) and run:
+
+```bash
+cd research-harness
+python run_eval.py --model claude_web_importer   # single model
+python run_all_models.py                          # full 5-LLM sweep
+```
+
+No local Python install, no version drift. GitHub's free tier covers
+60 container-hours per month per account — enough for several full
+methodology reproductions.
+
+Container definition: [`.devcontainer/devcontainer.json`](.devcontainer/devcontainer.json).
+
 ## Active 3-phase design (v2.4)
 
 As of Methodology Note 01 v2.4 (14 May 2026) the programme runs an explicit
