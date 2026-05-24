@@ -1,0 +1,62 @@
+name: Marin Dashboard · Daily Rebuild
+
+# Daily 05:00 UTC — 1 hour after the pipeline cron (04:00 UTC) so the
+# /api/latest snapshot is guaranteed fresh by the time we fetch + rebuild.
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+    # Manual button in GitHub UI for on-demand rebuilds
+  push:
+    # Source-code changes to the dashboard trigger an immediate rebuild
+    paths:
+      - "dashboard/**"
+      - ".github/workflows/dashboard-daily-rebuild.yml"
+    branches: [main]
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: dashboard
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: dashboard/package-lock.json
+
+      - name: Install deps (npm ci)
+        run: npm ci
+
+      - name: Fetch live data (evidence sources)
+        # Hits the public /api/latest + /api/timeseries endpoints of
+        # marin-research-pipeline and writes Parquet under .evidence/
+        run: npm run sources
+
+      - name: Build static dashboard (evidence build)
+        run: npm run build
+
+      - name: Patch DuckDB-WASM URLs to jsDelivr CDN
+        # Required: the local WASM blobs (~33 MB + ~38 MB) exceed CF Pages'
+        # 25 MiB per-file limit. The patch rewrites two SvelteKit chunks to
+        # load WASM from cdn.jsdelivr.net and deletes the local copies.
+        run: node scripts/patch-wasm-to-cdn.mjs
+
+      - name: Deploy to CF Pages (marin-dashboard)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: "3cff4d60f16032d78a178305caf97264"
+        run: |
+          npx --yes wrangler@3 pages deploy build \
+            --project-name=marin-dashboard \
+            --branch=main \
+            --commit-dirty=true \
+            --commit-message="Daily rebuild · $(date -u +%Y-%m-%d) · workflow ${{ github.run_id }}"
