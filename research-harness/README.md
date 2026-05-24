@@ -42,8 +42,10 @@ push_snapshot_to_d1.py              D1-Push (compatible with /__push_claude_web)
 
 ## Methodology
 
-- **Pre-Registration DOI:** `10.5281/zenodo.20125967` (v1)
-- **Methodology Note 01 v4.0:** `10.5281/zenodo.20308495` (Amendment T-122)
+- **Pre-Registration DOI:** `10.5281/zenodo.20125967` (v1, anchor)
+- **Methodology Note 01 v4.0:** [`10.5281/zenodo.20364173`](https://doi.org/10.5281/zenodo.20364173) (current Amendment)
+- **Methodology Note 01 v3.0:** [`10.5281/zenodo.20308495`](https://doi.org/10.5281/zenodo.20308495) (previous, superseded)
+- **Software DOI (this release):** [`10.5281/zenodo.20364157`](https://doi.org/10.5281/zenodo.20364157) (v0.4.2)
 - **Task Version:** `marin_research_v1` (frozen — breaking changes = new task version `v2`)
 - **Score-Scale:** -3 (hallucinated) .. 0 (not found) .. +3 (full citation)
 

@@ -2,7 +2,8 @@
 
 **Amendment to Pre-Registration DOI:** [10.5281/zenodo.20125967](https://doi.org/10.5281/zenodo.20125967)
 **Previous Methodology Version:** v3.0 (DOI [10.5281/zenodo.20308495](https://doi.org/10.5281/zenodo.20308495))
-**This Amendment:** v4.0 (locked 2026-05-23)
+**This Amendment:** v4.0 (DOI [10.5281/zenodo.20364173](https://doi.org/10.5281/zenodo.20364173), locked 2026-05-23)
+**Implementation:** marin-research-tools v0.4.2 (DOI [10.5281/zenodo.20364157](https://doi.org/10.5281/zenodo.20364157))
 
 ## What changed in v4.0
 
