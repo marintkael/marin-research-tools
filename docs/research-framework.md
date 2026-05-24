@@ -80,7 +80,8 @@ strings and endpoint snapshots.
 
 - **Quarterly validation reports** (Mid October, January, April; tolerance
   ±2 weeks) on the research page and on Zenodo with DOI.
-- **Public failure log** updated whenever the linter blocks a draft.
+- **Public failure log** updated whenever the linter flags a manuscript
+  inconsistency.
 - **Codebook changelog** updated whenever inter-rater results require a
   schema revision.
 

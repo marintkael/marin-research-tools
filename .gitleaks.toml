@@ -87,6 +87,4 @@ regexes = [
   '''10\.5281/zenodo\.[0-9]+''',
   # Public Wikidata QIDs for Marin's items
   '''Q1397208\d{2}''',
-  # Programme placeholder strings in operator_patterns_example.py
-  '''PLACEHOLDER_(REAL_NAME_[AB]|INTERNAL_SYSTEM_NAME)''',
 ]

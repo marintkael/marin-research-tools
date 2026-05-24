@@ -7,9 +7,9 @@
 # These hooks run on `git commit` and block commits that contain secrets
 # or violate basic file-hygiene rules.
 #
-# A second, stricter scan runs at tag-time via
-# scripts/marin/verify_tag_safety.py (operator-side, not committed here)
-# which checks the entire about-to-be-tagged tree before any release.
+# A second, stricter scan is run before any release tag is pushed; the
+# tag-time scan checks the entire tree against the secret-scan ruleset
+# in addition to the per-commit hooks below.
 
 repos:
   # -------------------------------------------------------------------------

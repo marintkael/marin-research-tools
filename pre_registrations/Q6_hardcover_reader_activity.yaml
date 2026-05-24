@@ -3,7 +3,7 @@
 #
 # Refactor v0.3 (2026-05-17): Activity volume is the variable.
 # Attributes of individual reviews (rating distribution, length, voice)
-# are operator-form and outside the research design.
+# are author-form and outside the research design.
 
 id: Q6
 title: "Hardcover Reader-Activity-Volume"
@@ -31,12 +31,12 @@ intervention:
   operational_form: >
     Sustained reader-account activity volume (reviews, mark-as-read,
     want-to-read events). Activity volume is the variable; attributes of
-    individual reviews (rating, length, voice, tone) are operator-form
+    individual reviews (rating, length, voice, tone) are author-form
     and not part of the research design. Low-volume sustained pacing to
     avoid spam-pattern detection.
   excluded:
     - Any reference to own works ("Das vierte Feld", "Prägungen des Reiches")
-      in review content — A1 pseudonym firewall applies generally,
+      in review content — pseudonym discipline applies generally,
       Q6 is not exempt
     - Any mass-burst posting that would trigger spam-pattern detection
 
@@ -62,7 +62,7 @@ confounds:
 stop_criteria:
   hard:
     - Account restriction / shadowban by Hardcover → immediate pause
-    - Any A1 pseudonym firewall breach in review content → immediate pause
+    - Any pseudonym discipline breach in review content → immediate pause
       + retroactive review of all prior posted activity
   soft:
     - 30-day rolling reader-authenticity-cluster score remains within
