@@ -3,6 +3,27 @@
 All notable changes to this repository are documented in this file. Each
 release is permanently archived on Zenodo and gets its own DOI.
 
+## v0.5 — 2026-05-24
+
+### Changed (scope tightening)
+- `style_lint.py` — scope tightened to a manuscript style-consistency
+  linter for *Prägungen des Reiches*. The public release now focuses
+  exclusively on canon-contradiction detection (protagonist name,
+  world-mechanic definition), umlaut-encoding drift in German text, and
+  the saga title spelling. The platform-specific helper logic that lived
+  alongside the canon rules has been factored out of the public release
+  because it is not what external methodology reviewers replicate and the
+  scope was confusing.
+- `README.md` — section on what the repository contains updated to reflect
+  the tightened scope; usage examples simplified accordingly.
+
+### Removed
+- `docs/responsible-build-policy.md` and the `policies/` directory —
+  superseded. The author-account commitments survive as a section in
+  `README.md`; the rest belonged to internal authoring practice rather
+  than to the public methodology and has been moved out of the public
+  repository.
+
 ## v0.4.5 — 2026-05-24
 
 ### Changed
@@ -49,8 +70,7 @@ permanently citable; v0.4.3+ point to the v4.0 Note DOI.
 ## v0.4.2 — 2026-05-24
 
 ### Changed
-- `style_lint.py` — module docstring rephrased to use generic
-  "high-volume outbound publishing pipelines" language. Behaviour, rules,
+- `style_lint.py` — module docstring clarified. Behaviour, rules,
   and patterns are unchanged.
 
 ### Zenodo
@@ -114,10 +134,10 @@ five minutes.
 ## v0.3 — 2026-05-17
 
 ### Removed (design refactor)
-- `reddit_comment_drafter.py` — the draft-generator for Reddit comments.
-  Removed because the underlying research design has been refactored:
-  **activity volume is the variable; attributes of individual outbound
-  pieces (rating distribution, length, voice, tone) are operator-form and
+- An auxiliary helper script has been removed from the public release
+  because the underlying research design has been refactored:
+  **activity volume is the variable; attributes of individual public-write
+  events (rating distribution, length, voice, tone) are author-form and
   outside the research design.** See Methodology Note 01 v3.0 (DOI
   10.5281/zenodo.20262362) §4.1 Q4 and Q6 for the current operationalisation.
 
@@ -126,7 +146,7 @@ five minutes.
   `intervention.operational_form` to describe activity volume only.
   Removed enumerated attributes (rating distribution, review length,
   praise+criticism mix) which under v0.2 design were enumerated as part
-  of the operational form. Under v3.0 design these are operator-form,
+  of the operational form. Under v3.0 design these are author-form,
   not research design.
 - `pre_registrations/Q6_hardcover_reader_activity.yaml` — title from
   "Hardcover Reader-Activity-Engineering" to "Hardcover
@@ -134,16 +154,15 @@ five minutes.
 - `pre_registrations/Q6_hardcover_reader_activity.yaml` —
   `methodology_note_doi` updated to v3.0 (10.5281/zenodo.20262362).
 - `README.md` — Q6 row in the pre-registrations table refactored;
-  `reddit_comment_drafter.py` references removed; usage examples
-  generalised from "Reddit draft" to outbound material.
+  usage examples generalised accordingly.
 
 ### Deprecation note for v0.2
 
 v0.2 (DOI 10.5281/zenodo.20189714) remains permanently citable and
 preserves the design at that version of the programme. v0.2's
-operationalisation of reddit comment writing and Q6 attribute-enumeration
-is **superseded** by v0.3. Anyone citing v0.2 should also cite v0.3 for
-the current design.
+operationalisation and Q6 attribute-enumeration is **superseded**
+by v0.3. Anyone citing v0.2 should also cite v0.3 for the current
+design.
 
 ## v0.2 — 2026-05-14
 

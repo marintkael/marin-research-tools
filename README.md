@@ -5,9 +5,9 @@
 >
 > Public companion to **https://marin-t-kael.de/research**.
 
-These are the small, opinionated scripts that sit between author practice
-and publication for the German-language high-fantasy saga *Prägungen des
-Reiches* (opening volume *Das vierte Feld*, scheduled for 22 September 2026).
+These are the small, opinionated scripts that support the research programme
+around the German-language high-fantasy saga *Prägungen des Reiches*
+(opening volume *Das vierte Feld*, scheduled for 22 September 2026).
 
 The repository exists because the research programme observes — empirically
 and openly — how language-model-based search systems, AI answer engines and
@@ -78,18 +78,18 @@ overview.
 | **Q3** | Source-attribution profile per LLM drifts < 1 trust point over 90 days (stability anchor for ITS) | Cross-LLM Trust Graph tracking (12 patterns × 9 LLMs) | source-attribution score per LLM | active (live from T+3 after cron 04:00 UTC) |
 | **Q4** | Reddit comment karma > 200 in 6 subreddits over 90 days increases mention-cluster visibility | Reddit karma building (1× substantive comment / sub / week) | Reddit mention-cluster · public log | active (running in r/Fantasy since T+0; 7 more subs from T+3) |
 | **Q5** | Zenodo DOI cadence (1 MN / quarter) triggers Wikipedia notability threshold crossing | Zenodo DOI salvo (MN-01 v1.x + v2.x, MN-02 Q3, MN-03 Q4) | Wikipedia article-existence probe (CC-MAIN coverage) | registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15) |
-| **Q6** | Consistent reader-activity on Hardcover produces a reader-authenticity signal that strengthens cross-linking to Goodreads and the LLM trust cluster 'reading community' | Reader-account activity volume on Hardcover (reviews, mark-as-read, want-to-read). Activity volume is the variable; attributes of individual reviews (rating, length, voice) are operator-form and outside the research design. | Hardcover snapshot pipeline · books_read · reviews_written · cross-LLM trust graph cluster 'reading community' | active (since T+3, low-volume sustained) — **new in v2.3, refactored in v0.3** |
+| **Q6** | Consistent reader-activity on Hardcover produces a reader-authenticity signal that strengthens cross-linking to Goodreads and the LLM trust cluster 'reading community' | Reader-account activity volume on Hardcover (reviews, mark-as-read, want-to-read). Activity volume is the variable; attributes of individual reviews (rating, length, voice) are outside the research design. | Hardcover snapshot pipeline · books_read · reviews_written · cross-LLM trust graph cluster 'reading community' | active (since T+3, low-volume sustained) — **new in v2.3, refactored in v0.3** |
 
 Q0–Q6 are formally independent but run in temporal parallel — inter-Q
 confounds are explicitly named in each quarterly report.
 
 ## What is in this repository
 
-- **`style_lint.py`** — a content-policy and style linter that runs over
-  outbound material before it leaves the author's workstation. It is the
-  gate that catches canon contradictions, persona drift and platform-rule
-  violations (Reddit self-promotion CTAs, voice drift, spoiler leaks).
-  Designed to be called both from the command line and as a Python library.
+- **`style_lint.py`** — a manuscript style-consistency linter for
+  *Prägungen des Reiches*. It catches canon contradictions (protagonist
+  name, world-mechanic definition), umlaut-encoding drift in German text,
+  and the saga title spelling. Designed to be called both from the
+  command line and as a Python library.
 - **`source_attribution_parser.py`** — Python port of the Cross-LLM Trust
   Graph source-attribution parser. Twelve source patterns
   (Wikipedia / Wikidata / ORCID / Zenodo / Goodreads / Amazon / official
@@ -99,27 +99,16 @@ confounds are explicitly named in each quarterly report.
   pre-registration Q3.
 - **`migrations/0003_ai_citation_sources.sql`** — SQLite/D1 table for the
   Cross-LLM Trust Graph snapshots used by Q3.
-- **`pre_registrations/`** — six YAML files Q0.yaml … Q5.yaml. The full
+- **`pre_registrations/`** — seven YAML files Q0.yaml … Q6.yaml. The full
   pre-registration appendix to each quarterly report.
-- **`policies/`** — documentation and example of the operator-private
-  pattern layer. The framework supports loading additional patterns from a
-  local file referenced via the `STYLE_LINT_PRIVATE_RULES` environment
-  variable; this is where the operator-specific pseudonym firewall and
-  internal-system-leak patterns live in actual deployments. They are not
-  included in this public repository because the patterns themselves would
-  defeat the purpose of having them.
 - **`docs/`** — the public research framework (four Phase-1 investigation
-  lines) and the responsible-build commitments that govern this tooling.
+  lines).
 
 ## What is *not* in this repository
 
-- No pseudonym-firewall patterns (operator-specific, loaded from a private
-  `.env`).
-- No internal system or vendor names (operator-specific, loaded from a
-  private `.env`).
-- No authentication credentials.
-- No production paths or operator-specific runtime layout.
 - No automation that posts, comments, votes or DMs on the author's behalf.
+- No authentication credentials.
+- No production paths or private runtime layout.
 
 ## Why this exists
 
@@ -156,8 +145,8 @@ The four Phase-1 investigation lines documented at
 ## Usage
 
 ```bash
-# Lint an outbound string
-python3 style_lint.py --text "Marin T. Kael's debut..." --surface reddit
+# Lint a manuscript string
+python3 style_lint.py --text "Marin T. Kael's debut..."
 
 # Lint a file
 python3 style_lint.py --file path/to/text.md --strict
@@ -168,7 +157,7 @@ echo "According to Wikipedia and ORCID..." | \
 
 # As a library
 from style_lint import check
-result = check(text, surface="reddit")
+result = check(text)
 if result["blocked"]:
     print("BLOCKED"); print(result["violations"])
 
@@ -176,29 +165,24 @@ from source_attribution_parser import parse_sources
 rows = parse_sources(answer_text, llm_id="claude", question_id="D2")
 ```
 
-## Operator commitments
+## Author-account commitments
 
-The full public commitment list is in
-[`docs/responsible-build-policy.md`](docs/responsible-build-policy.md).
-Summary:
+Public commitments that govern the author identity behind this programme:
 
 - One human, one account (`u/marintkael`). No alts, ever.
-- No automated posting, commenting, voting, replies or DMs.
-- Manual submission via the normal Reddit web UI is hard-required.
+- No automated posting, commenting, voting or DM-sending on the author's
+  behalf. Every public write goes through the platform's normal web UI.
 - Daily public-write volume across all platforms combined: 2–3 maximum.
 - Daily read volume: under 1,000 GET, well below rate limits.
-- User-Agent string: `marin-t-kael:research-tooling:v0.2 (by /u/marintkael)`.
+- User-Agent string for any read-only API access:
+  `marin-t-kael:research-tooling:v0.2 (by /u/marintkael)`.
 - 429 / 503 responses → exponential backoff. All rate-limit headers respected.
 - No scraping of personal user data. No DM-content access. No
   aggregate-and-resell. No ad targeting. No LLM-training-data export.
-- Public failure log: every outbound piece blocked by the linter is
-  logged with its reason and summarised in the quarterly research
-  write-ups on https://marin-t-kael.de/research, so the policy boundary is
-  auditable from the outside.
 
 ## Security and secret hygiene
 
-Two automated layers run against every commit and every release tag:
+An automated layer runs against every commit:
 
 - **Pre-commit** — install with `pip install pre-commit && pre-commit install`.
   Runs [gitleaks](https://github.com/gitleaks/gitleaks) with the custom
@@ -207,17 +191,6 @@ Two automated layers run against every commit and every release tag:
   API keys, IndexNow keys, generic token-assignments, and PEM private
   keys), plus standard file-hygiene hooks (trailing whitespace,
   large-file detection, private-key detection, merge-conflict markers).
-- **Pre-tag** — the operator runs a three-layer scan before any tag is
-  pushed: an A1-firewall layer (style_lint with the operator-private
-  rules), the gitleaks scan, and a tree-hygiene check that fails on any
-  `.env`, `.token`, `.secret`, `.pem`, `.key` file in the tree. Only when
-  all three layers pass does the tag get created and pushed.
-
-The operator-private layer (real-name firewall, internal-system-name
-patterns) is loaded at runtime from a file referenced via the
-`STYLE_LINT_PRIVATE_RULES` environment variable. That file is never
-committed — the patterns themselves are the strings the rules are meant
-to suppress.
 
 ## Release process
 
