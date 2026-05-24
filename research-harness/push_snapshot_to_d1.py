@@ -52,6 +52,23 @@ def main():
 
     snap = json.loads(Path(args.snapshot).read_text(encoding="utf-8"))
 
+    # Guard: if every model in this run failed (all 3 LLMs upstream-blocked,
+    # rate-limited, etc.), the snapshot has 0 result rows. Pushing an empty
+    # payload to the worker is a wasted call and the worker rejects it with
+    # HTTP 500 (it requires non-empty results to compute aggregates).
+    # Treat this as a no-op success — exit 0 so the workflow stays green and
+    # the next scheduled run gets a fresh shot at the upstreams.
+    n_rows = len(snap.get("results") or [])
+    if n_rows == 0:
+        print(
+            "SKIP push_snapshot_to_d1: snapshot has 0 result rows "
+            "(all models failed upstream — e.g. shared OpenAI rate-limit, "
+            "Gemini 503). Not pushing to /__push_claude_web. Will retry on "
+            "next scheduled run.",
+            file=sys.stderr,
+        )
+        return 0
+
     # Translate harness-snapshot schema → worker /__push_claude_web schema
     # (existing endpoint expects claude_web format, so we route harness data through same path)
     payload = {

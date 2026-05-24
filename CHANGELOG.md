@@ -3,6 +3,28 @@
 All notable changes to this repository are documented in this file. Each
 release is permanently archived on Zenodo and gets its own DOI.
 
+## v0.4.5 — 2026-05-24
+
+### Changed
+- `research-harness/push_snapshot_to_d1.py` — guard added: if the snapshot
+  has 0 result rows (because every LLM upstream failed during the run, e.g.
+  a shared OpenAI rate-limit hit + a transient Gemini 503), the push step
+  is now a no-op (`exit 0` with a clear log message). Previously the worker
+  returned HTTP 500 on empty payloads, which surfaced as a CI red even
+  though the harness itself ran fine. Eliminates spurious red runs on days
+  where upstream APIs are temporarily unreachable. The next scheduled run
+  retries cleanly.
+
+## v0.4.4 — 2026-05-24
+
+### Changed
+- `.github/workflows/marin-eval-daily.yml` — moved from
+  `research-harness/.github/workflows/` to the repository root, which is
+  where GitHub Actions actually looks for workflow files. The previous
+  location was silently ignored: 0 scheduled runs since v0.4. After this
+  move the workflow registers and runs at the configured 04:30 UTC cron
+  (plus on-demand via `workflow_dispatch`).
+
 ## v0.4.3 — 2026-05-24
 
 ### Changed
