@@ -5,8 +5,8 @@ Marin Style-Lint — content-policy pre-check pipeline.
 A small, opinionated linter that runs over draft material before it leaves the
 operator's workstation. The goal is not stylistic perfection; it is to catch
 the specific classes of content drift that have historically caused problems
-for AI-augmented authorship: canon contradictions, persona drift, and
-platform-rule violations.
+for high-volume outbound publishing pipelines: canon contradictions, persona
+drift, and platform-rule violations.
 
 This is the public, generic version of the linter. Operator-specific patterns
 (real-name firewall, internal-system-name leak detection, project-private
