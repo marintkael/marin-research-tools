@@ -1,0 +1,58 @@
+{
+  "name": "marin-research-harness",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+
+  // After the container is built, install the locked harness version + a
+  // few quality-of-life packages. Pinned to lm-eval v0.4.12 (the version
+  // referenced in Methodology Note 01 v4.0 and the .zenodo.json release).
+  // Changing this version means a methodology amendment, not a quiet pip-upgrade.
+  "postCreateCommand": "pip install --user --upgrade pip && pip install --user 'lm-eval[api]==0.4.12' requests pyyaml && pip install --user -e . || true && echo '--- harness self-test ---' && python -c 'import lm_eval; print(\"lm-eval version:\", lm_eval.__version__)'",
+
+  // VS Code extensions that make Python + YAML work pleasant out of the box.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": false
+      }
+    }
+  },
+
+  // Default working directory inside the container; matches the structure
+  // assumed by run_all_models.py and the methodology snippets in
+  // research-harness/README.md.
+  "workspaceFolder": "/workspaces/marin-research-tools",
+
+  // We need outbound HTTPS to the API providers (OpenAI / Gemini / Anthropic)
+  // and to the Marin D1 push endpoint. No forwarded ports — the harness is
+  // a batch tool, not a server.
+  "forwardPorts": [],
+
+  // Pre-installed features the harness can rely on. `common-utils` covers
+  // git + non-root user setup; `node` is handy if the user wants to inspect
+  // the Cloudflare Worker side of the pipeline in the same workspace.
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false,
+      "configureZshAsDefaultShell": false
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+
+  // The harness uses three env-vars when calling external LLM providers.
+  // We declare them here so VS Code's secret-input prompt offers them to
+  // the user — keys themselves are NOT baked into the image.
+  "remoteEnv": {
+    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}",
+    "GEMINI_API_KEY": "${localEnv:GEMINI_API_KEY}",
+    "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}"
+  }
+}
