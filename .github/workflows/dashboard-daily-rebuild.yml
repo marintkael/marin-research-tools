@@ -1,18 +1,13 @@
 name: Marin Dashboard · Daily Rebuild
 
-# Daily 05:00 UTC — 1 hour after the pipeline cron (04:00 UTC) so the
-# /api/latest snapshot is guaranteed fresh by the time we fetch + rebuild.
+# 2026-05-25 v4.4: Cron-Trigger + push-Auto-Build DEAKTIVIERT.
+# Operator-Direktive: "github soll generell nichts von sich aus machen …
+# nur cloudflare und die workers arbeiten". Hauptseite (marin-t-kael.de/research/
+# dashboard) rendert eh live aus D1 via Worker-SSR — Pages-Dashboard
+# (dashboard.marin-t-kael.de) bleibt statisch zwischen manuellen Rebuilds.
 on:
-  schedule:
-    - cron: "0 5 * * *"
   workflow_dispatch:
-    # Manual button in GitHub UI for on-demand rebuilds
-  push:
-    # Source-code changes to the dashboard trigger an immediate rebuild
-    paths:
-      - "dashboard/**"
-      - ".github/workflows/dashboard-daily-rebuild.yml"
-    branches: [main]
+    # Manual trigger ONLY — keine automatischen schedule/push-Trigger.
 
 jobs:
   rebuild:
