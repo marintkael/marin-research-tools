@@ -47,19 +47,16 @@ from lm_eval.tasks import TaskManager
 GATEWAY_BASE = "https://gateway.ai.cloudflare.com/v1/3cff4d60f16032d78a178305caf97264/marin-ai-citation"
 
 MODEL_CONFIGS = [
+    # 2026-05-25 v4.1: legacy gpt-4o-search-preview entries (14 Mo alt, knowledge cutoff
+    # March 2025) replaced by gpt-5-search-api (alias → latest snapshot, currently
+    # gpt-5-search-api-2025-10-14). Worker and Action now run on identical model.
+    # Operator directive: "immer neueste Modelle verwenden natürlich!" (2026-05-25).
     {
-        "name": "openai_search_preview_mini",
-        "model": "openai_search_preview",
-        "model_args": f"model=gpt-4o-mini-search-preview-2025-03-11,gateway={GATEWAY_BASE}",
+        "name": "openai_search_api",
+        "model": "openai_search_preview",  # registered model-id (adapter, back-compat)
+        "model_args": f"model=gpt-5-search-api,gateway={GATEWAY_BASE},max_tokens=1500",
         "provider": "OpenAI",
-        "scope_label": "gpt-4o-mini-search-preview",
-    },
-    {
-        "name": "openai_search_preview_full",
-        "model": "openai_search_preview",
-        "model_args": f"model=gpt-4o-search-preview-2025-03-11,gateway={GATEWAY_BASE}",
-        "provider": "OpenAI",
-        "scope_label": "gpt-4o-search-preview",
+        "scope_label": "gpt-5-search-api",
     },
     {
         "name": "gemini_2_5_flash_grounded",
