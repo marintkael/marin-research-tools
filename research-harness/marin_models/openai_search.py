@@ -1,5 +1,16 @@
 """
-OpenAI gpt-4o-search-preview / gpt-4o-mini-search-preview adapter.
+OpenAI search-API adapter.
+
+Compatible with the following OpenAI search-enabled models:
+  - gpt-5-search-api (alias to latest snapshot, current best, default)
+  - gpt-5-search-api-2025-10-14 (pinned)
+  - gpt-4o-mini-search-preview / -2025-03-11 (legacy, 14 Mo old)
+  - gpt-4o-search-preview / -2025-03-11 (legacy, 14 Mo old)
+
+These models do NOT accept the `temperature` parameter. Default
+max_tokens = 1500 (gpt-5-search-api produces ~700 tokens incl. citations;
+the legacy 400-default truncated citations at the end).
+
 Routes via Cloudflare AI Gateway (cache 7200s) + retry-backoff bei 429.
 """
 import os
@@ -23,7 +34,7 @@ class OpenAISearchPreview(LM):
       max_retries: default 3, exponential backoff 5s/15s/30s
     """
     def __init__(self, model: str, gateway: Optional[str] = None,
-                 max_retries: int = 3, max_tokens: int = 400, **kwargs):
+                 max_retries: int = 3, max_tokens: int = 1500, **kwargs):
         super().__init__()
         self.model = model
         self.max_retries = max_retries
