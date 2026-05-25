@@ -47,17 +47,26 @@ from lm_eval.tasks import TaskManager
 GATEWAY_BASE = "https://gateway.ai.cloudflare.com/v1/3cff4d60f16032d78a178305caf97264/marin-ai-citation"
 
 MODEL_CONFIGS = [
-    # 2026-05-25 v4.1: legacy gpt-4o-search-preview entries (14 Mo alt, knowledge cutoff
-    # March 2025) replaced by gpt-5-search-api (alias → latest snapshot, currently
-    # gpt-5-search-api-2025-10-14). Worker and Action now run on identical model.
-    # Operator directive: "immer neueste Modelle verwenden natürlich!" (2026-05-25).
-    {
-        "name": "openai_search_api",
-        "model": "openai_search_preview",  # registered model-id (adapter, back-compat)
-        "model_args": f"model=gpt-5-search-api,gateway={GATEWAY_BASE},max_tokens=1500",
-        "provider": "OpenAI",
-        "scope_label": "gpt-5-search-api",
-    },
+    # 2026-05-25 v4.2: OpenAI entry REMOVED from Action.
+    # gpt-5-search-api has a Tier-1 TPM limit of 6000 tokens/min. Single Q
+    # consumes ~17k input + 1.5k output tokens (web-search context inflation),
+    # which alone exceeds the 1-min window. Sequential 16-Q burst in <60s is
+    # impossible without 3+ min cooldown per Q → 48 min run, beyond Action
+    # 30-min timeout.
+    # Worker `ai_citation` stage (Cron 04:00 UTC) collects OpenAI data via
+    # AI-Gateway with 7200s cache + time-distributed calls. The Worker's
+    # ai_citation_snapshots feed `combined_primary.providers.openai` in
+    # /api/latest. Action stays the lm-eval-compliant Gemini + Claude layer.
+    # If TPM tier is upgraded later, this entry can be re-added (uncomment
+    # below).
+    #
+    # {
+    #     "name": "openai_search_api",
+    #     "model": "openai_search_preview",
+    #     "model_args": f"model=gpt-5-search-api,gateway={GATEWAY_BASE},max_tokens=1500,inter_call_sleep=180",
+    #     "provider": "OpenAI",
+    #     "scope_label": "gpt-5-search-api",
+    # },
     {
         "name": "gemini_2_5_flash_grounded",
         "model": "gemini_grounded",
