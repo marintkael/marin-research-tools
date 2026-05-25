@@ -27,6 +27,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install "lm-eval[api]==0.4.12" requests
 
+      - name: Stage claude_web sweeps to /tmp/marin_sweep
+        # claude_web_importer reads pre-scraped claude.ai answers from
+        # /tmp/marin_sweep/{QID}_{tier}.json. Sweeps for the current date
+        # are checked into research-harness/sweeps/YYYY-MM-DD/ — copy them
+        # into the harness-expected location. If no sweep exists for today,
+        # the importer simply loads 0 entries and that model is skipped.
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          mkdir -p /tmp/marin_sweep
+          if [ -d "research-harness/sweeps/${DATE}" ]; then
+            cp research-harness/sweeps/${DATE}/*.json /tmp/marin_sweep/ 2>/dev/null || true
+            echo "[sweeps] staged $(ls /tmp/marin_sweep/ | wc -l) files for ${DATE}"
+          else
+            echo "[sweeps] no sweep dir for ${DATE} — claude_web models will load 0 entries"
+          fi
+
       - name: Run all models
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -34,10 +50,18 @@ jobs:
           MARIN_RESEARCH_TRIGGER_TOKEN: ${{ secrets.MARIN_RESEARCH_TRIGGER_TOKEN }}
         run: |
           cd research-harness
-          # Note: GitHub Actions runs API LLMs only (no /tmp/marin_sweep claude_web data).
-          # Claude_web sweeps are produced separately and pushed via the same push_snapshot_to_d1.py script.
+          # Skip sonnet tier when no sonnet sweep files are present (auto-detect).
+          # Opus runs whenever opus sweeps exist for the date.
+          SKIP_LIST=""
+          if ! ls /tmp/marin_sweep/*_sonnet.json >/dev/null 2>&1; then
+            SKIP_LIST="claude_sonnet_4_6_web"
+          fi
+          if ! ls /tmp/marin_sweep/*_opus.json >/dev/null 2>&1; then
+            SKIP_LIST="${SKIP_LIST:+${SKIP_LIST},}claude_opus_4_7_web"
+          fi
+          echo "[run] skip=${SKIP_LIST:-<none>}"
           python run_all_models.py \
-            --skip claude_sonnet_4_6_web,claude_opus_4_7_web \
+            ${SKIP_LIST:+--skip ${SKIP_LIST}} \
             --output results/snapshot_$(date +%Y%m%d).json
 
       - name: Push snapshot to D1
