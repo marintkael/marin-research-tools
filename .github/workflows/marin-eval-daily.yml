@@ -1,11 +1,14 @@
 name: Marin Daily Eval (lm-evaluation-harness)
 
+# 2026-05-25 v4.4: Cron-Trigger DEAKTIVIERT. Operator-Direktive: "github soll
+# generell nichts von sich aus machen … nur cloudflare und die workers arbeiten".
+# Worker `marin-research-pipeline` (Cron 04:00 UTC) collects ALL Provider-Daten
+# selbst (incl. claude_web_scrape Stage v3.3 für 3 Tiers + ai_citation für
+# 2 OpenAI-Modelle + Gemini). Action bleibt für ad-hoc lm-eval-Validation-Runs
+# (Methodology-Reproducibility) via manual workflow_dispatch.
 on:
-  schedule:
-    # Daily 04:30 UTC — 30 min after Cloudflare-Cron 04:00 to avoid overlap
-    - cron: "30 4 * * *"
   workflow_dispatch:
-    # Manual trigger for ad-hoc runs
+    # Manual trigger ONLY — keine automatischen schedule-Trigger.
 
 jobs:
   eval:
