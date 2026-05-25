@@ -34,11 +34,12 @@ class OpenAISearchPreview(LM):
       max_retries: default 3, exponential backoff 5s/15s/30s
     """
     def __init__(self, model: str, gateway: Optional[str] = None,
-                 max_retries: int = 3, max_tokens: int = 1500, **kwargs):
+                 max_retries: int = 5, max_tokens: int = 1500, inter_call_sleep: float = 2.0, **kwargs):
         super().__init__()
         self.model = model
         self.max_retries = max_retries
         self.max_tokens = max_tokens
+        self.inter_call_sleep = inter_call_sleep
         self.api_key = os.environ.get("OPENAI_API_KEY")
         if not self.api_key:
             raise ValueError("OPENAI_API_KEY env not set")
@@ -73,9 +74,15 @@ class OpenAISearchPreview(LM):
         raise NotImplementedError()
 
     def generate_until(self, requests, **kwargs) -> List[str]:
+        # 2026-05-25 v4.1.1: Inter-call sleep to respect gpt-5-search-api Tier-1
+        # rate limit (10 RPM). 16 Q's burst → 429-overage without throttle.
+        # Sleep 2s between calls = 30 RPM target → safely under 10 RPM after
+        # ~5s OpenAI processing time per call.
         results = []
-        for req in requests:
+        for i, req in enumerate(requests):
             ctx, gen_kwargs = req.args if hasattr(req, 'args') else req
+            if i > 0 and self.inter_call_sleep > 0:
+                time.sleep(self.inter_call_sleep)
             answer = self._ask_one(ctx)
             results.append(answer or "")
         return results
@@ -88,7 +95,9 @@ class OpenAISearchPreview(LM):
             "max_tokens": self.max_tokens,
         }
         data = json.dumps(body).encode()
-        backoff_s = [5, 15, 30]
+        # 2026-05-25 v4.1.1: Extended backoff for stubborn 429s on gpt-5-search-api
+        # (Tier-1 quota burst). Was [5,15,30], now [5,15,30,60,90] with max_retries=5.
+        backoff_s = [5, 15, 30, 60, 90]
         last_err = None
         for attempt in range(self.max_retries):
             req = urllib.request.Request(
@@ -129,4 +138,5 @@ class OpenAISearchPreview(LM):
         # Convert numerics
         if "max_retries" in args: args["max_retries"] = int(args["max_retries"])
         if "max_tokens" in args: args["max_tokens"] = int(args["max_tokens"])
+        if "inter_call_sleep" in args: args["inter_call_sleep"] = float(args["inter_call_sleep"])
         return cls(**args)
