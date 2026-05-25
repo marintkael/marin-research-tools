@@ -76,6 +76,13 @@ MODEL_CONFIGS = [
         "scope_label": "gemini-2.5-flash-grounded",
     },
     {
+        "name": "claude_haiku_4_5_web",
+        "model": "claude_web_importer",
+        "model_args": "model_tier=haiku,sweep_dir=/tmp/marin_sweep",
+        "provider": "Claude",
+        "scope_label": "claude-haiku-4.5 (web)",
+    },
+    {
         "name": "claude_sonnet_4_6_web",
         "model": "claude_web_importer",
         "model_args": "model_tier=sonnet,sweep_dir=/tmp/marin_sweep",
