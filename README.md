@@ -245,3 +245,84 @@ MIT — see [`LICENSE`](LICENSE).
 
 Research enquiries: research@marin-t-kael.de
 Project page: https://marin-t-kael.de/research
+
+---
+
+## Findings — *Zero to Cited in Six Days*
+
+This repo holds the code, scoring harness, and config behind a single-subject measurement study: how fast, and through which mechanism, a brand-new author entity with **no prior web presence and no published work** becomes citable by web-grounded LLMs.
+
+> **What this is:** a measurement, not a success story. n=1, the investigator is the subject. That's a real limit — see [Honest limits](#honest-limits). I pre-registered the design and keep a public failure log so the n=1 is at least an *honest* n=1.
+
+**Paper (live, citable):** https://doi.org/10.5281/zenodo.20549020 (bilingual EN/DE, CC-BY)
+**Report page (live):** https://marin-t-kael.de/en/research/zero-to-cited?utm_source=github_readme (the DOI remains the canonical citable link)
+**Open dataset:** https://huggingface.co/datasets/marintkael/ai-citation-fidelity?utm_source=github_readme
+**ORCID:** 0009-0006-2105-8190
+
+### TL;DR
+
+A pseudonymous fantasy-author entity (*Marin T. Kael*) was launched on 2026-05-11 — no backlinks, no book, debut scheduled for 22 Sep 2026. I then polled **5 web-grounded LLM surfaces** with **16 standardized questions across 6 categories**, daily, for **23 days** — roughly **16,000 scored datapoints** (+1 correct / source-grounded, 0 not-found, −1 hallucinated).
+
+- **First correct LLM citation at T+6** (day six). Google Knowledge Graph entry at **T+4**.
+- It went AI-visible **with on-site crawling blocked the entire time** — Cloudflare returned HTTP **403 to every AI crawler on 22 of 23 days** (its silent opt-out default for new domains). Visibility came via Knowledge Graph (Wikidata) + inference-time grounding on third-party mentions, **not** the site itself.
+- The gap between providers is a **chasm, not a ladder** (precision = correct:hallucinated, 7-day window): OpenAI GPT-5.4 web **4.7:1**, OpenAI Search-API **4.0:1**, OpenAI GPT-5.2 web **1.9:1**, Gemini **0.47:1** (net-negative). Claude rarely cites (~5%) but abstains rather than confabulating — its raw net-negative score was a scorer artifact (see Finding 3).
+- **Structured identity moved the needle; social reach did not.** A 23× Reddit-karma jump (12 → 281) produced **zero** citation lift.
+
+### The six findings
+
+**1. Speed.** First source-grounded LLM citation landed at **T+6**. The Google Knowledge Graph entry appeared earlier, at **T+4** — structured identity propagates before generative surfaces catch up.
+
+**2. The locked door.** Cloudflare's default for a fresh domain silently opts out of AI crawling: **HTTP 403 to every AI crawler on 22 of 23 days**. The entity became citable anyway, routed through Wikidata → Knowledge Graph and inference-time grounding on third-party mentions. On-site files were never read.
+
+**3. The provider chasm.** Same entity, same questions, wildly different fidelity. Precision (correct:hallucinated, 7-day window):
+
+| Surface | Precision (correct:hallucinated) | Net |
+|---|---|---|
+| OpenAI GPT-5.4 (web) | 4.7 : 1 | positive |
+| OpenAI Search-API | 4.0 : 1 | positive |
+| OpenAI GPT-5.2 (web) | 1.9 : 1 | positive |
+| Gemini | 0.47 : 1 | **net-negative** (≈2× more wrong than right) |
+| Claude | ~5% cite rate | **rarely cites, abstains** (raw net-negative was a scorer artifact*) |
+
+\* **On Claude:** the automated scorer initially read Claude as net-negative, but a validated re-analysis showed that was a measurement artifact, not a real failure. Manual adjudication of n=50 (Cohen's κ=0.79; classifier recall 100% on true hallucinations; book claims web-verified) found only **≈11% (95% CI 7–16%)** of the flagged "hallucinations" were genuine — and all of those were low-severity linguistic substitutions (the model reading "Marin" as "marine"), with **zero** fabricated author biographies. The rest were *correct*: disambiguation of a real name/title collision ("Das vierte Feld" is a real 1999 book by Mokka Müller; "Marin" collides with the Maritime Research Institute Netherlands) or accurate genre answers naming real books. So Claude rarely surfaces this brand-new entity (~5%, expected for a cold identity) but abstains or correctly disambiguates rather than confabulating — effectively the most honest model measured. (Gemini's net-negative result, by contrast, is genuine and verified.)
+
+The newer OpenAI generation (5.4) cites *more* reliably than the older (5.2), so this isn't a fixed brand ranking — it tracks model generation and, more fundamentally, **retrieval source**. OpenAI grounds on the entity's own domain **119×**; Gemini grounds on it **0×** and pulls the entity **only from Reddit (17/17)**. The OpenAI-web citation *rate* plateaus around **~10%**, peaking at **16.3%**.
+
+**4. Depth.** Where OpenAI finds the entity, the description is complete and source-grounded — series, setting, release date, even pseudonym status and the research project itself — and fetched live (the cited URL carries `utm_source=openai`).
+
+**5. The needle.** Structured identity (Wikidata → KG, the website, DOIs) drove citations; social virality did not. The citation breakthrough (17 May) landed **before** the Reddit-karma build, and the subsequent 23× karma jump (12 → 281) produced **zero** citation lift. Social reach buys human readers; structured identity buys AI citations. Separate channels.
+
+**6. Named vs. discovery.** The entity is citable **when named** — direct "Who is…?" queries hit **38.9%** — but invisible in organic discovery: genre/recommendation queries **0%**, and **0** organic search clicks/impressions per Google Search Console.
+
+### Why the method refutes naive single-LLM checks
+
+Construct-validity controls baked into the harness:
+
+- **Primary-vs-control channel** to detect echo bias (does a surface only "know" the entity because it scraped my own announcement?).
+- **Fabrication trap:** the harness caught a hallucinated *"Wikipedia"* attribution **24×** for an entity that has **no Wikipedia page**.
+- **Entity-collision controls:** disambiguating *MARIN* the author from MARIN the Maritime Research Institute.
+
+A one-shot "I asked ChatGPT and it knew me" check passes all three of these traps without noticing them. That's the point of the harness.
+
+### Honest limits
+
+- **n=1, investigator = subject.** Mitigated by pre-registration + a public failure log, not eliminated. Treat every number as one well-instrumented case, not a population estimate.
+- **Crawlers were blocked the whole time**, so this study can say **nothing** about `llms.txt` efficacy — the door was shut before any on-site file could matter. That experiment is still open.
+- This is a measurement of one entity's trajectory. It is not a growth-hacking playbook.
+
+### Run it yourself
+
+Code is MIT-licensed; the scored dataset is open. You can rerun the harness against your own entity or audit mine.
+
+```bash
+git clone https://github.com/marintkael/marin-research-tools
+cd marin-research-tools
+# config: 16 questions x 6 categories, 5 web-grounded surfaces, daily poll
+# scoring: +1 correct/source-grounded, 0 not-found, -1 hallucinated
+```
+
+- **Code (MIT):** https://github.com/marintkael/marin-research-tools
+- **Dataset (CC-BY):** https://huggingface.co/datasets/marintkael/ai-citation-fidelity?utm_source=github_readme
+- **Paper (DOI):** https://doi.org/10.5281/zenodo.20549020
+
+Issues and replications welcome. If you run it against a *different* entity, open a Discussion — a second data point is the most useful thing this repo could get.
