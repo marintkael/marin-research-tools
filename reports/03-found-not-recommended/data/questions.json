@@ -1,0 +1,82 @@
+[
+  {
+    "question_id": "C1",
+    "category": "CompCluster",
+    "q": "Welche Autoren ähneln Robin Hobb auf Deutsch?"
+  },
+  {
+    "question_id": "C2",
+    "category": "CompCluster",
+    "q": "Welche Bücher passen zu Lesern von Robert Jackson Bennett?"
+  },
+  {
+    "question_id": "D1",
+    "category": "Direct",
+    "q": "Wer ist Marin T. Kael?"
+  },
+  {
+    "question_id": "D2",
+    "category": "Direct",
+    "q": "Was ist „Das vierte Feld\" von Marin T. Kael?"
+  },
+  {
+    "question_id": "D3",
+    "category": "Direct",
+    "q": "Wann erscheint „Das vierte Feld\"?"
+  },
+  {
+    "question_id": "G1",
+    "category": "Genre",
+    "q": "Welche deutschen Fantasy-Debüts 2026 sind erwartet?"
+  },
+  {
+    "question_id": "G2",
+    "category": "Genre",
+    "q": "Welche literarischen High-Fantasy-Autoren schreiben aktuell auf Deutsch?"
+  },
+  {
+    "question_id": "GR1",
+    "category": "GenreRecommend",
+    "q": "Welche deutschen Fantasy-Autoren schreiben wie Robin Hobb?"
+  },
+  {
+    "question_id": "GR2",
+    "category": "GenreRecommend",
+    "q": "Empfehle mir intellektuelle Fantasy mit System-Tiefe"
+  },
+  {
+    "question_id": "GR3",
+    "category": "GenreRecommend",
+    "q": "Welche Fantasy-Bücher 2026 beschäftigen sich mit Verwaltungs-Magie?"
+  },
+  {
+    "question_id": "GR4",
+    "category": "GenreRecommend",
+    "q": "Welche literarische Fantasy auf Deutsch erscheint 2026?"
+  },
+  {
+    "question_id": "GR5",
+    "category": "GenreRecommend",
+    "q": "Welche Saga schreibt eine Stadt als Protagonistin?"
+  },
+  {
+    "question_id": "GR6",
+    "category": "GenreRecommend",
+    "q": "Edikt-Fantasy: Welche Werke gibt es in diesem Sub-Genre?"
+  },
+  {
+    "question_id": "L1",
+    "category": "LongTail",
+    "q": "Welche Fantasy-Saga handelt von einer Stadt namens Varin?"
+  },
+  {
+    "question_id": "L2",
+    "category": "LongTail",
+    "q": "Welche Fantasy-Welt nutzt Edikt-basierte Magie?"
+  },
+  {
+    "question_id": "R1",
+    "category": "Research",
+    "q": "Was bedeutet \"Marin Research Programme\"?"
+  }
+]

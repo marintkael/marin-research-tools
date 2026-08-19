@@ -1,0 +1,3724 @@
+{
+ "meta": {
+  "T0": "2026-05-11",
+  "first_day": "2026-05-13",
+  "last_day": "2026-08-19",
+  "n_days": 99,
+  "n_primary_rows": 7947,
+  "n_claude_rows": 3183,
+  "n_rows_used": 11130,
+  "n_noweb_rows": 10654,
+  "questions": 16,
+  "providers": [
+   "openai",
+   "gemini",
+   "claude"
+  ]
+ },
+ "weekly": {
+  "20": {
+   "direct": {
+    "openai": {
+     "pct": 5.0,
+     "n": 153,
+     "pos_share": 13.1,
+     "ci": [
+      8.6,
+      19.3
+     ],
+     "neg": 10
+    },
+    "gemini": {
+     "pct": 12.2,
+     "n": 98,
+     "pos_share": 35.7,
+     "ci": [
+      26.9,
+      45.6
+     ],
+     "neg": 0
+    },
+    "_mean": 8.6,
+    "_pooled": 7.8,
+    "_n": 251,
+    "_ci": [
+     17.2,
+     27.4
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 0.0,
+     "n": 100,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      3.7
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 38,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      9.2
+     ],
+     "neg": 0
+    },
+    "_mean": 0.0,
+    "_pooled": 0.0,
+    "_n": 138,
+    "_ci": [
+     0.0,
+     2.7
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 388,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      1.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 133,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      2.8
+     ],
+     "neg": 0
+    },
+    "_mean": 0.0,
+    "_pooled": 0.0,
+    "_n": 521,
+    "_ci": [
+     0.0,
+     0.7
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": -2.3,
+     "n": 44,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      8.0
+     ],
+     "neg": 3
+    },
+    "gemini": {
+     "pct": 11.8,
+     "n": 17,
+     "pos_share": 70.6,
+     "ci": [
+      46.9,
+      86.7
+     ],
+     "neg": 0
+    },
+    "_mean": 4.8,
+    "_pooled": 1.6,
+    "_n": 61,
+    "_ci": [
+     11.6,
+     31.3
+    ]
+   }
+  },
+  "21": {
+   "direct": {
+    "openai": {
+     "pct": 58.2,
+     "n": 162,
+     "pos_share": 92.6,
+     "ci": [
+      87.5,
+      95.7
+     ],
+     "neg": 12
+    },
+    "gemini": {
+     "pct": -7.6,
+     "n": 176,
+     "pos_share": 34.7,
+     "ci": [
+      28.0,
+      41.9
+     ],
+     "neg": 90
+    },
+    "claude": {
+     "pct": -34.2,
+     "n": 20,
+     "pos_share": 10.0,
+     "ci": [
+      2.8,
+      30.1
+     ],
+     "neg": 11
+    },
+    "_mean": 5.5,
+    "_pooled": 20.7,
+    "_n": 358,
+    "_ci": [
+     54.3,
+     64.5
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 7.7,
+     "n": 104,
+     "pos_share": 10.6,
+     "ci": [
+      6.0,
+      18.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 33.0,
+     "n": 112,
+     "pos_share": 33.0,
+     "ci": [
+      25.0,
+      42.2
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 10,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      27.8
+     ],
+     "neg": 0
+    },
+    "_mean": 13.6,
+    "_pooled": 19.9,
+    "_n": 226,
+    "_ci": [
+     16.4,
+     27.0
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 507,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      0.8
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 559,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      0.7
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 1.3,
+     "n": 52,
+     "pos_share": 3.8,
+     "ci": [
+      1.1,
+      13.0
+     ],
+     "neg": 0
+    },
+    "_mean": 0.4,
+    "_pooled": 0.1,
+    "_n": 1118,
+    "_ci": [
+     0.0,
+     0.6
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": -31.4,
+     "n": 53,
+     "pos_share": 3.8,
+     "ci": [
+      1.0,
+      12.8
+     ],
+     "neg": 51
+    },
+    "gemini": {
+     "pct": -14.4,
+     "n": 60,
+     "pos_share": 33.3,
+     "ci": [
+      22.7,
+      45.9
+     ],
+     "neg": 36
+    },
+    "claude": {
+     "pct": -26.7,
+     "n": 5,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      43.4
+     ],
+     "neg": 4
+    },
+    "_mean": -24.2,
+    "_pooled": -22.6,
+    "_n": 118,
+    "_ci": [
+     12.6,
+     26.6
+    ]
+   }
+  },
+  "22": {
+   "direct": {
+    "openai": {
+     "pct": 46.9,
+     "n": 108,
+     "pos_share": 81.5,
+     "ci": [
+      73.1,
+      87.7
+     ],
+     "neg": 19
+    },
+    "gemini": {
+     "pct": -1.4,
+     "n": 123,
+     "pos_share": 39.0,
+     "ci": [
+      30.9,
+      47.9
+     ],
+     "neg": 65
+    },
+    "claude": {
+     "pct": -35.9,
+     "n": 134,
+     "pos_share": 3.0,
+     "ci": [
+      1.2,
+      7.4
+     ],
+     "neg": 82
+    },
+    "_mean": 3.2,
+    "_pooled": 0.2,
+    "_n": 365,
+    "_ci": [
+     33.5,
+     43.4
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 7.0,
+     "n": 62,
+     "pos_share": 8.1,
+     "ci": [
+      3.5,
+      17.5
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 25.9,
+     "n": 81,
+     "pos_share": 25.9,
+     "ci": [
+      17.6,
+      36.4
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 87,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      4.2
+     ],
+     "neg": 0
+    },
+    "_mean": 11.0,
+    "_pooled": 11.0,
+    "_n": 230,
+    "_ci": [
+     7.8,
+     16.0
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 255,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      1.5
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 403,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      0.9
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": -0.6,
+     "n": 424,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      0.9
+     ],
+     "neg": 5
+    },
+    "_mean": -0.2,
+    "_pooled": -0.2,
+    "_n": 1082,
+    "_ci": [
+     0.0,
+     0.4
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": -33.3,
+     "n": 30,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      11.4
+     ],
+     "neg": 30
+    },
+    "gemini": {
+     "pct": -32.1,
+     "n": 40,
+     "pos_share": 2.5,
+     "ci": [
+      0.4,
+      12.9
+     ],
+     "neg": 39
+    },
+    "claude": {
+     "pct": -26.4,
+     "n": 43,
+     "pos_share": 2.3,
+     "ci": [
+      0.4,
+      12.1
+     ],
+     "neg": 37
+    },
+    "_mean": -30.6,
+    "_pooled": -30.2,
+    "_n": 113,
+    "_ci": [
+     0.5,
+     6.2
+    ]
+   }
+  },
+  "23": {
+   "direct": {
+    "openai": {
+     "pct": 76.5,
+     "n": 34,
+     "pos_share": 88.2,
+     "ci": [
+      73.4,
+      95.3
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.4,
+     "n": 42,
+     "pos_share": 31.0,
+     "ci": [
+      19.1,
+      46.0
+     ],
+     "neg": 14
+    },
+    "claude": {
+     "pct": -30.9,
+     "n": 54,
+     "pos_share": 1.9,
+     "ci": [
+      0.3,
+      9.8
+     ],
+     "neg": 26
+    },
+    "_mean": 15.3,
+    "_pooled": 7.3,
+    "_n": 130,
+    "_ci": [
+     26.3,
+     42.3
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 27.1,
+     "n": 16,
+     "pos_share": 31.2,
+     "ci": [
+      14.2,
+      55.6
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 28,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      12.1
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 33,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      10.4
+     ],
+     "neg": 0
+    },
+    "_mean": 9.0,
+    "_pooled": 5.6,
+    "_n": 77,
+    "_ci": [
+     2.8,
+     14.3
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 35,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      9.9
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 140,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      2.7
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": -0.3,
+     "n": 167,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      2.2
+     ],
+     "neg": 1
+    },
+    "_mean": -0.1,
+    "_pooled": -0.1,
+    "_n": 342,
+    "_ci": [
+     -0.0,
+     1.1
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": -11.1,
+     "n": 3,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      56.2
+     ],
+     "neg": 1
+    },
+    "gemini": {
+     "pct": -11.9,
+     "n": 14,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      21.5
+     ],
+     "neg": 5
+    },
+    "claude": {
+     "pct": -22.2,
+     "n": 18,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      17.6
+     ],
+     "neg": 12
+    },
+    "_mean": -15.1,
+    "_pooled": -17.1,
+    "_n": 35,
+    "_ci": [
+     0.0,
+     9.9
+    ]
+   }
+  },
+  "24": {
+   "direct": {
+    "openai": {
+     "pct": 80.5,
+     "n": 41,
+     "pos_share": 90.2,
+     "ci": [
+      77.5,
+      96.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 29.6,
+     "n": 54,
+     "pos_share": 29.6,
+     "ci": [
+      19.1,
+      42.8
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 66,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      5.5
+     ],
+     "neg": 0
+    },
+    "_mean": 36.7,
+    "_pooled": 30.4,
+    "_n": 161,
+    "_ci": [
+     26.1,
+     40.5
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 33.3,
+     "n": 25,
+     "pos_share": 44.0,
+     "ci": [
+      26.7,
+      62.9
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 22.2,
+     "n": 36,
+     "pos_share": 22.2,
+     "ci": [
+      11.7,
+      38.1
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 42,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      8.4
+     ],
+     "neg": 0
+    },
+    "_mean": 18.5,
+    "_pooled": 15.9,
+    "_n": 103,
+    "_ci": [
+     12.1,
+     27.0
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 88,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      4.2
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 2.2,
+     "n": 180,
+     "pos_share": 2.2,
+     "ci": [
+      0.9,
+      5.6
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 217,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      1.7
+     ],
+     "neg": 0
+    },
+    "_mean": 0.7,
+    "_pooled": 0.8,
+    "_n": 485,
+    "_ci": [
+     0.3,
+     2.1
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 9,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      29.9
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 18,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      17.6
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": -4.5,
+     "n": 22,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      14.9
+     ],
+     "neg": 3
+    },
+    "_mean": -1.5,
+    "_pooled": -2.0,
+    "_n": 49,
+    "_ci": [
+     0.0,
+     7.3
+    ]
+   }
+  },
+  "25": {
+   "direct": {
+    "openai": {
+     "pct": 76.7,
+     "n": 40,
+     "pos_share": 90.0,
+     "ci": [
+      76.9,
+      96.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 30.6,
+     "n": 48,
+     "pos_share": 33.3,
+     "ci": [
+      21.7,
+      47.5
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 56,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      6.4
+     ],
+     "neg": 0
+    },
+    "_mean": 35.8,
+    "_pooled": 31.5,
+    "_n": 144,
+    "_ci": [
+     28.7,
+     44.2
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 20.3,
+     "n": 23,
+     "pos_share": 26.1,
+     "ci": [
+      12.5,
+      46.5
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 18.8,
+     "n": 32,
+     "pos_share": 18.8,
+     "ci": [
+      8.9,
+      35.3
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 36,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      9.6
+     ],
+     "neg": 0
+    },
+    "_mean": 13.0,
+    "_pooled": 11.7,
+    "_n": 91,
+    "_ci": [
+     7.7,
+     21.6
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 79,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      4.6
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 160,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      2.3
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 189,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      2.0
+     ],
+     "neg": 0
+    },
+    "_mean": 0.0,
+    "_pooled": 0.0,
+    "_n": 428,
+    "_ci": [
+     0.0,
+     0.9
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 8,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      32.4
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 16,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      19.4
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 20,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      16.1
+     ],
+     "neg": 0
+    },
+    "_mean": 0.0,
+    "_pooled": 0.0,
+    "_n": 44,
+    "_ci": [
+     0.0,
+     8.0
+    ]
+   }
+  },
+  "26": {
+   "direct": {
+    "openai": {
+     "pct": 70.9,
+     "n": 39,
+     "pos_share": 84.6,
+     "ci": [
+      70.3,
+      92.8
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 26.3,
+     "n": 33,
+     "pos_share": 39.4,
+     "ci": [
+      24.7,
+      56.3
+     ],
+     "neg": 2
+    },
+    "_mean": 48.6,
+    "_pooled": 50.5,
+    "_n": 72,
+    "_ci": [
+     52.4,
+     74.0
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 24.4,
+     "n": 26,
+     "pos_share": 26.9,
+     "ci": [
+      13.7,
+      46.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 10.0,
+     "n": 20,
+     "pos_share": 10.0,
+     "ci": [
+      2.8,
+      30.1
+     ],
+     "neg": 0
+    },
+    "_mean": 17.2,
+    "_pooled": 18.1,
+    "_n": 46,
+    "_ci": [
+     10.7,
+     33.2
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 1.6,
+     "n": 127,
+     "pos_share": 1.6,
+     "ci": [
+      0.4,
+      5.6
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 99,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      3.7
+     ],
+     "neg": 0
+    },
+    "_mean": 0.8,
+    "_pooled": 0.9,
+    "_n": 226,
+    "_ci": [
+     0.2,
+     3.2
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 13,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      22.8
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 11,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      25.9
+     ],
+     "neg": 0
+    },
+    "_mean": 0.0,
+    "_pooled": 0.0,
+    "_n": 24,
+    "_ci": [
+     0.0,
+     13.8
+    ]
+   }
+  },
+  "27": {
+   "direct": {
+    "openai": {
+     "pct": 76.5,
+     "n": 44,
+     "pos_share": 90.9,
+     "ci": [
+      78.8,
+      96.4
+     ],
+     "neg": 2
+    },
+    "gemini": {
+     "pct": 59.9,
+     "n": 54,
+     "pos_share": 74.1,
+     "ci": [
+      61.1,
+      83.9
+     ],
+     "neg": 2
+    },
+    "claude": {
+     "pct": 59.3,
+     "n": 27,
+     "pos_share": 59.3,
+     "ci": [
+      40.7,
+      75.5
+     ],
+     "neg": 0
+    },
+    "_mean": 65.2,
+    "_pooled": 65.6,
+    "_n": 125,
+    "_ci": [
+     68.7,
+     83.3
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 61.5,
+     "n": 32,
+     "pos_share": 78.1,
+     "ci": [
+      61.2,
+      89.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 8.3,
+     "n": 36,
+     "pos_share": 8.3,
+     "ci": [
+      2.9,
+      21.8
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 44.4,
+     "n": 18,
+     "pos_share": 44.4,
+     "ci": [
+      24.6,
+      66.3
+     ],
+     "neg": 0
+    },
+    "_mean": 38.1,
+    "_pooled": 35.7,
+    "_n": 86,
+    "_ci": [
+     32.0,
+     52.4
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 3.3,
+     "n": 121,
+     "pos_share": 3.3,
+     "ci": [
+      1.3,
+      8.2
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 170,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      2.2
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 90,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      4.1
+     ],
+     "neg": 0
+    },
+    "_mean": 1.1,
+    "_pooled": 1.0,
+    "_n": 381,
+    "_ci": [
+     0.4,
+     2.7
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 11,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      25.9
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 2.0,
+     "n": 17,
+     "pos_share": 11.8,
+     "ci": [
+      3.3,
+      34.3
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 1.9,
+     "n": 9,
+     "pos_share": 11.1,
+     "ci": [
+      2.0,
+      43.5
+     ],
+     "neg": 0
+    },
+    "_mean": 1.3,
+    "_pooled": 1.4,
+    "_n": 37,
+    "_ci": [
+     2.8,
+     21.3
+    ]
+   }
+  },
+  "28": {
+   "direct": {
+    "openai": {
+     "pct": 75.9,
+     "n": 29,
+     "pos_share": 93.1,
+     "ci": [
+      78.0,
+      98.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 66.7,
+     "n": 42,
+     "pos_share": 90.5,
+     "ci": [
+      77.9,
+      96.2
+     ],
+     "neg": 4
+    },
+    "_mean": 71.3,
+    "_pooled": 70.4,
+    "_n": 71,
+    "_ci": [
+     82.8,
+     96.1
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 39.6,
+     "n": 16,
+     "pos_share": 50.0,
+     "ci": [
+      28.0,
+      72.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 28.6,
+     "n": 28,
+     "pos_share": 28.6,
+     "ci": [
+      15.3,
+      47.1
+     ],
+     "neg": 0
+    },
+    "_mean": 34.1,
+    "_pooled": 32.6,
+    "_n": 44,
+    "_ci": [
+     23.8,
+     51.1
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 7.3,
+     "n": 82,
+     "pos_share": 7.3,
+     "ci": [
+      3.4,
+      15.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 1.4,
+     "n": 140,
+     "pos_share": 1.4,
+     "ci": [
+      0.4,
+      5.1
+     ],
+     "neg": 0
+    },
+    "_mean": 4.3,
+    "_pooled": 3.6,
+    "_n": 222,
+    "_ci": [
+     1.8,
+     6.9
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 9,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      29.9
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 4.8,
+     "n": 14,
+     "pos_share": 28.6,
+     "ci": [
+      11.7,
+      54.6
+     ],
+     "neg": 0
+    },
+    "_mean": 2.4,
+    "_pooled": 2.9,
+    "_n": 23,
+    "_ci": [
+     7.0,
+     37.1
+    ]
+   }
+  },
+  "29": {
+   "direct": {
+    "openai": {
+     "pct": 67.7,
+     "n": 33,
+     "pos_share": 81.8,
+     "ci": [
+      65.6,
+      91.4
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 87.3,
+     "n": 42,
+     "pos_share": 100.0,
+     "ci": [
+      91.6,
+      100.0
+     ],
+     "neg": 0
+    },
+    "_mean": 77.5,
+    "_pooled": 78.7,
+    "_n": 75,
+    "_ci": [
+     83.6,
+     96.3
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 56.1,
+     "n": 19,
+     "pos_share": 63.2,
+     "ci": [
+      41.0,
+      80.9
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 26.2,
+     "n": 28,
+     "pos_share": 28.6,
+     "ci": [
+      15.3,
+      47.1
+     ],
+     "neg": 0
+    },
+    "_mean": 41.1,
+    "_pooled": 38.3,
+    "_n": 47,
+    "_ci": [
+     29.5,
+     56.7
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 6.5,
+     "n": 92,
+     "pos_share": 6.5,
+     "ci": [
+      3.0,
+      13.5
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 1.4,
+     "n": 140,
+     "pos_share": 1.4,
+     "ci": [
+      0.4,
+      5.1
+     ],
+     "neg": 0
+    },
+    "_mean": 4.0,
+    "_pooled": 3.4,
+    "_n": 232,
+    "_ci": [
+     1.8,
+     6.7
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 8,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      32.4
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 7.1,
+     "n": 14,
+     "pos_share": 28.6,
+     "ci": [
+      11.7,
+      54.6
+     ],
+     "neg": 0
+    },
+    "_mean": 3.5,
+    "_pooled": 4.5,
+    "_n": 22,
+    "_ci": [
+     7.3,
+     38.5
+    ]
+   }
+  },
+  "30": {
+   "direct": {
+    "openai": {
+     "pct": 87.7,
+     "n": 19,
+     "pos_share": 100.0,
+     "ci": [
+      83.2,
+      100.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 74.6,
+     "n": 42,
+     "pos_share": 83.3,
+     "ci": [
+      69.4,
+      91.7
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 55.6,
+     "n": 36,
+     "pos_share": 69.4,
+     "ci": [
+      53.1,
+      82.0
+     ],
+     "neg": 2
+    },
+    "_mean": 72.6,
+    "_pooled": 70.1,
+    "_n": 97,
+    "_ci": [
+     72.6,
+     87.9
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 87.2,
+     "n": 13,
+     "pos_share": 100.0,
+     "ci": [
+      77.2,
+      100.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 21.4,
+     "n": 28,
+     "pos_share": 21.4,
+     "ci": [
+      10.2,
+      39.5
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 6.9,
+     "n": 24,
+     "pos_share": 8.3,
+     "ci": [
+      2.3,
+      25.8
+     ],
+     "neg": 0
+    },
+    "_mean": 38.5,
+    "_pooled": 29.2,
+    "_n": 65,
+    "_ci": [
+     22.2,
+     44.4
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 1.5,
+     "n": 66,
+     "pos_share": 1.5,
+     "ci": [
+      0.3,
+      8.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 2.2,
+     "n": 136,
+     "pos_share": 2.2,
+     "ci": [
+      0.8,
+      6.3
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 120,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      3.1
+     ],
+     "neg": 0
+    },
+    "_mean": 1.2,
+    "_pooled": 1.2,
+    "_n": 322,
+    "_ci": [
+     0.5,
+     3.2
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 7,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      35.4
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 4.8,
+     "n": 14,
+     "pos_share": 14.3,
+     "ci": [
+      4.0,
+      39.9
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 12,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      24.3
+     ],
+     "neg": 0
+    },
+    "_mean": 1.6,
+    "_pooled": 2.0,
+    "_n": 33,
+    "_ci": [
+     1.7,
+     19.6
+    ]
+   }
+  },
+  "31": {
+   "direct": {
+    "gemini": {
+     "pct": 73.7,
+     "n": 38,
+     "pos_share": 89.5,
+     "ci": [
+      75.9,
+      95.8
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 60.3,
+     "n": 63,
+     "pos_share": 69.8,
+     "ci": [
+      57.6,
+      79.8
+     ],
+     "neg": 1
+    },
+    "_mean": 67.0,
+    "_pooled": 65.3,
+    "_n": 101,
+    "_ci": [
+     68.1,
+     84.3
+    ]
+   },
+   "longtail": {
+    "gemini": {
+     "pct": 52.2,
+     "n": 23,
+     "pos_share": 52.2,
+     "ci": [
+      33.0,
+      70.8
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 7.1,
+     "n": 42,
+     "pos_share": 9.5,
+     "ci": [
+      3.8,
+      22.1
+     ],
+     "neg": 0
+    },
+    "_mean": 29.7,
+    "_pooled": 23.1,
+    "_n": 65,
+    "_ci": [
+     15.8,
+     36.3
+    ]
+   },
+   "discovery": {
+    "gemini": {
+     "pct": 1.7,
+     "n": 119,
+     "pos_share": 1.7,
+     "ci": [
+      0.5,
+      5.9
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": -0.5,
+     "n": 210,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      1.8
+     ],
+     "neg": 1
+    },
+    "_mean": 0.6,
+    "_pooled": 0.3,
+    "_n": 329,
+    "_ci": [
+     0.2,
+     2.2
+    ]
+   },
+   "research": {
+    "gemini": {
+     "pct": 5.1,
+     "n": 13,
+     "pos_share": 30.8,
+     "ci": [
+      12.7,
+      57.6
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 2.4,
+     "n": 21,
+     "pos_share": 14.3,
+     "ci": [
+      5.0,
+      34.6
+     ],
+     "neg": 0
+    },
+    "_mean": 3.8,
+    "_pooled": 3.4,
+    "_n": 34,
+    "_ci": [
+     10.3,
+     36.8
+    ]
+   }
+  },
+  "32": {
+   "direct": {
+    "openai": {
+     "pct": 88.9,
+     "n": 21,
+     "pos_share": 100.0,
+     "ci": [
+      84.5,
+      100.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 65.9,
+     "n": 44,
+     "pos_share": 77.3,
+     "ci": [
+      63.0,
+      87.2
+     ],
+     "neg": 2
+    },
+    "claude": {
+     "pct": 79.4,
+     "n": 63,
+     "pos_share": 95.2,
+     "ci": [
+      86.9,
+      98.4
+     ],
+     "neg": 3
+    },
+    "_mean": 78.1,
+    "_pooled": 76.3,
+    "_n": 128,
+    "_ci": [
+     83.4,
+     94.0
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 71.1,
+     "n": 15,
+     "pos_share": 80.0,
+     "ci": [
+      54.8,
+      93.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 27.6,
+     "n": 29,
+     "pos_share": 27.6,
+     "ci": [
+      14.7,
+      45.7
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 4.0,
+     "n": 42,
+     "pos_share": 4.8,
+     "ci": [
+      1.3,
+      15.8
+     ],
+     "neg": 0
+    },
+    "_mean": 34.2,
+    "_pooled": 23.6,
+    "_n": 86,
+    "_ci": [
+     17.5,
+     35.7
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 70,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      5.2
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 1.5,
+     "n": 130,
+     "pos_share": 1.5,
+     "ci": [
+      0.4,
+      5.4
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 210,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      1.8
+     ],
+     "neg": 0
+    },
+    "_mean": 0.5,
+    "_pooled": 0.5,
+    "_n": 410,
+    "_ci": [
+     0.1,
+     1.8
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 8,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      32.4
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 7.1,
+     "n": 14,
+     "pos_share": 42.9,
+     "ci": [
+      21.4,
+      67.4
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 5.6,
+     "n": 21,
+     "pos_share": 33.3,
+     "ci": [
+      17.2,
+      54.6
+     ],
+     "neg": 0
+    },
+    "_mean": 4.2,
+    "_pooled": 5.0,
+    "_n": 43,
+    "_ci": [
+     18.6,
+     45.1
+    ]
+   }
+  },
+  "33": {
+   "direct": {
+    "openai": {
+     "pct": 75.6,
+     "n": 41,
+     "pos_share": 90.2,
+     "ci": [
+      77.5,
+      96.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 57.1,
+     "n": 42,
+     "pos_share": 71.4,
+     "ci": [
+      56.4,
+      82.8
+     ],
+     "neg": 2
+    },
+    "claude": {
+     "pct": 74.1,
+     "n": 63,
+     "pos_share": 90.5,
+     "ci": [
+      80.7,
+      95.6
+     ],
+     "neg": 4
+    },
+    "_mean": 68.9,
+    "_pooled": 69.6,
+    "_n": 146,
+    "_ci": [
+     78.2,
+     89.8
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 71.4,
+     "n": 28,
+     "pos_share": 82.1,
+     "ci": [
+      64.4,
+      92.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 14.3,
+     "n": 28,
+     "pos_share": 14.3,
+     "ci": [
+      5.7,
+      31.5
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 42,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      8.4
+     ],
+     "neg": 0
+    },
+    "_mean": 28.6,
+    "_pooled": 24.5,
+    "_n": 98,
+    "_ci": [
+     19.7,
+     37.1
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 2.3,
+     "n": 132,
+     "pos_share": 2.3,
+     "ci": [
+      0.8,
+      6.5
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": -0.7,
+     "n": 139,
+     "pos_share": 0.7,
+     "ci": [
+      0.1,
+      4.0
+     ],
+     "neg": 2
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 210,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      1.8
+     ],
+     "neg": 0
+    },
+    "_mean": 0.5,
+    "_pooled": 0.4,
+    "_n": 481,
+    "_ci": [
+     0.3,
+     2.1
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 2.4,
+     "n": 14,
+     "pos_share": 14.3,
+     "ci": [
+      4.0,
+      39.9
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 3.6,
+     "n": 14,
+     "pos_share": 14.3,
+     "ci": [
+      4.0,
+      39.9
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 5.6,
+     "n": 21,
+     "pos_share": 33.3,
+     "ci": [
+      17.2,
+      54.6
+     ],
+     "neg": 0
+    },
+    "_mean": 3.9,
+    "_pooled": 4.1,
+    "_n": 49,
+    "_ci": [
+     13.0,
+     35.9
+    ]
+   }
+  },
+  "34": {
+   "direct": {
+    "openai": {
+     "pct": 88.9,
+     "n": 6,
+     "pos_share": 100.0,
+     "ci": [
+      61.0,
+      100.0
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 66.7,
+     "n": 12,
+     "pos_share": 83.3,
+     "ci": [
+      55.2,
+      95.3
+     ],
+     "neg": 1
+    },
+    "claude": {
+     "pct": 69.1,
+     "n": 27,
+     "pos_share": 85.2,
+     "ci": [
+      67.5,
+      94.1
+     ],
+     "neg": 2
+    },
+    "_mean": 74.9,
+    "_pooled": 71.1,
+    "_n": 45,
+    "_ci": [
+     73.8,
+     93.7
+    ]
+   },
+   "longtail": {
+    "openai": {
+     "pct": 66.7,
+     "n": 4,
+     "pos_share": 75.0,
+     "ci": [
+      30.1,
+      95.4
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 8,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      32.4
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 18,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      17.6
+     ],
+     "neg": 0
+    },
+    "_mean": 22.2,
+    "_pooled": 8.9,
+    "_n": 30,
+    "_ci": [
+     3.5,
+     25.6
+    ]
+   },
+   "discovery": {
+    "openai": {
+     "pct": 0.0,
+     "n": 20,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      16.1
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 40,
+     "pos_share": 0.0,
+     "ci": [
+      -0.0,
+      8.8
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 0.0,
+     "n": 90,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      4.1
+     ],
+     "neg": 0
+    },
+    "_mean": 0.0,
+    "_pooled": 0.0,
+    "_n": 150,
+    "_ci": [
+     0.0,
+     2.5
+    ]
+   },
+   "research": {
+    "openai": {
+     "pct": 0.0,
+     "n": 2,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      65.8
+     ],
+     "neg": 0
+    },
+    "gemini": {
+     "pct": 0.0,
+     "n": 4,
+     "pos_share": 0.0,
+     "ci": [
+      0.0,
+      49.0
+     ],
+     "neg": 0
+    },
+    "claude": {
+     "pct": 5.6,
+     "n": 9,
+     "pos_share": 33.3,
+     "ci": [
+      12.1,
+      64.6
+     ],
+     "neg": 0
+    },
+    "_mean": 1.9,
+    "_pooled": 3.3,
+    "_n": 15,
+    "_ci": [
+     7.0,
+     45.2
+    ]
+   }
+  }
+ },
+ "daily": {
+  "2026-05-13": {
+   "direct": 4.8,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 4.8
+  },
+  "2026-05-14": {
+   "direct": 8.3,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-05-15": {
+   "direct": 5.0,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 1.6
+  },
+  "2026-05-16": {
+   "direct": 5.6,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 4.2
+  },
+  "2026-05-17": {
+   "direct": 18.8,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": -8.3
+  },
+  "2026-05-18": {
+   "direct": 15.1,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-05-19": {
+   "direct": 59.0,
+   "longtail": 9.5,
+   "discovery": 0.0,
+   "research": -25.0
+  },
+  "2026-05-20": {
+   "direct": 28.0,
+   "longtail": 17.7,
+   "discovery": 0.0,
+   "research": -13.8
+  },
+  "2026-05-21": {
+   "direct": 20.0,
+   "longtail": 26.7,
+   "discovery": 0.0,
+   "research": -28.6
+  },
+  "2026-05-22": {
+   "direct": 0.0,
+   "longtail": 50.0,
+   "discovery": 0.0,
+   "research": -33.3
+  },
+  "2026-05-23": {
+   "direct": -27.1,
+   "longtail": 4.5,
+   "discovery": 0.7,
+   "research": -33.3
+  },
+  "2026-05-24": {
+   "direct": 35.1,
+   "longtail": 31.9,
+   "discovery": 0.0,
+   "research": -33.3
+  },
+  "2026-05-25": {
+   "direct": 5.7,
+   "longtail": 13.0,
+   "discovery": 0.0,
+   "research": -29.3
+  },
+  "2026-05-26": {
+   "direct": 2.5,
+   "longtail": 8.8,
+   "discovery": -0.5,
+   "research": -33.3
+  },
+  "2026-05-27": {
+   "direct": -6.6,
+   "longtail": 0.0,
+   "discovery": -0.2,
+   "research": -25.0
+  },
+  "2026-05-28": {
+   "direct": 11.1,
+   "longtail": 18.2,
+   "discovery": 0.0,
+   "research": -33.3
+  },
+  "2026-05-29": {
+   "direct": 7.4,
+   "longtail": 26.7,
+   "discovery": 0.0,
+   "research": -33.3
+  },
+  "2026-05-30": {
+   "direct": -28.9,
+   "longtail": 26.7,
+   "discovery": -1.1,
+   "research": -26.7
+  },
+  "2026-05-31": {
+   "direct": -9.5,
+   "longtail": 16.7,
+   "discovery": 0.0,
+   "research": -33.3
+  },
+  "2026-06-01": {
+   "direct": -22.5,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": -22.2
+  },
+  "2026-06-02": {
+   "direct": -23.7,
+   "longtail": 7.7,
+   "discovery": 0.0,
+   "research": -26.7
+  },
+  "2026-06-03": {
+   "direct": -4.4,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": -26.7
+  },
+  "2026-06-04": {
+   "direct": 7.4,
+   "longtail": 11.1,
+   "discovery": -1.3,
+   "research": -33.3
+  },
+  "2026-06-05": {
+   "direct": 28.6,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": -5.6
+  },
+  "2026-06-06": {
+   "direct": 37.0,
+   "longtail": 18.5,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-07": {
+   "direct": 25.9,
+   "longtail": 6.7,
+   "discovery": 0.0,
+   "research": -6.7
+  },
+  "2026-06-08": {
+   "direct": 28.1,
+   "longtail": 7.7,
+   "discovery": 0.0,
+   "research": -5.6
+  },
+  "2026-06-09": {
+   "direct": 11.8,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-10": {
+   "direct": 29.6,
+   "longtail": 17.6,
+   "discovery": 2.4,
+   "research": -3.9
+  },
+  "2026-06-11": {
+   "direct": 40.7,
+   "longtail": 36.4,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-12": {
+   "direct": 40.7,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-13": {
+   "direct": 40.7,
+   "longtail": 11.1,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-14": {
+   "direct": 22.2,
+   "longtail": 33.3,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-15": {
+   "direct": 32.0,
+   "longtail": 12.5,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-16": {
+   "direct": 28.6,
+   "longtail": 11.1,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-17": {
+   "direct": 34.9,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-18": {
+   "direct": 34.9,
+   "longtail": 14.3,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-19": {
+   "direct": 27.5,
+   "longtail": 30.3,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-20": {
+   "direct": 25.4,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-21": {
+   "direct": 37.0,
+   "longtail": 16.7,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-22": {
+   "direct": 77.8,
+   "longtail": 50.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-23": {
+   "direct": 48.5,
+   "longtail": 19.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-24": {
+   "direct": 33.3,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-25": {
+   "direct": 44.4,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-26": {
+   "direct": 55.6,
+   "longtail": 25.0,
+   "discovery": 5.0,
+   "research": 0.0
+  },
+  "2026-06-27": {
+   "direct": 55.6,
+   "longtail": 25.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-28": {
+   "direct": 55.6,
+   "longtail": 25.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-29": {
+   "direct": 38.9,
+   "longtail": 25.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-06-30": {
+   "direct": 40.0,
+   "longtail": 33.3,
+   "discovery": 0.0,
+   "research": 5.6
+  },
+  "2026-07-01": {
+   "direct": 94.4,
+   "longtail": 41.7,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-02": {
+   "direct": 50.0,
+   "longtail": 23.8,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-03": {
+   "direct": 73.2,
+   "longtail": 35.9,
+   "discovery": 3.3,
+   "research": 0.0
+  },
+  "2026-07-04": {
+   "direct": 80.7,
+   "longtail": 41.7,
+   "discovery": 0.0,
+   "research": 3.3
+  },
+  "2026-07-05": {
+   "direct": 66.7,
+   "longtail": 55.6,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-06": {
+   "direct": 83.3,
+   "longtail": 66.7,
+   "discovery": 5.9,
+   "research": 0.0
+  },
+  "2026-07-07": {
+   "direct": 33.3,
+   "longtail": 0.0,
+   "discovery": 5.7,
+   "research": 0.0
+  },
+  "2026-07-08": {
+   "direct": 77.8,
+   "longtail": 16.7,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-09": {
+   "direct": 86.7,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-10": {
+   "direct": 40.0,
+   "longtail": 50.0,
+   "discovery": 6.7,
+   "research": 16.7
+  },
+  "2026-07-11": {
+   "direct": 90.0,
+   "longtail": 42.9,
+   "discovery": 0.0,
+   "research": 8.3
+  },
+  "2026-07-12": {
+   "direct": 66.7,
+   "longtail": 55.6,
+   "discovery": 6.2,
+   "research": 0.0
+  },
+  "2026-07-13": {
+   "direct": 87.9,
+   "longtail": 28.6,
+   "discovery": 6.2,
+   "research": 8.3
+  },
+  "2026-07-14": {
+   "direct": 83.3,
+   "longtail": 66.7,
+   "discovery": 6.7,
+   "research": 0.0
+  },
+  "2026-07-15": {
+   "direct": 85.2,
+   "longtail": 42.9,
+   "discovery": 0.0,
+   "research": 16.7
+  },
+  "2026-07-16": {
+   "direct": 72.2,
+   "longtail": 58.3,
+   "discovery": 10.8,
+   "research": 0.0
+  },
+  "2026-07-17": {
+   "direct": 73.3,
+   "longtail": 22.2,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-18": {
+   "direct": 86.7,
+   "longtail": 25.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-19": {
+   "direct": 63.6,
+   "longtail": 20.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-20": {
+   "direct": 66.7,
+   "longtail": 66.7,
+   "discovery": 2.7,
+   "research": 0.0
+  },
+  "2026-07-21": {
+   "direct": 80.0,
+   "longtail": 41.7,
+   "discovery": 5.6,
+   "research": 0.0
+  },
+  "2026-07-22": {
+   "direct": 78.3,
+   "longtail": 22.2,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-23": {
+   "direct": 86.0,
+   "longtail": 28.2,
+   "discovery": 1.6,
+   "research": 9.5
+  },
+  "2026-07-24": {
+   "direct": 71.1,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-25": {
+   "direct": 88.9,
+   "longtail": 50.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-26": {
+   "direct": 26.7,
+   "longtail": 20.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-27": {
+   "direct": 86.1,
+   "longtail": 25.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-28": {
+   "direct": 83.3,
+   "longtail": 18.5,
+   "discovery": 0.0,
+   "research": 3.3
+  },
+  "2026-07-29": {
+   "direct": 86.7,
+   "longtail": 20.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-07-30": {
+   "direct": 80.0,
+   "longtail": 26.7,
+   "discovery": 0.0,
+   "research": 6.7
+  },
+  "2026-07-31": {
+   "direct": 68.9,
+   "longtail": 26.7,
+   "discovery": -2.0,
+   "research": 6.7
+  },
+  "2026-08-01": {
+   "direct": 26.7,
+   "longtail": 25.0,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-08-02": {
+   "direct": 31.1,
+   "longtail": 20.0,
+   "discovery": 4.0,
+   "research": 6.7
+  },
+  "2026-08-03": {
+   "direct": 72.2,
+   "longtail": 33.3,
+   "discovery": 0.0,
+   "research": 8.3
+  },
+  "2026-08-04": {
+   "direct": 84.4,
+   "longtail": 20.0,
+   "discovery": 0.0,
+   "research": 3.3
+  },
+  "2026-08-05": {
+   "direct": 62.2,
+   "longtail": 20.0,
+   "discovery": 0.0,
+   "research": 3.3
+  },
+  "2026-08-06": {
+   "direct": 82.7,
+   "longtail": 29.4,
+   "discovery": 0.0,
+   "research": 7.4
+  },
+  "2026-08-07": {
+   "direct": 64.9,
+   "longtail": 25.6,
+   "discovery": 0.0,
+   "research": 2.8
+  },
+  "2026-08-08": {
+   "direct": 79.4,
+   "longtail": 23.8,
+   "discovery": 0.0,
+   "research": 4.8
+  },
+  "2026-08-09": {
+   "direct": 82.5,
+   "longtail": 14.3,
+   "discovery": 2.9,
+   "research": 4.8
+  },
+  "2026-08-10": {
+   "direct": 73.8,
+   "longtail": 10.0,
+   "discovery": 2.1,
+   "research": 10.0
+  },
+  "2026-08-11": {
+   "direct": 79.4,
+   "longtail": 42.9,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-08-12": {
+   "direct": 82.5,
+   "longtail": 19.0,
+   "discovery": 0.0,
+   "research": 7.1
+  },
+  "2026-08-13": {
+   "direct": 74.1,
+   "longtail": 27.8,
+   "discovery": 1.1,
+   "research": 3.7
+  },
+  "2026-08-14": {
+   "direct": 63.5,
+   "longtail": 23.8,
+   "discovery": 0.0,
+   "research": 2.4
+  },
+  "2026-08-15": {
+   "direct": 41.3,
+   "longtail": 14.3,
+   "discovery": 2.9,
+   "research": 4.8
+  },
+  "2026-08-16": {
+   "direct": 73.0,
+   "longtail": 28.6,
+   "discovery": -2.9,
+   "research": 2.4
+  },
+  "2026-08-17": {
+   "direct": 66.7,
+   "longtail": 16.7,
+   "discovery": 0.0,
+   "research": 0.0
+  },
+  "2026-08-18": {
+   "direct": 75.6,
+   "longtail": 0.0,
+   "discovery": 0.0,
+   "research": 6.7
+  },
+  "2026-08-19": {
+   "direct": 71.1,
+   "longtail": 10.0,
+   "discovery": 0.0,
+   "research": 3.3
+  }
+ },
+ "daily_n": {
+  "2026-05-13": {
+   "direct": 42,
+   "longtail": 28,
+   "discovery": 56,
+   "research": 14
+  },
+  "2026-05-14": {
+   "direct": 10,
+   "longtail": 4,
+   "discovery": 20,
+   "research": 2
+  },
+  "2026-05-15": {
+   "direct": 97,
+   "longtail": 42,
+   "discovery": 205,
+   "research": 21
+  },
+  "2026-05-16": {
+   "direct": 54,
+   "longtail": 34,
+   "discovery": 153,
+   "research": 16
+  },
+  "2026-05-17": {
+   "direct": 48,
+   "longtail": 30,
+   "discovery": 87,
+   "research": 8
+  },
+  "2026-05-18": {
+   "direct": 21,
+   "longtail": 13,
+   "discovery": 53,
+   "research": 5
+  },
+  "2026-05-19": {
+   "direct": 13,
+   "longtail": 7,
+   "discovery": 34,
+   "research": 4
+  },
+  "2026-05-20": {
+   "direct": 146,
+   "longtail": 94,
+   "discovery": 477,
+   "research": 47
+  },
+  "2026-05-21": {
+   "direct": 95,
+   "longtail": 60,
+   "discovery": 303,
+   "research": 32
+  },
+  "2026-05-22": {
+   "direct": 11,
+   "longtail": 6,
+   "discovery": 30,
+   "research": 4
+  },
+  "2026-05-23": {
+   "direct": 35,
+   "longtail": 22,
+   "discovery": 101,
+   "research": 14
+  },
+  "2026-05-24": {
+   "direct": 37,
+   "longtail": 24,
+   "discovery": 120,
+   "research": 12
+  },
+  "2026-05-25": {
+   "direct": 117,
+   "longtail": 77,
+   "discovery": 355,
+   "research": 37
+  },
+  "2026-05-26": {
+   "direct": 106,
+   "longtail": 68,
+   "discovery": 329,
+   "research": 35
+  },
+  "2026-05-27": {
+   "direct": 66,
+   "longtail": 42,
+   "discovery": 206,
+   "research": 20
+  },
+  "2026-05-28": {
+   "direct": 18,
+   "longtail": 11,
+   "discovery": 46,
+   "research": 5
+  },
+  "2026-05-29": {
+   "direct": 18,
+   "longtail": 10,
+   "discovery": 43,
+   "research": 5
+  },
+  "2026-05-30": {
+   "direct": 19,
+   "longtail": 10,
+   "discovery": 47,
+   "research": 5
+  },
+  "2026-05-31": {
+   "direct": 21,
+   "longtail": 12,
+   "discovery": 56,
+   "research": 6
+  },
+  "2026-06-01": {
+   "direct": 17,
+   "longtail": 12,
+   "discovery": 54,
+   "research": 6
+  },
+  "2026-06-02": {
+   "direct": 19,
+   "longtail": 13,
+   "discovery": 58,
+   "research": 5
+  },
+  "2026-06-03": {
+   "direct": 19,
+   "longtail": 11,
+   "discovery": 51,
+   "research": 5
+  },
+  "2026-06-04": {
+   "direct": 18,
+   "longtail": 9,
+   "discovery": 38,
+   "research": 4
+  },
+  "2026-06-05": {
+   "direct": 21,
+   "longtail": 13,
+   "discovery": 55,
+   "research": 6
+  },
+  "2026-06-06": {
+   "direct": 18,
+   "longtail": 9,
+   "discovery": 39,
+   "research": 4
+  },
+  "2026-06-07": {
+   "direct": 18,
+   "longtail": 10,
+   "discovery": 47,
+   "research": 5
+  },
+  "2026-06-08": {
+   "direct": 19,
+   "longtail": 13,
+   "discovery": 54,
+   "research": 6
+  },
+  "2026-06-09": {
+   "direct": 17,
+   "longtail": 9,
+   "discovery": 49,
+   "research": 5
+  },
+  "2026-06-10": {
+   "direct": 53,
+   "longtail": 34,
+   "discovery": 170,
+   "research": 17
+  },
+  "2026-06-11": {
+   "direct": 18,
+   "longtail": 11,
+   "discovery": 54,
+   "research": 6
+  },
+  "2026-06-12": {
+   "direct": 18,
+   "longtail": 12,
+   "discovery": 54,
+   "research": 5
+  },
+  "2026-06-13": {
+   "direct": 18,
+   "longtail": 12,
+   "discovery": 51,
+   "research": 5
+  },
+  "2026-06-14": {
+   "direct": 18,
+   "longtail": 12,
+   "discovery": 53,
+   "research": 5
+  },
+  "2026-06-15": {
+   "direct": 25,
+   "longtail": 16,
+   "discovery": 78,
+   "research": 9
+  },
+  "2026-06-16": {
+   "direct": 21,
+   "longtail": 12,
+   "discovery": 58,
+   "research": 6
+  },
+  "2026-06-17": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 60,
+   "research": 6
+  },
+  "2026-06-18": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 62,
+   "research": 6
+  },
+  "2026-06-19": {
+   "direct": 17,
+   "longtail": 11,
+   "discovery": 49,
+   "research": 5
+  },
+  "2026-06-20": {
+   "direct": 21,
+   "longtail": 12,
+   "discovery": 63,
+   "research": 6
+  },
+  "2026-06-21": {
+   "direct": 18,
+   "longtail": 12,
+   "discovery": 58,
+   "research": 6
+  },
+  "2026-06-22": {
+   "direct": 3,
+   "longtail": 2,
+   "discovery": 8,
+   "research": 1
+  },
+  "2026-06-23": {
+   "direct": 11,
+   "longtail": 7,
+   "discovery": 31,
+   "research": 4
+  },
+  "2026-06-24": {
+   "direct": 10,
+   "longtail": 5,
+   "discovery": 27,
+   "research": 3
+  },
+  "2026-06-25": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 40,
+   "research": 4
+  },
+  "2026-06-26": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 40,
+   "research": 4
+  },
+  "2026-06-27": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 40,
+   "research": 4
+  },
+  "2026-06-28": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 40,
+   "research": 4
+  },
+  "2026-06-29": {
+   "direct": 6,
+   "longtail": 4,
+   "discovery": 20,
+   "research": 2
+  },
+  "2026-06-30": {
+   "direct": 20,
+   "longtail": 16,
+   "discovery": 64,
+   "research": 6
+  },
+  "2026-07-01": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 28,
+   "research": 2
+  },
+  "2026-07-02": {
+   "direct": 18,
+   "longtail": 14,
+   "discovery": 59,
+   "research": 7
+  },
+  "2026-07-03": {
+   "direct": 41,
+   "longtail": 26,
+   "discovery": 123,
+   "research": 12
+  },
+  "2026-07-04": {
+   "direct": 19,
+   "longtail": 12,
+   "discovery": 60,
+   "research": 5
+  },
+  "2026-07-05": {
+   "direct": 9,
+   "longtail": 6,
+   "discovery": 27,
+   "research": 3
+  },
+  "2026-07-06": {
+   "direct": 12,
+   "longtail": 7,
+   "discovery": 34,
+   "research": 4
+  },
+  "2026-07-07": {
+   "direct": 7,
+   "longtail": 6,
+   "discovery": 35,
+   "research": 4
+  },
+  "2026-07-08": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 31,
+   "research": 3
+  },
+  "2026-07-09": {
+   "direct": 10,
+   "longtail": 6,
+   "discovery": 28,
+   "research": 4
+  },
+  "2026-07-10": {
+   "direct": 10,
+   "longtail": 4,
+   "discovery": 30,
+   "research": 2
+  },
+  "2026-07-11": {
+   "direct": 10,
+   "longtail": 7,
+   "discovery": 32,
+   "research": 4
+  },
+  "2026-07-12": {
+   "direct": 10,
+   "longtail": 6,
+   "discovery": 32,
+   "research": 2
+  },
+  "2026-07-13": {
+   "direct": 11,
+   "longtail": 7,
+   "discovery": 32,
+   "research": 4
+  },
+  "2026-07-14": {
+   "direct": 12,
+   "longtail": 6,
+   "discovery": 30,
+   "research": 2
+  },
+  "2026-07-15": {
+   "direct": 9,
+   "longtail": 7,
+   "discovery": 34,
+   "research": 4
+  },
+  "2026-07-16": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 37,
+   "research": 4
+  },
+  "2026-07-17": {
+   "direct": 10,
+   "longtail": 6,
+   "discovery": 30,
+   "research": 2
+  },
+  "2026-07-18": {
+   "direct": 10,
+   "longtail": 8,
+   "discovery": 34,
+   "research": 4
+  },
+  "2026-07-19": {
+   "direct": 11,
+   "longtail": 5,
+   "discovery": 35,
+   "research": 2
+  },
+  "2026-07-20": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 37,
+   "research": 3
+  },
+  "2026-07-21": {
+   "direct": 10,
+   "longtail": 8,
+   "discovery": 36,
+   "research": 4
+  },
+  "2026-07-22": {
+   "direct": 20,
+   "longtail": 12,
+   "discovery": 68,
+   "research": 7
+  },
+  "2026-07-23": {
+   "direct": 19,
+   "longtail": 13,
+   "discovery": 62,
+   "research": 7
+  },
+  "2026-07-24": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-07-25": {
+   "direct": 6,
+   "longtail": 4,
+   "discovery": 19,
+   "research": 2
+  },
+  "2026-07-26": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-07-27": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 39,
+   "research": 4
+  },
+  "2026-07-28": {
+   "direct": 14,
+   "longtail": 9,
+   "discovery": 46,
+   "research": 5
+  },
+  "2026-07-29": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-07-30": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-07-31": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 49,
+   "research": 5
+  },
+  "2026-08-01": {
+   "direct": 15,
+   "longtail": 8,
+   "discovery": 45,
+   "research": 5
+  },
+  "2026-08-02": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-08-03": {
+   "direct": 12,
+   "longtail": 8,
+   "discovery": 40,
+   "research": 4
+  },
+  "2026-08-04": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-08-05": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 43,
+   "research": 5
+  },
+  "2026-08-06": {
+   "direct": 25,
+   "longtail": 17,
+   "discovery": 79,
+   "research": 9
+  },
+  "2026-08-07": {
+   "direct": 19,
+   "longtail": 13,
+   "discovery": 59,
+   "research": 6
+  },
+  "2026-08-08": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 70,
+   "research": 7
+  },
+  "2026-08-09": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 69,
+   "research": 7
+  },
+  "2026-08-10": {
+   "direct": 14,
+   "longtail": 10,
+   "discovery": 48,
+   "research": 5
+  },
+  "2026-08-11": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 68,
+   "research": 7
+  },
+  "2026-08-12": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 68,
+   "research": 7
+  },
+  "2026-08-13": {
+   "direct": 27,
+   "longtail": 18,
+   "discovery": 88,
+   "research": 9
+  },
+  "2026-08-14": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 69,
+   "research": 7
+  },
+  "2026-08-15": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 70,
+   "research": 7
+  },
+  "2026-08-16": {
+   "direct": 21,
+   "longtail": 14,
+   "discovery": 70,
+   "research": 7
+  },
+  "2026-08-17": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-08-18": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  },
+  "2026-08-19": {
+   "direct": 15,
+   "longtail": 10,
+   "discovery": 50,
+   "research": 5
+  }
+ },
+ "autocorr_lag1_since_0701": {
+  "direct": -0.075,
+  "longtail": 0.159,
+  "discovery": 0.078,
+  "research": -0.037
+ },
+ "logistic_direct": {
+  "L": 72.5,
+  "k": 0.12,
+  "t0_days": 37,
+  "r2": 0.703,
+  "n_points": 99,
+  "inflection_date": "2026-06-17"
+ },
+ "discovery_total": {
+  "n": 6729,
+  "positive": 40,
+  "genre_placement": 36,
+  "rate_pct": 0.59
+ },
+ "provider_disagreement_direct": [
+  {
+   "week": 20,
+   "min": 5.0,
+   "max": 12.2,
+   "range": 7.2,
+   "n_prov": 2
+  },
+  {
+   "week": 21,
+   "min": -34.2,
+   "max": 58.2,
+   "range": 92.4,
+   "n_prov": 3
+  },
+  {
+   "week": 22,
+   "min": -35.9,
+   "max": 46.9,
+   "range": 82.8,
+   "n_prov": 3
+  },
+  {
+   "week": 23,
+   "min": -30.9,
+   "max": 76.5,
+   "range": 107.4,
+   "n_prov": 3
+  },
+  {
+   "week": 24,
+   "min": 0.0,
+   "max": 80.5,
+   "range": 80.5,
+   "n_prov": 3
+  },
+  {
+   "week": 25,
+   "min": 0.0,
+   "max": 76.7,
+   "range": 76.7,
+   "n_prov": 3
+  },
+  {
+   "week": 26,
+   "min": 26.3,
+   "max": 70.9,
+   "range": 44.6,
+   "n_prov": 2
+  },
+  {
+   "week": 27,
+   "min": 59.3,
+   "max": 76.5,
+   "range": 17.2,
+   "n_prov": 3
+  },
+  {
+   "week": 28,
+   "min": 66.7,
+   "max": 75.9,
+   "range": 9.2,
+   "n_prov": 2
+  },
+  {
+   "week": 29,
+   "min": 67.7,
+   "max": 87.3,
+   "range": 19.6,
+   "n_prov": 2
+  },
+  {
+   "week": 30,
+   "min": 55.6,
+   "max": 87.7,
+   "range": 32.1,
+   "n_prov": 3
+  },
+  {
+   "week": 31,
+   "min": 60.3,
+   "max": 73.7,
+   "range": 13.4,
+   "n_prov": 2
+  },
+  {
+   "week": 32,
+   "min": 65.9,
+   "max": 88.9,
+   "range": 23.0,
+   "n_prov": 3
+  },
+  {
+   "week": 33,
+   "min": 57.1,
+   "max": 75.6,
+   "range": 18.5,
+   "n_prov": 3
+  },
+  {
+   "week": 34,
+   "min": 66.7,
+   "max": 88.9,
+   "range": 22.2,
+   "n_prov": 3
+  }
+ ],
+ "provider_means_since_0701": {
+  "openai": {
+   "direct": {
+    "pct": 78.7,
+    "n": 185,
+    "pos_share": 92.4,
+    "hallu_share": 0.0,
+    "ci": [
+     87.7,
+     95.4
+    ]
+   },
+   "longtail": {
+    "pct": 65.5,
+    "n": 119,
+    "pos_share": 77.3,
+    "hallu_share": 0.0,
+    "ci": [
+     69.0,
+     83.9
+    ]
+   },
+   "discovery": {
+    "pct": 3.6,
+    "n": 559,
+    "pos_share": 3.6,
+    "hallu_share": 0.0,
+    "ci": [
+     2.3,
+     5.5
+    ]
+   },
+   "research": {
+    "pct": 0.6,
+    "n": 57,
+    "pos_share": 3.5,
+    "hallu_share": 0.0,
+    "ci": [
+     1.0,
+     11.9
+    ]
+   }
+  },
+  "gemini": {
+   "direct": {
+    "pct": 70.8,
+    "n": 298,
+    "pos_share": 84.6,
+    "hallu_share": 3.0,
+    "ci": [
+     80.0,
+     88.2
+    ]
+   },
+   "longtail": {
+    "pct": 23.1,
+    "n": 196,
+    "pos_share": 23.5,
+    "hallu_share": 0.0,
+    "ci": [
+     18.1,
+     29.9
+    ]
+   },
+   "discovery": {
+    "pct": 1.0,
+    "n": 954,
+    "pos_share": 1.3,
+    "hallu_share": 0.2,
+    "ci": [
+     0.7,
+     2.2
+    ]
+   },
+   "research": {
+    "pct": 4.6,
+    "n": 98,
+    "pos_share": 22.4,
+    "hallu_share": 0.0,
+    "ci": [
+     15.3,
+     31.7
+    ]
+   }
+  },
+  "claude": {
+   "direct": {
+    "pct": 67.9,
+    "n": 279,
+    "pos_share": 80.6,
+    "hallu_share": 4.3,
+    "ci": [
+     75.6,
+     84.9
+    ]
+   },
+   "longtail": {
+    "pct": 7.7,
+    "n": 186,
+    "pos_share": 8.6,
+    "hallu_share": 0.0,
+    "ci": [
+     5.4,
+     13.5
+    ]
+   },
+   "discovery": {
+    "pct": -0.1,
+    "n": 930,
+    "pos_share": 0.0,
+    "hallu_share": 0.1,
+    "ci": [
+     0.0,
+     0.4
+    ]
+   },
+   "research": {
+    "pct": 3.8,
+    "n": 93,
+    "pos_share": 22.6,
+    "hallu_share": 0.0,
+    "ci": [
+     15.3,
+     32.1
+    ]
+   }
+  }
+ },
+ "echo_proof": {
+  "n_blind_answers": 6416,
+  "n_models": 10,
+  "models": [
+   "claude",
+   "claude_opus",
+   "claude_sonnet",
+   "llama3",
+   "llama31",
+   "llama32",
+   "mistral",
+   "openai",
+   "openai_gpt4o",
+   "phi2"
+  ],
+  "marin_mentioned_unprompted": 0
+ },
+ "noweb_direct_control": {
+  "n": 2131,
+  "hallucinated": 9,
+  "not_found": 1535,
+  "echo_partial": 498
+ },
+ "phases": {
+  "KW20-22 (T+0..T+20)": {
+   "direct": 9.6,
+   "longtail": 10.3,
+   "discovery": -0.0,
+   "research": -17.1
+  },
+  "KW23-26": {
+   "direct": 29.9,
+   "longtail": 12.8,
+   "discovery": 0.4,
+   "research": -4.8
+  },
+  "KW27-30": {
+   "direct": 71.2,
+   "longtail": 34.0,
+   "discovery": 2.3,
+   "research": 2.7
+  },
+  "KW31-33": {
+   "direct": 70.4,
+   "longtail": 23.7,
+   "discovery": 0.4,
+   "research": 4.2
+  }
+ },
+ "data_gaps": [
+  {
+   "id": 1,
+   "channel": "claude_web",
+   "gap_start": "2026-07-05",
+   "gap_end": "2026-07-21",
+   "reason": "Messkanal-Ausfall: die claude.ai-Messung wurde nach einer Umstellung der Ablaufsteuerung nicht mehr ausgeloest und die claude.ai-Browsersitzung war offline. Claude-Tiers (Haiku/Sonnet/Opus) fehlen fuer diese 17 Tage; Primaer-/Kombiniert-Wert basiert in dem Fenster auf 2 Anbietern (OpenAI+Gemini). Nicht rueckwirkend messbar (Live-Messung). Behoben 2026-07-22: taeglicher automatischer Messlauf.",
+   "recorded_at": "2026-07-22 13:41:43",
+   "reason_en": "Measurement-channel outage: the claude.ai measurement stopped being triggered after a scheduling change, and the claude.ai browser session was offline. Claude tiers (Haiku/Sonnet/Opus) are missing for these 17 days; the primary/combined value is based on 2 providers (OpenAI+Gemini) in that window. Not retroactively measurable (live measurement). Fixed 2026-07-22: daily automated measurement run."
+  },
+  {
+   "id": 2,
+   "channel": "openai_search",
+   "gap_start": "2026-07-24",
+   "gap_end": "2026-08-06",
+   "reason": "Messkanal-Ausfall LAUFEND (Ursache 06.08. per Direkt-Test verifiziert): OpenAI-API-Konto OHNE CREDITS (credit_balance_exhausted) seit ~24.07. — kein Timeout, kein Gateway-Defekt. AbortError-Eintraege waren Sekundaerartefakt der 429-Backoff-Kaskade (50s Sleeps rissen das Chunk-Race). Fix deployed 06.08. (Worker 88fa700b): quota-Fehler = fail-fast Marker openai_quota_exhausted + degraded_channels-Warnung im Stage-Result. RESTORE-Bedingung: Betreiber laedt OpenAI-Credits auf (manuelle Freigabe), dann gap_end setzen. || RESTORED 2026-08-06 ~17:2x CEST: Credits wurden aufgeladen; Direkt-Test 17s OK; manueller Stage-Nachlauf (run 304eb03e) liefert openai_search wieder live-Datapoints. Gap final: 24.07.-06.08.",
+   "recorded_at": "2026-08-06 14:54:26",
+   "reason_en": null
+  },
+  {
+   "id": 3,
+   "channel": "openai_search",
+   "gap_start": "2026-08-18",
+   "gap_end": "2026-08-19",
+   "reason": "Messkanal-Ausfall, ZWEITER Vorfall (Erster: 24.07.-06.08.): OpenAI-API-Konto erneut OHNE CREDITS (insufficient_quota, per Direkt-Test 19.08. verifiziert), 12 Tage nach der Aufladung vom 06.08. Verbrauch ca. 29 Search-Calls/Tag (gpt-4o-mini-search-preview). Betroffen: 18.08. (32 Fehlerzeilen, Tag nicht rueckwirkend messbar, Primaer-Wert nur Gemini) und 19.08. (nach Aufladung am 19.08. ~09:40 UTC Stage nachgefahren = echter Messwert, kein Gap). ZUSAETZLICH am 19.08. behoben: die Live-Stage-Aggregation zaehlte Fehlerzeilen als Datenpunkte (0% zitiert) und drueckte den kombinierten Wert (11,1% statt ~16,7%); seit Worker 3fd56929 sind Fehlerzeilen kein Messpunkt mehr und Provider ohne valide Antwort erscheinen als unavailable (Luecke ist kein Nullwert). Dauerhafte Vorbeugung: Auto-Recharge im OpenAI-Billing (Betreiber).",
+   "recorded_at": "2026-08-19 09:42:48",
+   "reason_en": "Measurement-channel outage, SECOND incident (first: 24 Jul-06 Aug): the OpenAI API account ran out of credits again (insufficient_quota, verified by direct test on 19 Aug), 12 days after the top-up of 06 Aug; consumption ~29 search calls/day (gpt-4o-mini-search-preview). Affected: 18 Aug (32 error rows, not retroactively measurable, primary value Gemini-only) and 19 Aug (after the top-up on 19 Aug ~09:40 UTC the stage was re-run = real measurement, no gap). Also fixed on 19 Aug: the live stage aggregation had counted error rows as datapoints (0% cited), depressing the combined value (11.1% instead of ~16.7%); since worker 3fd56929 error rows are no longer datapoints and providers without a valid answer appear as unavailable (a gap is not a zero). Durable prevention: auto-recharge in OpenAI billing (Betreiber)."
+  },
+  {
+   "id": 4,
+   "channel": "method_cadence",
+   "gap_start": "2026-08-19",
+   "gap_end": "2026-08-19",
+   "reason": "METHODIK-AENDERUNG (keine Luecke): KI-Zitations-Messung (OpenAI/Gemini/Claude-Batch) laeuft ab 19.08. alle 3 Tage statt taeglich (Messtage 19., 22., 25.08. ...). Begruendung aus 50 Tagen Daten: Tag-zu-Tag-Autokorrelation 0,02 (Tageswerte sind Rauschen um ein stabiles Niveau), 3-Tage-Mittel halbiert die Streuung, Kosten dritteln sich. Zeitreihe bleibt vergleichbar (gleiche 16 Fragen, gleiche Anbieter, gleiches Scoring); an Zwischentagen zeigt das Dashboard den juengsten Messtag (Messdatum explizit). Gleichzeitig Kennzahl-Split in drei Kanaele (Direkt / Saga-Wissen / Empfehlung), Kombi-Wert bleibt als Kontinuitaet.",
+   "recorded_at": "2026-08-19 09:57:13",
+   "reason_en": "METHOD CHANGE (not a gap): the AI-citation measurement (OpenAI/Gemini/Claude batch) runs every 3 days instead of daily from 19 Aug (measurement days 19, 22, 25 Aug ...). Rationale from 50 days of data: day-to-day autocorrelation 0.02 (daily values are noise around a stable level), 3-day means halve the spread, cost drops to a third. The series stays comparable (same 16 questions, providers, scoring); on in-between days the dashboard shows the latest measurement day (date shown explicitly). At the same time the headline was split into three channels (Direct / Saga knowledge / Recommendation); the combined value remains for continuity."
+  }
+ ]
+}

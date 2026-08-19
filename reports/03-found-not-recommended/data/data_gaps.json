@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "channel": "claude_web",
+    "gap_start": "2026-07-05",
+    "gap_end": "2026-07-21",
+    "reason": "Messkanal-Ausfall: die claude.ai-Messung wurde nach einer Umstellung der Ablaufsteuerung nicht mehr ausgeloest und die claude.ai-Browsersitzung war offline. Claude-Tiers (Haiku/Sonnet/Opus) fehlen fuer diese 17 Tage; Primaer-/Kombiniert-Wert basiert in dem Fenster auf 2 Anbietern (OpenAI+Gemini). Nicht rueckwirkend messbar (Live-Messung). Behoben 2026-07-22: taeglicher automatischer Messlauf.",
+    "recorded_at": "2026-07-22 13:41:43",
+    "reason_en": "Measurement-channel outage: the claude.ai measurement stopped being triggered after a scheduling change, and the claude.ai browser session was offline. Claude tiers (Haiku/Sonnet/Opus) are missing for these 17 days; the primary/combined value is based on 2 providers (OpenAI+Gemini) in that window. Not retroactively measurable (live measurement). Fixed 2026-07-22: daily automated measurement run."
+  },
+  {
+    "id": 2,
+    "channel": "openai_search",
+    "gap_start": "2026-07-24",
+    "gap_end": "2026-08-06",
+    "reason": "Messkanal-Ausfall LAUFEND (Ursache 06.08. per Direkt-Test verifiziert): OpenAI-API-Konto OHNE CREDITS (credit_balance_exhausted) seit ~24.07. — kein Timeout, kein Gateway-Defekt. AbortError-Eintraege waren Sekundaerartefakt der 429-Backoff-Kaskade (50s Sleeps rissen das Chunk-Race). Fix deployed 06.08. (Worker 88fa700b): quota-Fehler = fail-fast Marker openai_quota_exhausted + degraded_channels-Warnung im Stage-Result. RESTORE-Bedingung: Betreiber laedt OpenAI-Credits auf (manuelle Freigabe), dann gap_end setzen. || RESTORED 2026-08-06 ~17:2x CEST: Credits wurden aufgeladen; Direkt-Test 17s OK; manueller Stage-Nachlauf (run 304eb03e) liefert openai_search wieder live-Datapoints. Gap final: 24.07.-06.08.",
+    "recorded_at": "2026-08-06 14:54:26",
+    "reason_en": null
+  },
+  {
+    "id": 3,
+    "channel": "openai_search",
+    "gap_start": "2026-08-18",
+    "gap_end": "2026-08-19",
+    "reason": "Messkanal-Ausfall, ZWEITER Vorfall (Erster: 24.07.-06.08.): OpenAI-API-Konto erneut OHNE CREDITS (insufficient_quota, per Direkt-Test 19.08. verifiziert), 12 Tage nach der Aufladung vom 06.08. Verbrauch ca. 29 Search-Calls/Tag (gpt-4o-mini-search-preview). Betroffen: 18.08. (32 Fehlerzeilen, Tag nicht rueckwirkend messbar, Primaer-Wert nur Gemini) und 19.08. (nach Aufladung am 19.08. ~09:40 UTC Stage nachgefahren = echter Messwert, kein Gap). ZUSAETZLICH am 19.08. behoben: die Live-Stage-Aggregation zaehlte Fehlerzeilen als Datenpunkte (0% zitiert) und drueckte den kombinierten Wert (11,1% statt ~16,7%); seit Worker 3fd56929 sind Fehlerzeilen kein Messpunkt mehr und Provider ohne valide Antwort erscheinen als unavailable (Luecke ist kein Nullwert). Dauerhafte Vorbeugung: Auto-Recharge im OpenAI-Billing (Betreiber).",
+    "recorded_at": "2026-08-19 09:42:48",
+    "reason_en": "Measurement-channel outage, SECOND incident (first: 24 Jul-06 Aug): the OpenAI API account ran out of credits again (insufficient_quota, verified by direct test on 19 Aug), 12 days after the top-up of 06 Aug; consumption ~29 search calls/day (gpt-4o-mini-search-preview). Affected: 18 Aug (32 error rows, not retroactively measurable, primary value Gemini-only) and 19 Aug (after the top-up on 19 Aug ~09:40 UTC the stage was re-run = real measurement, no gap). Also fixed on 19 Aug: the live stage aggregation had counted error rows as datapoints (0% cited), depressing the combined value (11.1% instead of ~16.7%); since worker 3fd56929 error rows are no longer datapoints and providers without a valid answer appear as unavailable (a gap is not a zero). Durable prevention: auto-recharge in OpenAI billing (Betreiber)."
+  },
+  {
+    "id": 4,
+    "channel": "method_cadence",
+    "gap_start": "2026-08-19",
+    "gap_end": "2026-08-19",
+    "reason": "METHODIK-AENDERUNG (keine Luecke): KI-Zitations-Messung (OpenAI/Gemini/Claude-Batch) laeuft ab 19.08. alle 3 Tage statt taeglich (Messtage 19., 22., 25.08. ...). Begruendung aus 50 Tagen Daten: Tag-zu-Tag-Autokorrelation 0,02 (Tageswerte sind Rauschen um ein stabiles Niveau), 3-Tage-Mittel halbiert die Streuung, Kosten dritteln sich. Zeitreihe bleibt vergleichbar (gleiche 16 Fragen, gleiche Anbieter, gleiches Scoring); an Zwischentagen zeigt das Dashboard den juengsten Messtag (Messdatum explizit). Gleichzeitig Kennzahl-Split in drei Kanaele (Direkt / Saga-Wissen / Empfehlung), Kombi-Wert bleibt als Kontinuitaet.",
+    "recorded_at": "2026-08-19 09:57:13",
+    "reason_en": "METHOD CHANGE (not a gap): the AI-citation measurement (OpenAI/Gemini/Claude batch) runs every 3 days instead of daily from 19 Aug (measurement days 19, 22, 25 Aug ...). Rationale from 50 days of data: day-to-day autocorrelation 0.02 (daily values are noise around a stable level), 3-day means halve the spread, cost drops to a third. The series stays comparable (same 16 questions, providers, scoring); on in-between days the dashboard shows the latest measurement day (date shown explicitly). At the same time the headline was split into three channels (Direct / Saga knowledge / Recommendation); the combined value remains for continuity."
+  }
+]

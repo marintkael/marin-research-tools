@@ -1,0 +1,25 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap');
+:root{--ink:#1c1c1c;--mute:#6b6b6b;--rule:#e2e2e2;--wax:#6E1010;--paper:#fdfcfa}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16.5px;line-height:1.62}
+.wrap{max-width:760px;margin:0 auto;padding:64px 28px 96px}
+h1{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:46px;line-height:1.08;letter-spacing:-.01em;margin:0 0 10px}
+.deck{font-family:Newsreader,Georgia,serif;font-size:22px;line-height:1.35;color:#333;margin:0 0 18px}
+.meta{font-size:12.5px;color:var(--mute);letter-spacing:.01em;margin:0 0 6px}
+h2{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:27px;line-height:1.2;margin:46px 0 12px}
+p{margin:0 0 15px;hyphens:auto}
+hr{border:0;border-top:1px solid var(--rule);margin:34px 0}
+figure{margin:26px -120px 30px}@media(max-width:1040px){figure{margin:22px 0}}
+figure img{width:100%;display:block;border:1px solid var(--rule)}
+figcaption{font-size:12.5px;color:var(--mute);margin-top:8px;line-height:1.45}
+.tablewrap{margin:10px -120px 26px;overflow-x:auto}@media(max-width:1040px){.tablewrap{margin:10px 0 26px}}
+table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}
+th,td{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-weight:600;border-bottom:1.5px solid #bbb;font-size:12.5px}
+td .v{font-size:14.5px;font-weight:600;display:block}td .s{font-size:11.5px;color:var(--mute);display:block;margin-top:1px}
+td.num,th.num{text-align:right}
+.badge{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--wax);border:1px solid var(--wax);border-radius:3px;padding:2px 7px;margin-bottom:18px}
+.xref{color:inherit;text-decoration:none;border-bottom:1px dotted #999}.xref:hover{border-bottom-color:var(--wax)}
+.tabcap{margin-top:22px;margin-bottom:8px;color:#444;font-size:13px}
+a.ext{color:var(--wax);text-decoration:none;border-bottom:1px solid rgba(110,16,16,.35)}a.ext:hover{border-bottom-color:var(--wax)}
+</style>

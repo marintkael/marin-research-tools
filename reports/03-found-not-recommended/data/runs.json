@@ -1,0 +1,477 @@
+[
+  {
+    "d": "2026-05-14",
+    "stages_ok": 4,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-05-15",
+    "stages_ok": 7,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-05-16",
+    "stages_ok": 10,
+    "stages_failed": 4
+  },
+  {
+    "d": "2026-05-17",
+    "stages_ok": 11,
+    "stages_failed": 3
+  },
+  {
+    "d": "2026-05-17",
+    "stages_ok": 12,
+    "stages_failed": 2
+  },
+  {
+    "d": "2026-05-18",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-05-18",
+    "stages_ok": 14,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-05-18",
+    "stages_ok": 14,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-05-19",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-05-20",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-05-21",
+    "stages_ok": 12,
+    "stages_failed": 2
+  },
+  {
+    "d": "2026-05-22",
+    "stages_ok": 13,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-05-23",
+    "stages_ok": 14,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-05-24",
+    "stages_ok": 13,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-05-26",
+    "stages_ok": 15,
+    "stages_failed": 2
+  },
+  {
+    "d": "2026-05-27",
+    "stages_ok": 18,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-05-28",
+    "stages_ok": 17,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-05-29",
+    "stages_ok": 16,
+    "stages_failed": 2
+  },
+  {
+    "d": "2026-05-30",
+    "stages_ok": 17,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-05-31",
+    "stages_ok": 17,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-01",
+    "stages_ok": 17,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-02",
+    "stages_ok": 17,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-03",
+    "stages_ok": 16,
+    "stages_failed": 2
+  },
+  {
+    "d": "2026-06-04",
+    "stages_ok": 16,
+    "stages_failed": 2
+  },
+  {
+    "d": "2026-06-05",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-06",
+    "stages_ok": 17,
+    "stages_failed": 2
+  },
+  {
+    "d": "2026-06-07",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-08",
+    "stages_ok": 19,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-09",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-10",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-11",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-12",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-13",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-14",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-15",
+    "stages_ok": 19,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-16",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-17",
+    "stages_ok": 19,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-18",
+    "stages_ok": 19,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-19",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-20",
+    "stages_ok": 19,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-21",
+    "stages_ok": 18,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-23",
+    "stages_ok": 14,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-24",
+    "stages_ok": 14,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-25",
+    "stages_ok": 14,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-06-26",
+    "stages_ok": 15,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-27",
+    "stages_ok": 15,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-28",
+    "stages_ok": 15,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-06-30",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-01",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-02",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-07-03",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-04",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-05",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-07-06",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-07",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-08",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-09",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-10",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-11",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-12",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-13",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-14",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-15",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-16",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-07-17",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-18",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-19",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-20",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-07-21",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-22",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-23",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-07-24",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-25",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-26",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-28",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-29",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-30",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-07-31",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-01",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-02",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-04",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-05",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-06",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-07",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-08",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-09",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-11",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-12",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-13",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-14",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-15",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-16",
+    "stages_ok": 15,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-17",
+    "stages_ok": 17,
+    "stages_failed": 1
+  },
+  {
+    "d": "2026-08-18",
+    "stages_ok": 16,
+    "stages_failed": 0
+  },
+  {
+    "d": "2026-08-19",
+    "stages_ok": 16,
+    "stages_failed": 0
+  }
+]
