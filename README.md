@@ -97,6 +97,15 @@ confounds are explicitly named in each quarterly report.
   weights from +2 (verifiable primary) through 0 (neutral) to -1
   (hallucination risk). Feeds the source × LLM heatmap underlying
   pre-registration Q3.
+- **`kg_entity_probe.py`**, a probe for the Google Knowledge Graph Search
+  API that prints every result with its id, `resultScore` and description
+  instead of reducing the response to a count. The endpoint pads its
+  ranked list, so a count answers a question nobody asked: on 2026-09-29
+  a name query returned four results, two of them distinct machine ids
+  for that name at score 43, then an unrelated bird at 0.0374 and a 1962
+  film at 0.0028. The tool counts how many results clear an explicit
+  score floor and flags duplicate ids for one exact name, which is the
+  state a count or a present/absent boolean cannot show.
 - **`migrations/0003_ai_citation_sources.sql`**, SQLite/D1 table for the
   Cross-LLM Trust Graph snapshots used by Q3.
 - **`pre_registrations/`**, seven YAML files Q0.yaml … Q6.yaml. The full
