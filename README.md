@@ -63,7 +63,7 @@ three-phase design:
 Everything in this repository is public so methodology reviewers can
 reproduce the measurement.
 
-## Active Pre-Registrations Q0, Q6
+## Active Pre-Registrations Q0 to Q6
 
 Seven independent, formally pre-registered probes run in temporal parallel
 across Phase 1. Full YAML specifications live under
@@ -80,8 +80,18 @@ overview.
 | **Q5** | Zenodo DOI cadence (1 MN / quarter) triggers Wikipedia notability threshold crossing | Zenodo DOI salvo (MN-01 v1.x + v2.x, MN-02 Q3, MN-03 Q4) | Wikipedia article-existence probe (CC-MAIN coverage) | registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15) |
 | **Q6** | Consistent reader-activity on Hardcover produces a reader-authenticity signal that strengthens cross-linking to Goodreads and the LLM trust cluster 'reading community' | Reader-account activity volume on Hardcover (reviews, mark-as-read, want-to-read). Activity volume is the variable; attributes of individual reviews (rating, length, voice) are outside the research design. | Hardcover snapshot pipeline · books_read · reviews_written · cross-LLM trust graph cluster 'reading community' | active (since T+3, low-volume sustained), **new in v2.3, refactored in v0.3** |
 
-Q0, Q6 are formally independent but run in temporal parallel, inter-Q
+Q0 to Q6 are formally independent but run in temporal parallel, inter-Q
 confounds are explicitly named in each quarterly report.
+
+**Naming note (4 October 2026).** Two documents carry the label Q0.
+`pre_registrations/Q0.yaml` is the probe "Wikidata statements reach the
+Google Knowledge Graph" listed in the table above. The Zenodo
+pre-registration "Pre-Launch Instrument Validation"
+([10.5281/zenodo.20125967](https://doi.org/10.5281/zenodo.20125967)) is a
+separate document with the six instrument hypotheses H-Q0-INST-01 to 06.
+From the Q3 / 2026 validation report onward the Zenodo document is cited as
+**Q0-INST** and the YAML probe as **Q0-KG**. Neither document is changed;
+registered texts stay as published.
 
 ## What is in this repository
 
@@ -237,7 +247,7 @@ release set:
   Trust Graph hard-coded), v2.0 (12 May 2026, active 3-phase design
   introduced), v1.x (10, 11 May 2026, two-phase setup release). All
   historical Version-DOIs resolve from the Concept-DOI above.
-- **Vor-Registrierung Q0**, Pre-Launch-Instrument-Validierung. DOI:
+- **Vor-Registrierung Q0-INST** (bis 10/2026 „Q0“), Pre-Launch-Instrument-Validierung. DOI:
   [10.5281/zenodo.20125967](https://doi.org/10.5281/zenodo.20125967)
 - **Codebuch v0.1**, Annotations-Schema. DOI:
   [10.5281/zenodo.20125976](https://doi.org/10.5281/zenodo.20125976)
