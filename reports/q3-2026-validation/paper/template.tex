@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{$lang$}
+\usepackage{newunicodechar}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{κ}{\ensuremath{\kappa}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{±}{\ensuremath{\pm}}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,array,calc,tabularx,makecell}
+\renewcommand{\cellalign}{lb}\setcellgapes{1pt}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\captionsetup[table]{skip=4pt}
+\usepackage{xcolor}
+\definecolor{doired}{RGB}{140,20,20}
+\usepackage[hidelinks=false,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=doired,pdfauthor={Marin T. Kael},pdftitle={$title$},pdfcreator={},pdfproducer={}]{hyperref}
+\usepackage{url}
+\setlength{\parindent}{1.5em}
+\newcounter{none}
+\providecommand{\pandocbounded}[1]{#1}
+\makeatletter\def\fps@figure{htbp}\makeatother
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\renewcommand{\tablename}{$tablename$}
+\renewcommand{\figurename}{$figurename$}
+\setlength{\emergencystretch}{2em}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries $title$\par}
+\vspace{4pt}
+{\large $subtitle$\par}
+\vspace{14pt}
+{\large\bfseries Marin T. Kael\par}
+\vspace{2pt}
+$affiliation$\par
+\texttt{marin@marin-t-kael.de}\quad ORCID: 0009-0006-2105-8190\par
+\vspace{12pt}
+{\large $datestr$ \quad$\bullet$\quad DOI \href{https://doi.org/10.5281/zenodo.23145378}{10.5281/zenodo.23145378}\par}
+\end{center}
+\vspace{6pt}
+\begin{abstract}
+$abstract$
+\end{abstract}
+$body$
+\end{document}

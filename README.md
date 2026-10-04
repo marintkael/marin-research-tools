@@ -122,6 +122,10 @@ registered texts stay as published.
   pre-registration appendix to each quarterly report.
 - **`docs/`**, the public research framework (four Phase-1 investigation
   lines).
+- **`reports/`**, analysis code, figure builds and frozen results per report:
+  `03-found-not-recommended/` (Report 03, 19 August 2026) and
+  `q3-2026-validation/` (Validation Report Q3 / 2026, tests the six instrument
+  hypotheses of Q0-INST; DOI [10.5281/zenodo.23145378](https://doi.org/10.5281/zenodo.23145378)).
 
 ## What is *not* in this repository
 

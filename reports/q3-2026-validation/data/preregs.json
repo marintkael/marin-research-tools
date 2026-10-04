@@ -1,0 +1,83 @@
+{
+ "frozen_at_utc": "2026-10-04T16:09:37Z",
+ "source": "marin-research-tools/pre_registrations",
+ "items": [
+  {
+   "file": "Q0.yaml",
+   "sha256": "36967ac3ed0c8f9318a406ceb90ca86bf700be91556801a438a71106b3949313",
+   "id": "prereg-q0-wikidata-to-google-kg-latency",
+   "field": 1,
+   "start": "2026-05-11",
+   "end": "2026-09-22",
+   "stopping_rule": "134 surveys or saturation (no new hit in 14 days)",
+   "status": "active (latency ≈ 40 h observed T+0 → T+2)",
+   "version": "v1.0 · 2026-05-13"
+  },
+  {
+   "file": "Q1.yaml",
+   "sha256": "c1f3ef5a9b99ad52625ad628a6931f3e0b5e0e2a4d9c2e8a6eccdc460ce3b327",
+   "id": "prereg-q1-wikidata-co-occurrence",
+   "field": 1,
+   "start": "2026-05-14",
+   "end": "2026-12-31",
+   "stopping_rule": "90 days post statement publication or saturation (CompCluster mean score stable ±0.1 for 14 days)",
+   "status": "registered (execution Q3 / 2026)",
+   "version": "v1.0 · 2026-05-13"
+  },
+  {
+   "file": "Q2.yaml",
+   "sha256": "be4c77b6750abb3d87c3851c23a9b00853e9c73cf2d169b36dedbb8243eb7450",
+   "id": "prereg-q2-common-crawl-snapshot-inclusion",
+   "field": 2,
+   "start": "2026-05-13",
+   "end": "2026-12-31",
+   "stopping_rule": "next major model-cycle release of mistral/llama (whichever is later) plus 30 days observation window",
+   "status": "active (files deployed T+2)",
+   "version": "v1.0 · 2026-05-13"
+  },
+  {
+   "file": "Q3.yaml",
+   "sha256": "8c6d00d095daead2cb301b2573d8791f28bb119c751b3dc01075a93974e8d9b5",
+   "id": "prereg-q3-cross-llm-trust-graph-drift",
+   "field": 2,
+   "start": "2026-05-14",
+   "end": "2026-08-14",
+   "stopping_rule": "90 days continuous tracking or earlier saturation (drift < 0.2 point for 30 days)",
+   "status": "active (live from T+3 after cron 04:00 UTC)",
+   "version": "v1.0 · 2026-05-13"
+  },
+  {
+   "file": "Q4.yaml",
+   "sha256": "80e88b6ce94570a8c5cd7707bdae6d7c647c30e715c9738e1eb0a4d520fa8f49",
+   "id": "prereg-q4-reddit-karma-mention-cluster",
+   "field": 1,
+   "start": "2026-05-11",
+   "end": "2026-08-09",
+   "stopping_rule": "90 days post-start or karma-target reached in all 6 subs",
+   "status": "active (running in r/Fantasy since T+0; 7 more subs from T+3)",
+   "version": "v1.0 · 2026-05-13"
+  },
+  {
+   "file": "Q5.yaml",
+   "sha256": "1cb88dfb10dc696aaa0b4b7b4727ddc8663915d30c746cf27ffa96b12242635c",
+   "id": "prereg-q5-zenodo-doi-cadence-wikipedia-notability",
+   "field": 4,
+   "start": "2026-05-11",
+   "end": "2027-09-30",
+   "stopping_rule": "Wikipedia article published OR end of Phase 1 (Q3 / 2027) whichever comes first",
+   "status": "registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15)",
+   "version": "v1.0 · 2026-05-13"
+  },
+  {
+   "file": "Q6_hardcover_reader_activity.yaml",
+   "sha256": "31af1de7070217e543b675581f23142aa894bbbc4c9dff8d4af7214f60595b98",
+   "id": "Q6",
+   "field": null,
+   "start": "2026-05-14",
+   "end": null,
+   "stopping_rule": null,
+   "status": "active",
+   "version": null
+  }
+ ]
+}

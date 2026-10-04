@@ -1,0 +1,333 @@
+{
+ "coded_at": "2026-10-04",
+ "source": "Lückenregister (D1 data_gaps, Einträge 1–25, Stand 04.10.2026), manuell kodiert; Volltexte nicht eingefroren",
+ "effect_classes": {
+  "missing": "Messtag(e) ohne Messwert; verändert den Pegel der eigenen Tagesreihe nicht",
+  "sampling": "verändert nur, an welchen Tagen gemessen wird",
+  "none": "betrifft Kopfzahl, Speicherung oder Prüfkanal, nicht die eigene Tagesreihe (eigene Regel: eine Zeile je Tag, Einheit, Frage)",
+  "timing": "Messung zu anderem Zeitpunkt als geplant",
+  "level": "kann den Pegel der eigenen Tagesreihe verschieben"
+ },
+ "events": [
+  {
+   "id": 1,
+   "from": "2026-07-05",
+   "to": "2026-07-21",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Messlauf nicht ausgelöst, Messumgebung offline",
+   "en": "measurement run not triggered, measurement environment offline"
+  },
+  {
+   "id": 2,
+   "from": "2026-07-24",
+   "to": "2026-08-06",
+   "providers": [
+    "OpenAI"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Kontingent des Messkontos erschöpft",
+   "en": "quota of the measurement account exhausted"
+  },
+  {
+   "id": 3,
+   "from": "2026-08-18",
+   "to": "2026-08-18",
+   "providers": [
+    "OpenAI"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Kontingent des Messkontos erschöpft",
+   "en": "quota of the measurement account exhausted"
+  },
+  {
+   "id": 4,
+   "from": "2026-08-19",
+   "to": "2026-08-19",
+   "providers": [
+    "OpenAI",
+    "Gemini",
+    "Claude-Web"
+   ],
+   "effect": "sampling",
+   "questions": null,
+   "de": "Kadenz: alle drei Tage statt täglich",
+   "en": "cadence: every three days instead of daily"
+  },
+  {
+   "id": 5,
+   "from": "2026-08-27",
+   "to": "2026-08-27",
+   "providers": [
+    "OpenAI",
+    "Gemini",
+    "Claude-Web"
+   ],
+   "effect": "level",
+   "questions": null,
+   "de": "Eingriff: Eintrag in eine kuratierte Fremdliste eingereicht",
+   "en": "intervention: entry submitted to a curated third-party list",
+   "direction": "up"
+  },
+  {
+   "id": 6,
+   "from": "2026-09-03",
+   "to": "2026-09-03",
+   "providers": [
+    "OpenAI"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "Kontingent erschöpft, am selben Tag nachgemessen",
+   "en": "quota exhausted, re-measured the same day"
+  },
+  {
+   "id": 7,
+   "from": "2026-08-22",
+   "to": "2026-09-03",
+   "providers": [
+    "OpenAI",
+    "Gemini"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "Doppelzeilen entfernt (Dedupe-Korrektur)",
+   "en": "duplicate rows removed (dedupe correction)"
+  },
+  {
+   "id": 8,
+   "from": "2026-09-04",
+   "to": "2026-09-04",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "level",
+   "questions": [
+    "GR2",
+    "GR4",
+    "GR5"
+   ],
+   "de": "Konnektor der Messumgebung deaktiviert (betraf Antworten auf GR2, GR4, GR5)",
+   "en": "connector of the measurement environment disabled (affected answers to GR2, GR4, GR5)",
+   "direction": "unknown"
+  },
+  {
+   "id": 9,
+   "from": "2026-05-13",
+   "to": "2026-08-21",
+   "providers": [
+    "OpenAI",
+    "Gemini"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "Dedupe-Regel in der Auswertung statt Löschung",
+   "en": "dedupe rule in the analysis instead of deletion"
+  },
+  {
+   "id": 10,
+   "from": "2026-09-04",
+   "to": "2026-09-04",
+   "providers": [
+    "OpenAI",
+    "Gemini",
+    "Claude-Web"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "Kopfzahl neu definiert",
+   "en": "headline figure redefined"
+  },
+  {
+   "id": 11,
+   "from": "2026-09-04",
+   "to": "2026-09-04",
+   "providers": [
+    "OpenAI",
+    "Gemini",
+    "Claude-Web"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "Dedupe-Regel: Antwort nächst dem geplanten Messzeitpunkt",
+   "en": "dedupe rule: answer closest to the scheduled time"
+  },
+  {
+   "id": 12,
+   "from": "2026-09-22",
+   "to": "2026-09-22",
+   "providers": [],
+   "effect": "none",
+   "questions": null,
+   "de": "vorab registrierter Eingriff Buchstart, durch Eintrag 18 ersetzt (fand am 22.09. nicht statt)",
+   "en": "pre-registered book-launch intervention, superseded by entry 18 (did not take place on 22 Sep)"
+  },
+  {
+   "id": 13,
+   "from": "2026-08-23",
+   "to": "2026-08-23",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "alle Antworten Fehlerstatus",
+   "en": "all answers in error status"
+  },
+  {
+   "id": 14,
+   "from": "2026-08-01",
+   "to": "2026-09-15",
+   "providers": [
+    "Bing"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Bing-Indexabfrage ohne Status (Eigentümer-Bestätigung verloren, danach Drosselung)",
+   "en": "Bing index query without status (ownership verification lost, then throttling)"
+  },
+  {
+   "id": 15,
+   "from": "2026-08-29",
+   "to": "2026-09-03",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Messumgebung vom 29.08. bis 01.09. ausgefallen; Ankertage 31.08. und 03.09. ohne eigene Messung",
+   "en": "measurement environment down 29 Aug to 1 Sep; anchor days 31 Aug and 3 Sep without own measurement"
+  },
+  {
+   "id": 16,
+   "from": "2026-09-12",
+   "to": "2026-09-12",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Drosselung durch den Anbieter, alle Antworten Fehler",
+   "en": "provider throttling, all answers errors"
+  },
+  {
+   "id": 17,
+   "from": "2026-09-18",
+   "to": "2026-09-27",
+   "providers": [
+    "OpenAI"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Kontingent des Messkontos erschöpft",
+   "en": "quota of the measurement account exhausted"
+  },
+  {
+   "id": 18,
+   "from": "2026-09-15",
+   "to": "2026-09-15",
+   "providers": [
+    "OpenAI",
+    "Gemini",
+    "Claude-Web"
+   ],
+   "effect": "level",
+   "questions": [
+    "D3"
+   ],
+   "de": "Erscheinungstermin öffentlich vom 22.09. auf den 08.10. verschoben (betrifft die Terminfrage D3)",
+   "en": "release date publicly moved from 22 Sep to 8 Oct (affects the date question D3)",
+   "direction": "unknown"
+  },
+  {
+   "id": 19,
+   "from": "2026-09-24",
+   "to": "2026-09-24",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "Lauf abgebrochen, am selben Tag nachgemessen",
+   "en": "run aborted, re-measured the same day"
+  },
+  {
+   "id": 20,
+   "from": "2026-05-15",
+   "to": "2026-09-25",
+   "providers": [
+    "GSC"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Sitemap-Indexfeld liefert konstant 0 (totes Feld)",
+   "en": "sitemap index field constantly returns 0 (dead field)"
+  },
+  {
+   "id": 21,
+   "from": "2026-09-27",
+   "to": "2026-09-27",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "Nutzungslimit des Messkontos erschöpft, alle Antworten Fehler",
+   "en": "usage limit of the measurement account exhausted, all answers errors"
+  },
+  {
+   "id": 22,
+   "from": "2026-09-18",
+   "to": "2026-09-30",
+   "providers": [
+    "Claude-API"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "Prüfkanal Claude-API ohne Antworten",
+   "en": "Claude API control channel without answers"
+  },
+  {
+   "id": 23,
+   "from": "2026-09-18",
+   "to": "2026-09-19",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "timing",
+   "questions": null,
+   "de": "Ankertag 18.09. nicht gemessen, Nachholung am 19.09.",
+   "en": "anchor day 18 Sep not measured, catch-up on 19 Sep"
+  },
+  {
+   "id": 24,
+   "from": "2026-10-03",
+   "to": "2026-10-03",
+   "providers": [
+    "Claude-Web"
+   ],
+   "effect": "missing",
+   "questions": null,
+   "de": "nach Fensterende: Nutzungslimit erschöpft",
+   "en": "after window end: usage limit exhausted"
+  },
+  {
+   "id": 25,
+   "from": "2026-10-04",
+   "to": "2026-10-04",
+   "providers": [
+    "Claude-API"
+   ],
+   "effect": "none",
+   "questions": null,
+   "de": "nach Fensterende: Prüfkanal Claude-API eingestellt, Claude nur noch über claude.ai mit Websuche",
+   "en": "after window end: Claude API control channel discontinued, Claude measured only via claude.ai with web search"
+  }
+ ],
+ "direction_note": "direction = erwartete Richtung einer Pegelwirkung (up / down / unknown), vor dem Alarm-Abgleich festgelegt"
+}

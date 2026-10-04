@@ -1,0 +1,7538 @@
+{
+ "stand": "Etappe 3 (04.10.2026): Abdeckung, Wiederhol-Uebereinstimmung, Tageswert, CUSUM, intra-Set-Konsistenz, Eingriffs-Chronik, Alarm-Abgleich, Hypothesen Q0, Abdeckungsbilanz",
+ "stage3": {
+  "summary": {
+   "cells_valid": {
+    "OpenAI": 1637,
+    "Gemini": 2192,
+    "Claude-Web": 3289
+   },
+   "cells_error": {
+    "Gemini": 42,
+    "OpenAI": 597,
+    "Claude-Web": 288
+   },
+   "cells_valid_total": 7118,
+   "raw_rows_used": {
+    "web_rows_headline_providers": 11532,
+    "claude_web_rows_tiers": 4047
+   },
+   "level_days": {
+    "OpenAI": 72,
+    "Gemini": 129,
+    "Claude-Web": 73
+   },
+   "zero_variance_items": {
+    "OpenAI": 6,
+    "Gemini": 9,
+    "Claude-Web": 10
+   },
+   "cusum_fixed_alarms": {
+    "OpenAI": {
+     "up": 19,
+     "down": 0
+    },
+    "Gemini": {
+     "up": 30,
+     "down": 0
+    },
+    "Claude-Web": {
+     "up": 44,
+     "down": 0
+    }
+   },
+   "cusum_rolling_alarms": {
+    "OpenAI": {
+     "up": 2,
+     "down": 1
+    },
+    "Gemini": {
+     "up": 4,
+     "down": 1
+    },
+    "Claude-Web": {
+     "up": 4,
+     "down": 1
+    }
+   },
+   "rebase_down_alarms": 5,
+   "rebase_down_explained": 0,
+   "retest_by_question_range": {
+    "OpenAI": [
+     45.7,
+     100.0
+    ],
+    "Gemini": [
+     43.8,
+     100.0
+    ],
+    "Claude-Web": [
+     73.6,
+     100.0
+    ]
+   },
+   "retest_questions_100pct": {
+    "OpenAI": 6,
+    "Gemini": 9,
+    "Claude-Web": 10
+   },
+   "retest_varying_questions": {
+    "OpenAI": {
+     "questions": 10,
+     "pairs": 1014,
+     "share_pct": 78.6
+    },
+    "Gemini": {
+     "questions": 7,
+     "pairs": 955,
+     "share_pct": 70.6
+    },
+    "Claude-Web": {
+     "questions": 6,
+     "pairs": 1198,
+     "share_pct": 85.0
+    }
+   },
+   "prereg_end_passed": [
+    "prereg-q0-wikidata-to-google-kg-latency",
+    "prereg-q3-cross-llm-trust-graph-drift",
+    "prereg-q4-reddit-karma-mention-cluster"
+   ],
+   "gaps_in_window_n": 21
+  },
+  "day_state": {
+   "OpenAI": {
+    "2026-05-13": "partial",
+    "2026-05-14": "complete",
+    "2026-05-15": "complete",
+    "2026-05-16": "complete",
+    "2026-05-17": "complete",
+    "2026-05-18": "complete",
+    "2026-05-19": "complete",
+    "2026-05-20": "complete",
+    "2026-05-21": "complete",
+    "2026-05-22": "complete",
+    "2026-05-23": "complete",
+    "2026-05-24": "complete",
+    "2026-05-25": "complete",
+    "2026-05-26": "complete",
+    "2026-05-27": "complete",
+    "2026-05-28": "partial",
+    "2026-05-29": "partial",
+    "2026-05-30": "partial",
+    "2026-05-31": "partial",
+    "2026-06-01": "partial",
+    "2026-06-02": "partial",
+    "2026-06-03": "partial",
+    "2026-06-04": "partial",
+    "2026-06-05": "partial",
+    "2026-06-06": "partial",
+    "2026-06-07": "partial",
+    "2026-06-08": "partial",
+    "2026-06-09": "partial",
+    "2026-06-10": "complete",
+    "2026-06-11": "complete",
+    "2026-06-12": "complete",
+    "2026-06-13": "partial",
+    "2026-06-14": "complete",
+    "2026-06-15": "partial",
+    "2026-06-16": "complete",
+    "2026-06-17": "partial",
+    "2026-06-18": "complete",
+    "2026-06-19": "partial",
+    "2026-06-20": "partial",
+    "2026-06-21": "partial",
+    "2026-06-22": "partial",
+    "2026-06-23": "complete",
+    "2026-06-24": "complete",
+    "2026-06-25": "complete",
+    "2026-06-26": "complete",
+    "2026-06-27": "complete",
+    "2026-06-28": "complete",
+    "2026-06-29": "error_only",
+    "2026-06-30": "complete",
+    "2026-07-01": "partial",
+    "2026-07-02": "partial",
+    "2026-07-03": "complete",
+    "2026-07-04": "partial",
+    "2026-07-05": "partial",
+    "2026-07-06": "complete",
+    "2026-07-07": "partial",
+    "2026-07-08": "partial",
+    "2026-07-09": "partial",
+    "2026-07-10": "partial",
+    "2026-07-11": "partial",
+    "2026-07-12": "partial",
+    "2026-07-13": "complete",
+    "2026-07-14": "partial",
+    "2026-07-15": "partial",
+    "2026-07-16": "complete",
+    "2026-07-17": "partial",
+    "2026-07-18": "partial",
+    "2026-07-19": "partial",
+    "2026-07-20": "complete",
+    "2026-07-21": "partial",
+    "2026-07-22": "partial",
+    "2026-07-23": "complete",
+    "2026-07-24": "error_only",
+    "2026-07-25": "error_only",
+    "2026-07-26": "error_only",
+    "2026-07-27": "error_only",
+    "2026-07-28": "error_only",
+    "2026-07-29": "error_only",
+    "2026-07-30": "error_only",
+    "2026-07-31": "error_only",
+    "2026-08-01": "error_only",
+    "2026-08-02": "error_only",
+    "2026-08-03": "error_only",
+    "2026-08-04": "error_only",
+    "2026-08-05": "error_only",
+    "2026-08-06": "complete",
+    "2026-08-07": "complete",
+    "2026-08-08": "complete",
+    "2026-08-09": "complete",
+    "2026-08-10": "partial",
+    "2026-08-11": "partial",
+    "2026-08-12": "partial",
+    "2026-08-13": "complete",
+    "2026-08-14": "complete",
+    "2026-08-15": "complete",
+    "2026-08-16": "complete",
+    "2026-08-17": "complete",
+    "2026-08-18": "error_only",
+    "2026-08-19": "complete",
+    "2026-08-20": "complete",
+    "2026-08-21": "complete",
+    "2026-08-22": "complete",
+    "2026-08-23": "partial",
+    "2026-08-24": "complete",
+    "2026-08-25": "complete",
+    "2026-08-26": "complete",
+    "2026-08-27": "complete",
+    "2026-08-28": "complete",
+    "2026-08-29": "complete",
+    "2026-08-30": "complete",
+    "2026-08-31": "complete",
+    "2026-09-01": "complete",
+    "2026-09-02": "complete",
+    "2026-09-03": "complete",
+    "2026-09-05": "complete",
+    "2026-09-06": "complete",
+    "2026-09-07": "complete",
+    "2026-09-08": "complete",
+    "2026-09-09": "complete",
+    "2026-09-10": "complete",
+    "2026-09-11": "complete",
+    "2026-09-12": "complete",
+    "2026-09-13": "complete",
+    "2026-09-14": "complete",
+    "2026-09-15": "complete",
+    "2026-09-16": "partial",
+    "2026-09-17": "complete",
+    "2026-09-18": "error_only",
+    "2026-09-19": "error_only",
+    "2026-09-20": "error_only",
+    "2026-09-21": "error_only",
+    "2026-09-22": "error_only",
+    "2026-09-23": "error_only",
+    "2026-09-24": "error_only",
+    "2026-09-25": "error_only",
+    "2026-09-26": "error_only",
+    "2026-09-27": "error_only",
+    "2026-09-28": "complete",
+    "2026-09-29": "complete",
+    "2026-09-30": "complete"
+   },
+   "Gemini": {
+    "2026-05-13": "partial",
+    "2026-05-14": "partial",
+    "2026-05-15": "partial",
+    "2026-05-16": "complete",
+    "2026-05-17": "complete",
+    "2026-05-18": "complete",
+    "2026-05-19": "complete",
+    "2026-05-20": "complete",
+    "2026-05-21": "complete",
+    "2026-05-22": "complete",
+    "2026-05-23": "complete",
+    "2026-05-24": "complete",
+    "2026-05-25": "complete",
+    "2026-05-26": "complete",
+    "2026-05-27": "complete",
+    "2026-05-28": "complete",
+    "2026-05-29": "complete",
+    "2026-05-30": "complete",
+    "2026-05-31": "complete",
+    "2026-06-01": "complete",
+    "2026-06-02": "complete",
+    "2026-06-03": "complete",
+    "2026-06-04": "complete",
+    "2026-06-05": "complete",
+    "2026-06-06": "complete",
+    "2026-06-07": "complete",
+    "2026-06-08": "complete",
+    "2026-06-09": "complete",
+    "2026-06-10": "complete",
+    "2026-06-11": "complete",
+    "2026-06-12": "complete",
+    "2026-06-13": "complete",
+    "2026-06-14": "complete",
+    "2026-06-15": "complete",
+    "2026-06-16": "complete",
+    "2026-06-17": "complete",
+    "2026-06-18": "complete",
+    "2026-06-19": "complete",
+    "2026-06-20": "complete",
+    "2026-06-21": "complete",
+    "2026-06-22": "error_only",
+    "2026-06-23": "complete",
+    "2026-06-24": "partial",
+    "2026-06-25": "complete",
+    "2026-06-26": "complete",
+    "2026-06-27": "complete",
+    "2026-06-28": "complete",
+    "2026-06-29": "complete",
+    "2026-06-30": "complete",
+    "2026-07-01": "complete",
+    "2026-07-02": "complete",
+    "2026-07-03": "complete",
+    "2026-07-04": "complete",
+    "2026-07-05": "partial",
+    "2026-07-06": "complete",
+    "2026-07-07": "complete",
+    "2026-07-08": "complete",
+    "2026-07-09": "complete",
+    "2026-07-10": "complete",
+    "2026-07-11": "complete",
+    "2026-07-12": "complete",
+    "2026-07-13": "complete",
+    "2026-07-14": "complete",
+    "2026-07-15": "complete",
+    "2026-07-16": "complete",
+    "2026-07-17": "complete",
+    "2026-07-18": "complete",
+    "2026-07-19": "complete",
+    "2026-07-20": "complete",
+    "2026-07-21": "complete",
+    "2026-07-22": "complete",
+    "2026-07-23": "complete",
+    "2026-07-24": "complete",
+    "2026-07-25": "complete",
+    "2026-07-26": "complete",
+    "2026-07-27": "partial",
+    "2026-07-28": "complete",
+    "2026-07-29": "complete",
+    "2026-07-30": "complete",
+    "2026-07-31": "complete",
+    "2026-08-01": "partial",
+    "2026-08-02": "complete",
+    "2026-08-03": "complete",
+    "2026-08-04": "complete",
+    "2026-08-05": "partial",
+    "2026-08-06": "complete",
+    "2026-08-07": "partial",
+    "2026-08-08": "complete",
+    "2026-08-09": "complete",
+    "2026-08-10": "partial",
+    "2026-08-11": "complete",
+    "2026-08-12": "complete",
+    "2026-08-13": "complete",
+    "2026-08-14": "complete",
+    "2026-08-15": "complete",
+    "2026-08-16": "complete",
+    "2026-08-17": "complete",
+    "2026-08-18": "complete",
+    "2026-08-19": "complete",
+    "2026-08-20": "complete",
+    "2026-08-21": "complete",
+    "2026-08-22": "complete",
+    "2026-08-23": "complete",
+    "2026-08-24": "complete",
+    "2026-08-25": "complete",
+    "2026-08-26": "complete",
+    "2026-08-27": "complete",
+    "2026-08-28": "complete",
+    "2026-08-29": "complete",
+    "2026-08-30": "complete",
+    "2026-08-31": "complete",
+    "2026-09-01": "complete",
+    "2026-09-02": "complete",
+    "2026-09-03": "complete",
+    "2026-09-05": "complete",
+    "2026-09-06": "complete",
+    "2026-09-07": "complete",
+    "2026-09-08": "complete",
+    "2026-09-09": "complete",
+    "2026-09-10": "complete",
+    "2026-09-11": "complete",
+    "2026-09-12": "complete",
+    "2026-09-13": "complete",
+    "2026-09-14": "complete",
+    "2026-09-15": "complete",
+    "2026-09-16": "complete",
+    "2026-09-17": "complete",
+    "2026-09-18": "complete",
+    "2026-09-19": "complete",
+    "2026-09-20": "complete",
+    "2026-09-21": "complete",
+    "2026-09-22": "complete",
+    "2026-09-23": "complete",
+    "2026-09-24": "complete",
+    "2026-09-25": "complete",
+    "2026-09-26": "complete",
+    "2026-09-27": "complete",
+    "2026-09-28": "complete",
+    "2026-09-29": "complete",
+    "2026-09-30": "complete"
+   },
+   "Claude-Web": {
+    "2026-05-20": "partial",
+    "2026-05-23": "partial",
+    "2026-05-25": "complete",
+    "2026-05-26": "complete",
+    "2026-05-27": "complete",
+    "2026-05-28": "complete",
+    "2026-05-29": "partial",
+    "2026-05-30": "partial",
+    "2026-05-31": "complete",
+    "2026-06-01": "complete",
+    "2026-06-02": "complete",
+    "2026-06-03": "partial",
+    "2026-06-04": "partial",
+    "2026-06-05": "complete",
+    "2026-06-06": "partial",
+    "2026-06-07": "complete",
+    "2026-06-08": "complete",
+    "2026-06-09": "partial",
+    "2026-06-10": "complete",
+    "2026-06-11": "complete",
+    "2026-06-12": "complete",
+    "2026-06-13": "complete",
+    "2026-06-14": "complete",
+    "2026-06-15": "complete",
+    "2026-06-16": "partial",
+    "2026-06-17": "partial",
+    "2026-06-18": "complete",
+    "2026-06-19": "partial",
+    "2026-06-20": "complete",
+    "2026-06-21": "partial",
+    "2026-07-02": "complete",
+    "2026-07-03": "complete",
+    "2026-07-04": "complete",
+    "2026-07-22": "complete",
+    "2026-07-23": "complete",
+    "2026-07-24": "complete",
+    "2026-07-26": "error_only",
+    "2026-07-27": "complete",
+    "2026-07-28": "complete",
+    "2026-07-29": "complete",
+    "2026-07-30": "complete",
+    "2026-07-31": "complete",
+    "2026-08-01": "error_only",
+    "2026-08-02": "error_only",
+    "2026-08-03": "complete",
+    "2026-08-04": "complete",
+    "2026-08-05": "complete",
+    "2026-08-06": "complete",
+    "2026-08-07": "complete",
+    "2026-08-08": "complete",
+    "2026-08-09": "complete",
+    "2026-08-10": "complete",
+    "2026-08-11": "complete",
+    "2026-08-12": "complete",
+    "2026-08-13": "complete",
+    "2026-08-14": "complete",
+    "2026-08-15": "complete",
+    "2026-08-16": "complete",
+    "2026-08-17": "complete",
+    "2026-08-18": "complete",
+    "2026-08-19": "complete",
+    "2026-08-22": "complete",
+    "2026-08-23": "error_only",
+    "2026-08-24": "complete",
+    "2026-08-25": "complete",
+    "2026-08-26": "complete",
+    "2026-08-27": "complete",
+    "2026-08-28": "complete",
+    "2026-09-02": "complete",
+    "2026-09-04": "complete",
+    "2026-09-06": "complete",
+    "2026-09-09": "complete",
+    "2026-09-12": "error_only",
+    "2026-09-15": "complete",
+    "2026-09-19": "complete",
+    "2026-09-21": "complete",
+    "2026-09-24": "complete",
+    "2026-09-27": "error_only",
+    "2026-09-30": "complete"
+   }
+  },
+  "model_changes": [
+   {
+    "provider": "Claude-Web",
+    "unit": "claude-opus-4.7 (web)",
+    "first_day": "2026-05-23",
+    "last_day": "2026-05-25"
+   },
+   {
+    "provider": "Claude-Web",
+    "unit": "claude-sonnet-4.6 (web)",
+    "first_day": "2026-05-23",
+    "last_day": "2026-05-23"
+   },
+   {
+    "provider": "Claude-Web",
+    "unit": "claude-opus-4-8",
+    "first_day": "2026-07-02",
+    "last_day": "2026-09-30"
+   },
+   {
+    "provider": "Claude-Web",
+    "unit": "claude-haiku-4-5-20251001",
+    "first_day": "2026-07-02",
+    "last_day": "2026-09-30"
+   },
+   {
+    "provider": "Claude-Web",
+    "unit": "claude-opus-4-7",
+    "retired_after": "2026-06-21"
+   },
+   {
+    "provider": "Claude-Web",
+    "unit": "claude-haiku-4-5",
+    "retired_after": "2026-06-21"
+   }
+  ],
+  "alarm_check_rebase_down": [
+   {
+    "provider": "OpenAI",
+    "alarm_day": "2026-08-27",
+    "x": 20.83,
+    "reference": [
+     "2026-07-20",
+     "2026-08-16"
+    ],
+    "ref_mu": 25.21,
+    "ref_sd": 3.32,
+    "interval": [
+     "2026-08-17",
+     "2026-08-27"
+    ],
+    "interval_measuring_days": 9,
+    "interval_mean": 22.91,
+    "interval_minus_ref": -2.3,
+    "top_questions": [
+     {
+      "question_id": "D1",
+      "mean_ref": 2.5,
+      "mean_interval": 2.0,
+      "contribution_pp": -1.04
+     },
+     {
+      "question_id": "L2",
+      "mean_ref": 1.2,
+      "mean_interval": 0.89,
+      "contribution_pp": -0.65
+     },
+     {
+      "question_id": "GR4",
+      "mean_ref": 0.3,
+      "mean_interval": 0.0,
+      "contribution_pp": -0.62
+     }
+    ],
+    "status_shift_top2": {
+     "reference": {
+      "partial_book": 11,
+      "full_citation": 5,
+      "not_found_no_anchor": 4
+     },
+     "interval": {
+      "partial_book": 7,
+      "not_found_no_anchor": 5,
+      "full_citation": 4,
+      "not_found_disclaimed": 2
+     }
+    },
+    "events_in_interval": [
+     {
+      "id": 3,
+      "effect": "missing",
+      "from": "2026-08-18",
+      "to": "2026-08-18",
+      "questions": null,
+      "not_matched_because": "effect_missing",
+      "de": "Kontingent des Messkontos erschöpft",
+      "en": "quota of the measurement account exhausted"
+     },
+     {
+      "id": 4,
+      "effect": "sampling",
+      "from": "2026-08-19",
+      "to": "2026-08-19",
+      "questions": null,
+      "not_matched_because": "effect_sampling",
+      "de": "Kadenz: alle drei Tage statt täglich",
+      "en": "cadence: every three days instead of daily"
+     },
+     {
+      "id": 5,
+      "effect": "level",
+      "from": "2026-08-27",
+      "to": "2026-08-27",
+      "questions": null,
+      "not_matched_because": "same_day_as_alarm",
+      "de": "Eingriff: Eintrag in eine kuratierte Fremdliste eingereicht",
+      "en": "intervention: entry submitted to a curated third-party list"
+     },
+     {
+      "id": 7,
+      "effect": "none",
+      "from": "2026-08-22",
+      "to": "2026-09-03",
+      "questions": null,
+      "not_matched_because": "effect_none",
+      "de": "Doppelzeilen entfernt (Dedupe-Korrektur)",
+      "en": "duplicate rows removed (dedupe correction)"
+     },
+     {
+      "id": 9,
+      "effect": "none",
+      "from": "2026-05-13",
+      "to": "2026-08-21",
+      "questions": null,
+      "not_matched_because": "effect_none",
+      "de": "Dedupe-Regel in der Auswertung statt Löschung",
+      "en": "dedupe rule in the analysis instead of deletion"
+     }
+    ],
+    "matched_level_events": [],
+    "verdict": "unexplained_with_events"
+   },
+   {
+    "provider": "OpenAI",
+    "alarm_day": "2026-09-30",
+    "x": 20.83,
+    "reference": [
+     "2026-08-28",
+     "2026-09-07"
+    ],
+    "ref_mu": 25.62,
+    "ref_sd": 3.26,
+    "interval": [
+     "2026-09-08",
+     "2026-09-30"
+    ],
+    "interval_measuring_days": 12,
+    "interval_mean": 24.04,
+    "interval_minus_ref": -1.58,
+    "top_questions": [
+     {
+      "question_id": "L2",
+      "mean_ref": 1.9,
+      "mean_interval": 1.08,
+      "contribution_pp": -1.7
+     },
+     {
+      "question_id": "GR6",
+      "mean_ref": 0.9,
+      "mean_interval": 0.5,
+      "contribution_pp": -0.83
+     },
+     {
+      "question_id": "L1",
+      "mean_ref": 2.9,
+      "mean_interval": 2.67,
+      "contribution_pp": -0.49
+     }
+    ],
+    "status_shift_top2": {
+     "reference": {
+      "genre_baseline_no_marin": 7,
+      "partial_book": 5,
+      "full_citation": 3,
+      "genre_placement": 3,
+      "not_found_no_anchor": 2
+     },
+     "interval": {
+      "genre_baseline_no_marin": 10,
+      "not_found_no_anchor": 6,
+      "partial_book": 5,
+      "genre_placement": 2,
+      "full_citation": 1
+     }
+    },
+    "events_in_interval": [
+     {
+      "id": 17,
+      "effect": "missing",
+      "from": "2026-09-18",
+      "to": "2026-09-27",
+      "questions": null,
+      "not_matched_because": "effect_missing",
+      "de": "Kontingent des Messkontos erschöpft",
+      "en": "quota of the measurement account exhausted"
+     },
+     {
+      "id": 18,
+      "effect": "level",
+      "from": "2026-09-15",
+      "to": "2026-09-15",
+      "questions": [
+       "D3"
+      ],
+      "not_matched_because": "other_questions",
+      "de": "Erscheinungstermin öffentlich vom 22.09. auf den 08.10. verschoben (betrifft die Terminfrage D3)",
+      "en": "release date publicly moved from 22 Sep to 8 Oct (affects the date question D3)"
+     }
+    ],
+    "matched_level_events": [],
+    "verdict": "unexplained_with_events"
+   },
+   {
+    "provider": "Gemini",
+    "alarm_day": "2026-08-14",
+    "x": 8.33,
+    "reference": [
+     "2026-07-12",
+     "2026-07-21"
+    ],
+    "ref_mu": 20.94,
+    "ref_sd": 4.92,
+    "interval": [
+     "2026-07-22",
+     "2026-08-14"
+    ],
+    "interval_measuring_days": 19,
+    "interval_mean": 18.09,
+    "interval_minus_ref": -2.85,
+    "top_questions": [
+     {
+      "question_id": "D2",
+      "mean_ref": 2.8,
+      "mean_interval": 2.26,
+      "contribution_pp": -1.12
+     },
+     {
+      "question_id": "GR6",
+      "mean_ref": 0.9,
+      "mean_interval": 0.47,
+      "contribution_pp": -0.89
+     },
+     {
+      "question_id": "D3",
+      "mean_ref": 1.7,
+      "mean_interval": 1.53,
+      "contribution_pp": -0.36
+     }
+    ],
+    "status_shift_top2": {
+     "reference": {
+      "full_citation": 8,
+      "genre_baseline_no_marin": 7,
+      "genre_placement": 3,
+      "partial_book": 2
+     },
+     "interval": {
+      "genre_baseline_no_marin": 13,
+      "full_citation": 11,
+      "partial_book": 5,
+      "not_found": 5,
+      "genre_placement": 3,
+      "not_found_disclaimed": 1
+     }
+    },
+    "events_in_interval": [
+     {
+      "id": 9,
+      "effect": "none",
+      "from": "2026-05-13",
+      "to": "2026-08-21",
+      "questions": null,
+      "not_matched_because": "effect_none",
+      "de": "Dedupe-Regel in der Auswertung statt Löschung",
+      "en": "dedupe rule in the analysis instead of deletion"
+     }
+    ],
+    "matched_level_events": [],
+    "verdict": "unexplained_with_events"
+   },
+   {
+    "provider": "Claude-Web",
+    "alarm_day": "2026-08-17",
+    "x": 11.11,
+    "reference": [
+     "2026-07-03",
+     "2026-07-31"
+    ],
+    "ref_mu": 16.74,
+    "ref_sd": 2.77,
+    "interval": [
+     "2026-08-01",
+     "2026-08-17"
+    ],
+    "interval_measuring_days": 15,
+    "interval_mean": 14.72,
+    "interval_minus_ref": -2.02,
+    "top_questions": [
+     {
+      "question_id": "L1",
+      "mean_ref": 1.07,
+      "mean_interval": 0.11,
+      "contribution_pp": -1.99
+     },
+     {
+      "question_id": "D1",
+      "mean_ref": 2.37,
+      "mean_interval": 1.93,
+      "contribution_pp": -0.9
+     },
+     {
+      "question_id": "C1",
+      "mean_ref": 0.0,
+      "mean_interval": 0.0,
+      "contribution_pp": 0.0
+     }
+    ],
+    "status_shift_top2": {
+     "reference": {
+      "full_citation": 34,
+      "not_found_no_anchor": 18,
+      "partial_book": 5,
+      "hallucinated": 3
+     },
+     "interval": {
+      "not_found_no_anchor": 43,
+      "full_citation": 38,
+      "hallucinated": 8,
+      "partial_book": 1
+     }
+    },
+    "events_in_interval": [],
+    "matched_level_events": [],
+    "verdict": "unexplained_no_event"
+   },
+   {
+    "provider": "Claude-Web",
+    "alarm_day": "2026-09-19",
+    "x": -2.08,
+    "reference": [
+     "2026-08-18",
+     "2026-09-04"
+    ],
+    "ref_mu": 14.86,
+    "ref_sd": 2.06,
+    "interval": [
+     "2026-09-05",
+     "2026-09-19"
+    ],
+    "interval_measuring_days": 4,
+    "interval_mean": 10.85,
+    "interval_minus_ref": -4.01,
+    "top_questions": [
+     {
+      "question_id": "D1",
+      "mean_ref": 1.97,
+      "mean_interval": 1.17,
+      "contribution_pp": -1.67
+     },
+     {
+      "question_id": "D2",
+      "mean_ref": 3.0,
+      "mean_interval": 2.25,
+      "contribution_pp": -1.56
+     },
+     {
+      "question_id": "D3",
+      "mean_ref": 1.97,
+      "mean_interval": 1.67,
+      "contribution_pp": -0.62
+     }
+    ],
+    "status_shift_top2": {
+     "reference": {
+      "full_citation": 54,
+      "hallucinated": 5,
+      "partial_book": 1
+     },
+     "interval": {
+      "full_citation": 17,
+      "hallucinated": 4,
+      "not_found_disclaimed": 2,
+      "partial_book": 1
+     }
+    },
+    "events_in_interval": [
+     {
+      "id": 16,
+      "effect": "missing",
+      "from": "2026-09-12",
+      "to": "2026-09-12",
+      "questions": null,
+      "not_matched_because": "effect_missing",
+      "de": "Drosselung durch den Anbieter, alle Antworten Fehler",
+      "en": "provider throttling, all answers errors"
+     },
+     {
+      "id": 18,
+      "effect": "level",
+      "from": "2026-09-15",
+      "to": "2026-09-15",
+      "questions": [
+       "D3"
+      ],
+      "not_matched_because": "other_questions",
+      "de": "Erscheinungstermin öffentlich vom 22.09. auf den 08.10. verschoben (betrifft die Terminfrage D3)",
+      "en": "release date publicly moved from 22 Sep to 8 Oct (affects the date question D3)"
+     },
+     {
+      "id": 23,
+      "effect": "timing",
+      "from": "2026-09-18",
+      "to": "2026-09-19",
+      "questions": null,
+      "not_matched_because": "effect_timing",
+      "de": "Ankertag 18.09. nicht gemessen, Nachholung am 19.09.",
+      "en": "anchor day 18 Sep not measured, catch-up on 19 Sep"
+     }
+    ],
+    "matched_level_events": [],
+    "verdict": "unexplained_with_events"
+   }
+  ],
+  "cusum_rolling30": {
+   "OpenAI": {
+    "n_monitored": 54,
+    "n_sd_zero_days": 0,
+    "alarms": [
+     {
+      "d": "2026-06-12",
+      "direction": "up",
+      "x": 16.67,
+      "ref_mu": 8.72,
+      "ref_sd": 8.03,
+      "ref_n": 16,
+      "events_7d_before": [
+       9
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-07-20",
+      "direction": "up",
+      "x": 31.25,
+      "ref_mu": 20.83,
+      "ref_sd": 10.03,
+      "ref_n": 11,
+      "events_7d_before": [
+       9
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-09-30",
+      "direction": "down",
+      "x": 20.83,
+      "ref_mu": 25.17,
+      "ref_sd": 4.11,
+      "ref_n": 18,
+      "events_7d_before": [
+       17
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     }
+    ]
+   },
+   "Gemini": {
+    "n_monitored": 119,
+    "n_sd_zero_days": 0,
+    "alarms": [
+     {
+      "d": "2026-06-19",
+      "direction": "up",
+      "x": 10.42,
+      "ref_mu": 3.19,
+      "ref_sd": 5.74,
+      "ref_n": 30,
+      "events_7d_before": [
+       9
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-07-06",
+      "direction": "up",
+      "x": 22.92,
+      "ref_mu": 7.72,
+      "ref_sd": 4.72,
+      "ref_n": 27,
+      "events_7d_before": [
+       9
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-07-12",
+      "direction": "up",
+      "x": 27.08,
+      "ref_mu": 9.95,
+      "ref_sd": 6.03,
+      "ref_n": 27,
+      "events_7d_before": [
+       9
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-07-17",
+      "direction": "up",
+      "x": 20.83,
+      "ref_mu": 13.08,
+      "ref_sd": 8.18,
+      "ref_n": 27,
+      "events_7d_before": [
+       9
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-08-15",
+      "direction": "down",
+      "x": 0.0,
+      "ref_mu": 18.17,
+      "ref_sd": 5.88,
+      "ref_n": 25,
+      "events_7d_before": [
+       9
+      ],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     }
+    ]
+   },
+   "Claude-Web": {
+    "n_monitored": 53,
+    "n_sd_zero_days": 0,
+    "alarms": [
+     {
+      "d": "2026-06-07",
+      "direction": "up",
+      "x": -1.04,
+      "ref_mu": -8.9,
+      "ref_sd": 4.74,
+      "ref_n": 15,
+      "events_7d_before": [],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-06-13",
+      "direction": "up",
+      "x": 0.0,
+      "ref_mu": -6.47,
+      "ref_sd": 5.59,
+      "ref_n": 21,
+      "events_7d_before": [],
+      "level_events_7d_before": [],
+      "model_change_7d_before": []
+     },
+     {
+      "d": "2026-07-02",
+      "direction": "up",
+      "x": 12.5,
+      "ref_mu": -1.8,
+      "ref_sd": 4.11,
+      "ref_n": 20,
+      "events_7d_before": [
+       "M-Claude-Web-2026-07-02"
+      ],
+      "level_events_7d_before": [
+       "M-Claude-Web-2026-07-02"
+      ],
+      "model_change_7d_before": [
+       "M-Claude-Web-2026-07-02"
+      ]
+     },
+     {
+      "d": "2026-07-04",
+      "direction": "up",
+      "x": 19.1,
+      "ref_mu": 0.68,
+      "ref_sd": 6.13,
+      "ref_n": 20,
+      "events_7d_before": [
+       "M-Claude-Web-2026-07-02"
+      ],
+      "level_events_7d_before": [
+       "M-Claude-Web-2026-07-02"
+      ],
+      "model_change_7d_before": [
+       "M-Claude-Web-2026-07-02"
+      ]
+     },
+     {
+      "d": "2026-09-19",
+      "direction": "down",
+      "x": -2.08,
+      "ref_mu": 15.02,
+      "ref_sd": 2.14,
+      "ref_n": 11,
+      "events_7d_before": [
+       16,
+       18,
+       23
+      ],
+      "level_events_7d_before": [
+       18
+      ],
+      "model_change_7d_before": []
+     }
+    ]
+   }
+  },
+  "cusum_rolling30_path": {
+   "OpenAI": [
+    {
+     "d": "2026-05-24",
+     "x": 4.17,
+     "mu": 5.73,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-25",
+     "x": 7.29,
+     "mu": 5.59,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-26",
+     "x": 14.58,
+     "mu": 5.73,
+     "s_up": 0.95,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-27",
+     "x": 10.42,
+     "mu": 6.41,
+     "s_up": 1.08,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-10",
+     "x": 20.83,
+     "mu": 6.7,
+     "s_up": 2.86,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-11",
+     "x": 25.0,
+     "mu": 7.64,
+     "s_up": 4.84,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-12",
+     "x": 16.67,
+     "mu": 8.72,
+     "s_up": 5.33,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-14",
+     "x": 12.5,
+     "mu": 9.77,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-16",
+     "x": 16.67,
+     "mu": 11.25,
+     "s_up": 0.26,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-18",
+     "x": 22.92,
+     "mu": 13.1,
+     "s_up": 1.35,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-23",
+     "x": 18.75,
+     "mu": 15.11,
+     "s_up": 1.39,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-24",
+     "x": 10.42,
+     "mu": 16.56,
+     "s_up": 0.0,
+     "s_down": 0.6
+    },
+    {
+     "d": "2026-06-25",
+     "x": 10.42,
+     "mu": 16.88,
+     "s_up": 0.0,
+     "s_down": 1.38
+    },
+    {
+     "d": "2026-06-26",
+     "x": 29.17,
+     "mu": 16.46,
+     "s_up": 1.85,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-27",
+     "x": 20.83,
+     "mu": 18.33,
+     "s_up": 1.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-28",
+     "x": 12.5,
+     "mu": 18.56,
+     "s_up": 0.23,
+     "s_down": 0.51
+    },
+    {
+     "d": "2026-06-30",
+     "x": 6.25,
+     "mu": 18.06,
+     "s_up": 0.0,
+     "s_down": 1.98
+    },
+    {
+     "d": "2026-07-03",
+     "x": 22.92,
+     "mu": 17.15,
+     "s_up": 0.37,
+     "s_down": 0.61
+    },
+    {
+     "d": "2026-07-06",
+     "x": 31.25,
+     "mu": 17.56,
+     "s_up": 1.97,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-13",
+     "x": 35.42,
+     "mu": 17.88,
+     "s_up": 3.72,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-16",
+     "x": 31.25,
+     "mu": 19.79,
+     "s_up": 4.48,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-20",
+     "x": 31.25,
+     "mu": 20.83,
+     "s_up": 5.02,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-23",
+     "x": 27.08,
+     "mu": 21.7,
+     "s_up": 0.04,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-17",
+     "x": 27.08,
+     "mu": 25.21,
+     "s_up": 0.1,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-19",
+     "x": 22.92,
+     "mu": 25.38,
+     "s_up": 0.0,
+     "s_down": 0.27
+    },
+    {
+     "d": "2026-08-20",
+     "x": 33.33,
+     "mu": 24.62,
+     "s_up": 2.85,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-21",
+     "x": 20.83,
+     "mu": 25.35,
+     "s_up": 1.07,
+     "s_down": 0.78
+    },
+    {
+     "d": "2026-08-22",
+     "x": 20.83,
+     "mu": 25.0,
+     "s_up": 0.0,
+     "s_down": 1.43
+    },
+    {
+     "d": "2026-08-24",
+     "x": 20.83,
+     "mu": 24.52,
+     "s_up": 0.0,
+     "s_down": 1.92
+    },
+    {
+     "d": "2026-08-25",
+     "x": 27.08,
+     "mu": 24.25,
+     "s_up": 0.26,
+     "s_down": 0.66
+    },
+    {
+     "d": "2026-08-26",
+     "x": 12.5,
+     "mu": 24.44,
+     "s_up": 0.0,
+     "s_down": 3.44
+    },
+    {
+     "d": "2026-08-27",
+     "x": 20.83,
+     "mu": 23.7,
+     "s_up": 0.0,
+     "s_down": 3.56
+    },
+    {
+     "d": "2026-08-28",
+     "x": 25.0,
+     "mu": 23.53,
+     "s_up": 0.0,
+     "s_down": 2.73
+    },
+    {
+     "d": "2026-08-29",
+     "x": 22.92,
+     "mu": 23.61,
+     "s_up": 0.0,
+     "s_down": 2.39
+    },
+    {
+     "d": "2026-08-30",
+     "x": 22.92,
+     "mu": 23.57,
+     "s_up": 0.0,
+     "s_down": 2.04
+    },
+    {
+     "d": "2026-08-31",
+     "x": 22.92,
+     "mu": 23.54,
+     "s_up": 0.0,
+     "s_down": 1.69
+    },
+    {
+     "d": "2026-09-01",
+     "x": 25.0,
+     "mu": 23.51,
+     "s_up": 0.0,
+     "s_down": 0.82
+    },
+    {
+     "d": "2026-09-02",
+     "x": 27.08,
+     "mu": 23.58,
+     "s_up": 0.38,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-03",
+     "x": 33.33,
+     "mu": 23.73,
+     "s_up": 2.3,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-05",
+     "x": 27.08,
+     "mu": 24.13,
+     "s_up": 2.48,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-06",
+     "x": 27.08,
+     "mu": 24.3,
+     "s_up": 2.62,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-07",
+     "x": 22.92,
+     "mu": 24.3,
+     "s_up": 1.8,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-08",
+     "x": 29.17,
+     "mu": 24.13,
+     "s_up": 2.46,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-09",
+     "x": 22.92,
+     "mu": 24.39,
+     "s_up": 1.63,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-10",
+     "x": 28.12,
+     "mu": 24.33,
+     "s_up": 2.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-11",
+     "x": 27.08,
+     "mu": 24.48,
+     "s_up": 2.1,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-12",
+     "x": 27.08,
+     "mu": 24.57,
+     "s_up": 2.18,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-13",
+     "x": 25.0,
+     "mu": 24.81,
+     "s_up": 1.73,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-14",
+     "x": 27.08,
+     "mu": 24.81,
+     "s_up": 1.76,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-15",
+     "x": 22.92,
+     "mu": 24.81,
+     "s_up": 0.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-17",
+     "x": 25.0,
+     "mu": 24.8,
+     "s_up": 0.37,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-28",
+     "x": 14.58,
+     "mu": 25.87,
+     "s_up": 0.0,
+     "s_down": 3.51
+    },
+    {
+     "d": "2026-09-29",
+     "x": 18.75,
+     "mu": 25.4,
+     "s_up": 0.0,
+     "s_down": 4.74
+    },
+    {
+     "d": "2026-09-30",
+     "x": 20.83,
+     "mu": 25.17,
+     "s_up": 0.0,
+     "s_down": 5.3
+    }
+   ],
+   "Gemini": [
+    {
+     "d": "2026-05-26",
+     "x": 1.04,
+     "mu": 2.08,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-27",
+     "x": 1.04,
+     "mu": 1.99,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-28",
+     "x": -2.08,
+     "mu": 1.91,
+     "s_up": 0.0,
+     "s_down": 0.27
+    },
+    {
+     "d": "2026-05-29",
+     "x": 1.04,
+     "mu": 1.6,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-30",
+     "x": 7.29,
+     "mu": 1.56,
+     "s_up": 0.67,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-31",
+     "x": 1.04,
+     "mu": 1.94,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-01",
+     "x": -3.12,
+     "mu": 1.89,
+     "s_up": 0.0,
+     "s_down": 0.55
+    },
+    {
+     "d": "2026-06-02",
+     "x": -11.46,
+     "mu": 1.59,
+     "s_up": 0.0,
+     "s_down": 2.78
+    },
+    {
+     "d": "2026-06-03",
+     "x": 0.0,
+     "mu": 0.87,
+     "s_up": 0.0,
+     "s_down": 2.44
+    },
+    {
+     "d": "2026-06-04",
+     "x": -2.08,
+     "mu": 0.82,
+     "s_up": 0.0,
+     "s_down": 2.48
+    },
+    {
+     "d": "2026-06-05",
+     "x": 6.25,
+     "mu": 0.68,
+     "s_up": 0.55,
+     "s_down": 0.92
+    },
+    {
+     "d": "2026-06-06",
+     "x": 8.33,
+     "mu": 0.94,
+     "s_up": 1.44,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-07",
+     "x": 0.0,
+     "mu": 1.28,
+     "s_up": 0.71,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-08",
+     "x": 6.25,
+     "mu": 1.22,
+     "s_up": 1.16,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-09",
+     "x": 0.0,
+     "mu": 1.43,
+     "s_up": 0.38,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-10",
+     "x": 6.25,
+     "mu": 1.37,
+     "s_up": 0.83,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-11",
+     "x": 12.5,
+     "mu": 1.56,
+     "s_up": 2.44,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-12",
+     "x": 6.25,
+     "mu": 1.97,
+     "s_up": 2.73,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-13",
+     "x": 6.25,
+     "mu": 2.12,
+     "s_up": 2.98,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-14",
+     "x": 12.5,
+     "mu": 2.26,
+     "s_up": 4.38,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-15",
+     "x": 6.25,
+     "mu": 2.6,
+     "s_up": 4.53,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-16",
+     "x": 6.25,
+     "mu": 2.74,
+     "s_up": 4.65,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-17",
+     "x": 6.25,
+     "mu": 2.88,
+     "s_up": 4.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-18",
+     "x": 6.25,
+     "mu": 3.05,
+     "s_up": 4.8,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-19",
+     "x": 10.42,
+     "mu": 3.19,
+     "s_up": 5.56,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-20",
+     "x": 4.17,
+     "mu": 3.3,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-21",
+     "x": 12.5,
+     "mu": 3.4,
+     "s_up": 1.06,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-23",
+     "x": 4.17,
+     "mu": 4.09,
+     "s_up": 0.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-25",
+     "x": 6.25,
+     "mu": 4.06,
+     "s_up": 0.48,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-26",
+     "x": 4.17,
+     "mu": 4.24,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-27",
+     "x": 6.25,
+     "mu": 4.35,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-28",
+     "x": 14.58,
+     "mu": 4.65,
+     "s_up": 1.42,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-29",
+     "x": 10.42,
+     "mu": 5.13,
+     "s_up": 1.89,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-30",
+     "x": 10.42,
+     "mu": 5.25,
+     "s_up": 2.32,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-01",
+     "x": 18.75,
+     "mu": 5.58,
+     "s_up": 4.2,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-02",
+     "x": 0.0,
+     "mu": 6.36,
+     "s_up": 2.6,
+     "s_down": 0.59
+    },
+    {
+     "d": "2026-07-03",
+     "x": 6.25,
+     "mu": 6.77,
+     "s_up": 1.99,
+     "s_down": 0.2
+    },
+    {
+     "d": "2026-07-04",
+     "x": 16.67,
+     "mu": 6.99,
+     "s_up": 3.58,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-06",
+     "x": 22.92,
+     "mu": 7.72,
+     "s_up": 6.29,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-07",
+     "x": 4.17,
+     "mu": 8.26,
+     "s_up": 0.0,
+     "s_down": 0.24
+    },
+    {
+     "d": "2026-07-08",
+     "x": 14.58,
+     "mu": 8.41,
+     "s_up": 0.65,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-09",
+     "x": 16.67,
+     "mu": 8.72,
+     "s_up": 1.6,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-10",
+     "x": 11.46,
+     "mu": 9.34,
+     "s_up": 1.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-11",
+     "x": 23.96,
+     "mu": 9.53,
+     "s_up": 3.67,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-12",
+     "x": 27.08,
+     "mu": 9.95,
+     "s_up": 6.01,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-13",
+     "x": 17.71,
+     "mu": 10.73,
+     "s_up": 0.52,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-14",
+     "x": 29.17,
+     "mu": 11.15,
+     "s_up": 2.64,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-15",
+     "x": 25.0,
+     "mu": 11.77,
+     "s_up": 3.85,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-16",
+     "x": 22.92,
+     "mu": 12.46,
+     "s_up": 4.66,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-17",
+     "x": 20.83,
+     "mu": 13.08,
+     "s_up": 5.1,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-18",
+     "x": 16.67,
+     "mu": 13.62,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-19",
+     "x": 14.58,
+     "mu": 14.01,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-20",
+     "x": 16.67,
+     "mu": 14.16,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-21",
+     "x": 18.75,
+     "mu": 14.62,
+     "s_up": 0.03,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-22",
+     "x": 16.67,
+     "mu": 14.85,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-23",
+     "x": 22.92,
+     "mu": 14.92,
+     "s_up": 0.54,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-24",
+     "x": 12.5,
+     "mu": 15.59,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-25",
+     "x": 22.92,
+     "mu": 15.48,
+     "s_up": 0.5,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-26",
+     "x": 18.75,
+     "mu": 16.06,
+     "s_up": 0.37,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-28",
+     "x": 20.83,
+     "mu": 16.93,
+     "s_up": 0.44,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-29",
+     "x": 22.92,
+     "mu": 17.15,
+     "s_up": 0.79,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-30",
+     "x": 16.67,
+     "mu": 17.6,
+     "s_up": 0.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-31",
+     "x": 19.79,
+     "mu": 17.82,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-02",
+     "x": 28.12,
+     "mu": 18.52,
+     "s_up": 1.17,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-03",
+     "x": 23.96,
+     "mu": 19.33,
+     "s_up": 1.51,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-04",
+     "x": 20.83,
+     "mu": 19.6,
+     "s_up": 1.23,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-06",
+     "x": 0.0,
+     "mu": 19.52,
+     "s_up": 0.0,
+     "s_down": 3.04
+    },
+    {
+     "d": "2026-08-08",
+     "x": 16.67,
+     "mu": 19.55,
+     "s_up": 0.0,
+     "s_down": 3.02
+    },
+    {
+     "d": "2026-08-09",
+     "x": 26.04,
+     "mu": 19.55,
+     "s_up": 0.58,
+     "s_down": 1.45
+    },
+    {
+     "d": "2026-08-11",
+     "x": 16.67,
+     "mu": 19.96,
+     "s_up": 0.0,
+     "s_down": 1.49
+    },
+    {
+     "d": "2026-08-12",
+     "x": 16.67,
+     "mu": 19.54,
+     "s_up": 0.0,
+     "s_down": 1.49
+    },
+    {
+     "d": "2026-08-13",
+     "x": 12.5,
+     "mu": 19.5,
+     "s_up": 0.0,
+     "s_down": 2.18
+    },
+    {
+     "d": "2026-08-14",
+     "x": 8.33,
+     "mu": 18.83,
+     "s_up": 0.0,
+     "s_down": 3.54
+    },
+    {
+     "d": "2026-08-15",
+     "x": 0.0,
+     "mu": 18.17,
+     "s_up": 0.0,
+     "s_down": 6.13
+    },
+    {
+     "d": "2026-08-16",
+     "x": 10.42,
+     "mu": 17.25,
+     "s_up": 0.0,
+     "s_down": 0.5
+    },
+    {
+     "d": "2026-08-17",
+     "x": 12.5,
+     "mu": 16.83,
+     "s_up": 0.0,
+     "s_down": 0.63
+    },
+    {
+     "d": "2026-08-18",
+     "x": 16.67,
+     "mu": 16.67,
+     "s_up": 0.0,
+     "s_down": 0.13
+    },
+    {
+     "d": "2026-08-19",
+     "x": 4.17,
+     "mu": 16.75,
+     "s_up": 0.0,
+     "s_down": 1.44
+    },
+    {
+     "d": "2026-08-20",
+     "x": 4.17,
+     "mu": 16.25,
+     "s_up": 0.0,
+     "s_down": 2.57
+    },
+    {
+     "d": "2026-08-21",
+     "x": 10.42,
+     "mu": 15.67,
+     "s_up": 0.0,
+     "s_down": 2.75
+    },
+    {
+     "d": "2026-08-22",
+     "x": 25.0,
+     "mu": 15.42,
+     "s_up": 0.73,
+     "s_down": 1.03
+    },
+    {
+     "d": "2026-08-23",
+     "x": 16.67,
+     "mu": 15.5,
+     "s_up": 0.37,
+     "s_down": 0.38
+    },
+    {
+     "d": "2026-08-24",
+     "x": 22.92,
+     "mu": 15.67,
+     "s_up": 0.79,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-25",
+     "x": 4.17,
+     "mu": 15.67,
+     "s_up": 0.0,
+     "s_down": 0.96
+    },
+    {
+     "d": "2026-08-26",
+     "x": 16.67,
+     "mu": 15.08,
+     "s_up": 0.0,
+     "s_down": 0.26
+    },
+    {
+     "d": "2026-08-27",
+     "x": 4.17,
+     "mu": 15.15,
+     "s_up": 0.0,
+     "s_down": 1.13
+    },
+    {
+     "d": "2026-08-28",
+     "x": 16.67,
+     "mu": 14.5,
+     "s_up": 0.0,
+     "s_down": 0.37
+    },
+    {
+     "d": "2026-08-29",
+     "x": 23.96,
+     "mu": 14.26,
+     "s_up": 0.7,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-30",
+     "x": 17.71,
+     "mu": 14.54,
+     "s_up": 0.59,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-31",
+     "x": 20.83,
+     "mu": 14.46,
+     "s_up": 0.86,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-01",
+     "x": 4.17,
+     "mu": 14.7,
+     "s_up": 0.0,
+     "s_down": 0.79
+    },
+    {
+     "d": "2026-09-02",
+     "x": 30.21,
+     "mu": 13.81,
+     "s_up": 1.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-03",
+     "x": 15.62,
+     "mu": 14.04,
+     "s_up": 1.26,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-05",
+     "x": 6.25,
+     "mu": 13.85,
+     "s_up": 0.0,
+     "s_down": 0.42
+    },
+    {
+     "d": "2026-09-06",
+     "x": 16.67,
+     "mu": 14.08,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-07",
+     "x": 23.96,
+     "mu": 14.18,
+     "s_up": 0.76,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-08",
+     "x": 23.96,
+     "mu": 14.44,
+     "s_up": 1.45,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-09",
+     "x": 20.83,
+     "mu": 14.36,
+     "s_up": 1.78,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-10",
+     "x": 22.92,
+     "mu": 14.58,
+     "s_up": 2.34,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-11",
+     "x": 22.92,
+     "mu": 14.8,
+     "s_up": 2.86,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-12",
+     "x": 7.29,
+     "mu": 15.02,
+     "s_up": 1.41,
+     "s_down": 0.45
+    },
+    {
+     "d": "2026-09-13",
+     "x": 12.5,
+     "mu": 14.84,
+     "s_up": 0.62,
+     "s_down": 0.24
+    },
+    {
+     "d": "2026-09-14",
+     "x": 16.67,
+     "mu": 14.98,
+     "s_up": 0.33,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-15",
+     "x": 18.75,
+     "mu": 15.55,
+     "s_up": 0.25,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-16",
+     "x": 20.83,
+     "mu": 15.84,
+     "s_up": 0.41,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-17",
+     "x": 10.42,
+     "mu": 16.13,
+     "s_up": 0.0,
+     "s_down": 0.25
+    },
+    {
+     "d": "2026-09-18",
+     "x": 25.0,
+     "mu": 15.91,
+     "s_up": 0.69,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-19",
+     "x": 22.92,
+     "mu": 16.63,
+     "s_up": 1.02,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-20",
+     "x": 20.83,
+     "mu": 17.28,
+     "s_up": 1.02,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-21",
+     "x": 10.42,
+     "mu": 17.64,
+     "s_up": 0.0,
+     "s_down": 0.52
+    },
+    {
+     "d": "2026-09-22",
+     "x": 10.42,
+     "mu": 17.13,
+     "s_up": 0.0,
+     "s_down": 0.97
+    },
+    {
+     "d": "2026-09-23",
+     "x": 14.58,
+     "mu": 16.92,
+     "s_up": 0.0,
+     "s_down": 0.79
+    },
+    {
+     "d": "2026-09-24",
+     "x": 20.83,
+     "mu": 16.63,
+     "s_up": 0.09,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-25",
+     "x": 10.42,
+     "mu": 17.21,
+     "s_up": 0.0,
+     "s_down": 0.51
+    },
+    {
+     "d": "2026-09-26",
+     "x": 18.75,
+     "mu": 16.99,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-27",
+     "x": 22.92,
+     "mu": 17.49,
+     "s_up": 0.35,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-28",
+     "x": 25.0,
+     "mu": 17.71,
+     "s_up": 0.98,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-29",
+     "x": 25.0,
+     "mu": 17.74,
+     "s_up": 1.6,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-30",
+     "x": 20.83,
+     "mu": 18.0,
+     "s_up": 1.53,
+     "s_down": 0.0
+    }
+   ],
+   "Claude-Web": [
+    {
+     "d": "2026-06-02",
+     "x": -10.07,
+     "mu": -9.98,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-03",
+     "x": -8.33,
+     "mu": -9.99,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-04",
+     "x": -14.58,
+     "mu": -9.85,
+     "s_up": 0.0,
+     "s_down": 0.9
+    },
+    {
+     "d": "2026-06-05",
+     "x": -0.69,
+     "mu": -10.22,
+     "s_up": 2.23,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-06",
+     "x": 0.0,
+     "mu": -9.53,
+     "s_up": 4.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-07",
+     "x": -1.04,
+     "mu": -8.9,
+     "s_up": 5.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-08",
+     "x": -0.69,
+     "mu": -8.41,
+     "s_up": 1.05,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-09",
+     "x": 0.0,
+     "mu": -7.95,
+     "s_up": 2.08,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-10",
+     "x": -0.69,
+     "mu": -7.51,
+     "s_up": 2.86,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-11",
+     "x": 0.0,
+     "mu": -7.15,
+     "s_up": 3.67,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-12",
+     "x": 0.0,
+     "mu": -6.8,
+     "s_up": 4.4,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-13",
+     "x": 0.0,
+     "mu": -6.47,
+     "s_up": 5.06,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-14",
+     "x": 0.0,
+     "mu": -6.18,
+     "s_up": 0.6,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-15",
+     "x": 0.0,
+     "mu": -5.91,
+     "s_up": 1.14,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-16",
+     "x": 0.0,
+     "mu": -5.66,
+     "s_up": 1.65,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-17",
+     "x": 0.0,
+     "mu": -5.44,
+     "s_up": 2.11,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-18",
+     "x": 0.0,
+     "mu": -5.23,
+     "s_up": 2.53,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-19",
+     "x": 0.0,
+     "mu": -5.03,
+     "s_up": 2.93,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-20",
+     "x": 0.0,
+     "mu": -4.46,
+     "s_up": 3.27,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-21",
+     "x": 0.0,
+     "mu": -4.3,
+     "s_up": 3.59,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-02",
+     "x": 12.5,
+     "mu": -1.8,
+     "s_up": 6.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-03",
+     "x": 18.75,
+     "mu": -0.68,
+     "s_up": 3.58,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-04",
+     "x": 19.1,
+     "mu": 0.68,
+     "s_up": 6.08,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-31",
+     "x": 12.5,
+     "mu": 16.74,
+     "s_up": 0.0,
+     "s_down": 1.03
+    },
+    {
+     "d": "2026-08-05",
+     "x": 17.01,
+     "mu": 16.28,
+     "s_up": 0.0,
+     "s_down": 0.24
+    },
+    {
+     "d": "2026-08-06",
+     "x": 17.01,
+     "mu": 16.35,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-07",
+     "x": 17.01,
+     "mu": 16.4,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-08",
+     "x": 13.19,
+     "mu": 16.45,
+     "s_up": 0.0,
+     "s_down": 0.97
+    },
+    {
+     "d": "2026-08-09",
+     "x": 12.5,
+     "mu": 16.22,
+     "s_up": 0.0,
+     "s_down": 2.09
+    },
+    {
+     "d": "2026-08-10",
+     "x": 12.85,
+     "mu": 15.97,
+     "s_up": 0.0,
+     "s_down": 2.88
+    },
+    {
+     "d": "2026-08-11",
+     "x": 16.67,
+     "mu": 15.78,
+     "s_up": 0.0,
+     "s_down": 2.02
+    },
+    {
+     "d": "2026-08-12",
+     "x": 17.01,
+     "mu": 15.83,
+     "s_up": 0.0,
+     "s_down": 1.02
+    },
+    {
+     "d": "2026-08-13",
+     "x": 15.62,
+     "mu": 15.89,
+     "s_up": 0.0,
+     "s_down": 0.64
+    },
+    {
+     "d": "2026-08-14",
+     "x": 12.85,
+     "mu": 15.88,
+     "s_up": 0.0,
+     "s_down": 1.47
+    },
+    {
+     "d": "2026-08-15",
+     "x": 9.03,
+     "mu": 15.73,
+     "s_up": 0.0,
+     "s_down": 3.87
+    },
+    {
+     "d": "2026-08-16",
+     "x": 15.62,
+     "mu": 15.41,
+     "s_up": 0.0,
+     "s_down": 3.29
+    },
+    {
+     "d": "2026-08-17",
+     "x": 11.11,
+     "mu": 15.42,
+     "s_up": 0.0,
+     "s_down": 4.43
+    },
+    {
+     "d": "2026-08-18",
+     "x": 13.19,
+     "mu": 15.23,
+     "s_up": 0.0,
+     "s_down": 4.68
+    },
+    {
+     "d": "2026-08-19",
+     "x": 15.62,
+     "mu": 15.15,
+     "s_up": 0.0,
+     "s_down": 4.01
+    },
+    {
+     "d": "2026-08-22",
+     "x": 17.36,
+     "mu": 15.22,
+     "s_up": 0.3,
+     "s_down": 2.71
+    },
+    {
+     "d": "2026-08-24",
+     "x": 17.36,
+     "mu": 15.28,
+     "s_up": 0.6,
+     "s_down": 1.41
+    },
+    {
+     "d": "2026-08-25",
+     "x": 12.85,
+     "mu": 15.36,
+     "s_up": 0.0,
+     "s_down": 1.88
+    },
+    {
+     "d": "2026-08-26",
+     "x": 12.85,
+     "mu": 15.26,
+     "s_up": 0.0,
+     "s_down": 2.32
+    },
+    {
+     "d": "2026-08-27",
+     "x": 13.54,
+     "mu": 15.03,
+     "s_up": 0.0,
+     "s_down": 2.41
+    },
+    {
+     "d": "2026-08-28",
+     "x": 16.32,
+     "mu": 14.83,
+     "s_up": 0.11,
+     "s_down": 1.29
+    },
+    {
+     "d": "2026-09-02",
+     "x": 12.5,
+     "mu": 14.78,
+     "s_up": 0.0,
+     "s_down": 1.76
+    },
+    {
+     "d": "2026-09-04",
+     "x": 17.01,
+     "mu": 14.5,
+     "s_up": 0.56,
+     "s_down": 0.2
+    },
+    {
+     "d": "2026-09-06",
+     "x": 12.5,
+     "mu": 14.38,
+     "s_up": 0.0,
+     "s_down": 0.5
+    },
+    {
+     "d": "2026-09-09",
+     "x": 15.97,
+     "mu": 14.31,
+     "s_up": 0.19,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-15",
+     "x": 17.01,
+     "mu": 14.56,
+     "s_up": 0.85,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-19",
+     "x": -2.08,
+     "mu": 15.02,
+     "s_up": 0.0,
+     "s_down": 7.49
+    },
+    {
+     "d": "2026-09-21",
+     "x": -4.51,
+     "mu": 13.6,
+     "s_up": 0.0,
+     "s_down": 2.89
+    },
+    {
+     "d": "2026-09-24",
+     "x": 0.0,
+     "mu": 11.27,
+     "s_up": 0.0,
+     "s_down": 3.9
+    }
+   ]
+  },
+  "model_change_detected": {
+   "M-Claude-Web-2026-07-02": [
+    [
+     "Claude-Web",
+     "2026-07-02"
+    ],
+    [
+     "Claude-Web",
+     "2026-07-04"
+    ]
+   ]
+  },
+  "coverage_balance": {
+   "OpenAI": {
+    "first_day": "2026-05-13",
+    "soll_days": 113,
+    "complete": 53,
+    "partial": 41,
+    "error_only": 19,
+    "none": 0,
+    "missing_with_register": 18,
+    "missing_without_register": [
+     "2026-06-29"
+    ],
+    "missing_without_register_n": 1,
+    "missing_total": 19,
+    "complete_pct": 46.9,
+    "not_complete_days": [
+     {
+      "d": "2026-05-13",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-28",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-29",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-30",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-31",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-01",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-02",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-03",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-04",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-05",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-06",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-07",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-08",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-09",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-13",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-15",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-17",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-19",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-20",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-21",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-22",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-29",
+      "state": "error_only",
+      "register": []
+     },
+     {
+      "d": "2026-07-01",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-02",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-04",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-05",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-07",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-08",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-09",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-10",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-11",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-12",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-14",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-15",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-17",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-18",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-19",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-21",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-22",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-24",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-07-25",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-07-26",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-07-27",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-07-28",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-07-29",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-07-30",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-07-31",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-08-01",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-08-02",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-08-03",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-08-04",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-08-05",
+      "state": "error_only",
+      "register": [
+       2
+      ]
+     },
+     {
+      "d": "2026-08-10",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-08-11",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-08-12",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-08-18",
+      "state": "error_only",
+      "register": [
+       3
+      ]
+     },
+     {
+      "d": "2026-09-18",
+      "state": "error_only",
+      "register": [
+       17
+      ]
+     },
+     {
+      "d": "2026-09-21",
+      "state": "error_only",
+      "register": [
+       17
+      ]
+     },
+     {
+      "d": "2026-09-24",
+      "state": "error_only",
+      "register": [
+       17
+      ]
+     },
+     {
+      "d": "2026-09-27",
+      "state": "error_only",
+      "register": [
+       17
+      ]
+     }
+    ],
+    "daily_phase": {
+     "soll": 98,
+     "complete": 42
+    },
+    "anchor_phase": {
+     "soll": 15,
+     "complete": 11
+    }
+   },
+   "Gemini": {
+    "first_day": "2026-05-13",
+    "soll_days": 113,
+    "complete": 102,
+    "partial": 10,
+    "error_only": 1,
+    "none": 0,
+    "missing_with_register": 0,
+    "missing_without_register": [
+     "2026-06-22"
+    ],
+    "missing_without_register_n": 1,
+    "missing_total": 1,
+    "complete_pct": 90.3,
+    "not_complete_days": [
+     {
+      "d": "2026-05-13",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-14",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-15",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-22",
+      "state": "error_only",
+      "register": []
+     },
+     {
+      "d": "2026-06-24",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-05",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-07-27",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-08-01",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-08-05",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-08-07",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-08-10",
+      "state": "partial",
+      "register": []
+     }
+    ],
+    "daily_phase": {
+     "soll": 98,
+     "complete": 87
+    },
+    "anchor_phase": {
+     "soll": 15,
+     "complete": 15
+    }
+   },
+   "Claude-Web": {
+    "first_day": "2026-05-20",
+    "soll_days": 106,
+    "complete": 55,
+    "partial": 12,
+    "error_only": 5,
+    "none": 34,
+    "missing_with_register": 22,
+    "missing_without_register": [
+     "2026-05-21",
+     "2026-05-22",
+     "2026-05-24",
+     "2026-06-22",
+     "2026-06-23",
+     "2026-06-24",
+     "2026-06-25",
+     "2026-06-26",
+     "2026-06-27",
+     "2026-06-28",
+     "2026-06-29",
+     "2026-06-30",
+     "2026-07-01",
+     "2026-07-25",
+     "2026-07-26",
+     "2026-08-01",
+     "2026-08-02"
+    ],
+    "missing_without_register_n": 17,
+    "missing_total": 39,
+    "complete_pct": 51.9,
+    "not_complete_days": [
+     {
+      "d": "2026-05-20",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-21",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-05-22",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-05-23",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-24",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-05-29",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-05-30",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-03",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-04",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-06",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-09",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-16",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-17",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-19",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-21",
+      "state": "partial",
+      "register": []
+     },
+     {
+      "d": "2026-06-22",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-23",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-24",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-25",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-26",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-27",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-28",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-29",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-06-30",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-07-01",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-07-05",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-06",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-07",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-08",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-09",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-10",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-11",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-12",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-13",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-14",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-15",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-16",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-17",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-18",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-19",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-20",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-21",
+      "state": "none",
+      "register": [
+       1
+      ]
+     },
+     {
+      "d": "2026-07-25",
+      "state": "none",
+      "register": []
+     },
+     {
+      "d": "2026-07-26",
+      "state": "error_only",
+      "register": []
+     },
+     {
+      "d": "2026-08-01",
+      "state": "error_only",
+      "register": []
+     },
+     {
+      "d": "2026-08-02",
+      "state": "error_only",
+      "register": []
+     },
+     {
+      "d": "2026-08-31",
+      "state": "none",
+      "register": [
+       15
+      ]
+     },
+     {
+      "d": "2026-09-03",
+      "state": "none",
+      "register": [
+       15
+      ]
+     },
+     {
+      "d": "2026-09-12",
+      "state": "error_only",
+      "register": [
+       16
+      ]
+     },
+     {
+      "d": "2026-09-18",
+      "state": "none",
+      "register": [
+       23
+      ]
+     },
+     {
+      "d": "2026-09-27",
+      "state": "error_only",
+      "register": [
+       21
+      ]
+     }
+    ],
+    "daily_phase": {
+     "soll": 91,
+     "complete": 45
+    },
+    "anchor_phase": {
+     "soll": 15,
+     "complete": 10
+    }
+   }
+  },
+  "anchor_surfaces": {
+   "wikidata_registered_anchor": {
+    "Q139720807": {
+     "snapshots": 1,
+     "deleted_detected": "2026-06-25"
+    },
+    "Q139720798": {
+     "snapshots": 1,
+     "deleted_detected": "2026-06-25"
+    }
+   },
+   "wikidata_successor": {
+    "Q140004504": {
+     "entity_type": "author",
+     "first_day": "2026-06-02",
+     "last_day": "2026-09-30",
+     "days": 121,
+     "reference_properties": 14,
+     "coverage_mean": 1.0,
+     "coverage_min": 1.0,
+     "coverage_cv": 0.0,
+     "coverage_range": 0.0,
+     "claim_count_min": 14,
+     "claim_count_max": 16,
+     "claim_count_cv": 0.0541,
+     "consecutive_identical_claim_count_pct": 98.3
+    },
+    "Q140004740": {
+     "entity_type": "book",
+     "first_day": "2026-06-02",
+     "last_day": "2026-09-30",
+     "days": 121,
+     "reference_properties": 11,
+     "coverage_mean": 1.0,
+     "coverage_min": 1.0,
+     "coverage_cv": 0.0,
+     "coverage_range": 0.0,
+     "claim_count_min": 11,
+     "claim_count_max": 13,
+     "claim_count_cv": 0.0649,
+     "consecutive_identical_claim_count_pct": 98.3
+    }
+   },
+   "kg": {
+    "author": {
+     "days": 141,
+     "hit_days": 140,
+     "hit_rate": 0.993,
+     "first_hit": "2026-05-14",
+     "consecutive_same_hit_pct": 99.3
+    },
+    "book": {
+     "days": 139,
+     "hit_days": 0,
+     "hit_rate": 0.0,
+     "first_hit": null,
+     "consecutive_same_hit_pct": 100.0
+    },
+    "series": {
+     "days": 139,
+     "hit_days": 0,
+     "hit_rate": 0.0,
+     "first_hit": null,
+     "consecutive_same_hit_pct": 100.0
+    }
+   },
+   "kg_author_score_consecutive_r": null,
+   "kg_author_score_pairs": 139,
+   "kg_author_score_distinct": 1,
+   "kappa_wd_kg": {
+    "pairs": 242,
+    "p_observed": 0.5,
+    "p_expected": 0.5,
+    "kappa": 0.0,
+    "wd_hit_share": 1.0,
+    "kg_hit_share": 0.5
+   },
+   "bing_by_month": {
+    "2026-05": {
+     "days": 19,
+     "days_with_status": 5
+    },
+    "2026-06": {
+     "days": 30,
+     "days_with_status": 30
+    },
+    "2026-07": {
+     "days": 31,
+     "days_with_status": 25
+    },
+    "2026-08": {
+     "days": 31,
+     "days_with_status": 0
+    },
+    "2026-09": {
+     "days": 30,
+     "days_with_status": 1
+    }
+   },
+   "gsc_days": 139
+  },
+  "retest_r_single_snapshot": {
+   "OpenAI": {
+    "pairs": 1416,
+    "day_pairs": 109,
+    "r": 0.746,
+    "ci95": [
+     0.695,
+     0.795
+    ],
+    "r_within_question": 0.326
+   },
+   "Gemini": {
+    "pairs": 2125,
+    "day_pairs": 136,
+    "r": 0.612,
+    "ci95": [
+     0.558,
+     0.665
+    ],
+    "r_within_question": 0.367
+   },
+   "Claude-Web": {
+    "pairs": 2301,
+    "day_pairs": 55,
+    "r": 0.811,
+    "ci95": [
+     0.753,
+     0.869
+    ],
+    "r_within_question": 0.759
+   }
+  },
+  "hypotheses_q0": [
+   {
+    "id": "H-Q0-INST-01",
+    "registered": "Test-Retest r >= 0,9 fuer API-Flaechen (Wikidata, Google KG, Bing, GSC) auf 24-h-Wiederholungsproben an 14 Tagen",
+    "verdict": "not_testable",
+    "reason": "Die 24-h-Wiederholungsproben wurden nicht erhoben; Bing ab 08/2026 ohne Status, GSC-Indexfeld tot; Folgetag-Vergleiche sind kein Retest desselben Zustands",
+    "evidence": {
+     "kg_author_consecutive_same_hit_pct": 99.3,
+     "kg_author_score_consecutive_r": null,
+     "wikidata_consecutive_identical_claim_count_pct": {
+      "Q140004504": 98.3,
+      "Q140004740": 98.3
+     },
+     "bing_by_month": {
+      "2026-05": {
+       "days": 19,
+       "days_with_status": 5
+      },
+      "2026-06": {
+       "days": 30,
+       "days_with_status": 30
+      },
+      "2026-07": {
+       "days": 31,
+       "days_with_status": 25
+      },
+      "2026-08": {
+       "days": 31,
+       "days_with_status": 0
+      },
+      "2026-09": {
+       "days": 30,
+       "days_with_status": 1
+      }
+     }
+    }
+   },
+   {
+    "id": "H-Q0-INST-02",
+    "registered": "Sprachmodell-Proben: r >= 0,7 mit n = 5 Schnappschuessen je Tag und Median-Aggregation, Vergleich gegen Einzel-Schnappschuss",
+    "verdict": "not_testable",
+    "reason": "Mehrfach-Schnappschuesse (n = 5 je Tag) wurden nicht erhoben; nur die Einzel-Schnappschuss-Bedingung ist berechenbar",
+    "evidence": {
+     "single_snapshot_r": {
+      "OpenAI": {
+       "pairs": 1416,
+       "day_pairs": 109,
+       "r": 0.746,
+       "ci95": [
+        0.695,
+        0.795
+       ],
+       "r_within_question": 0.326
+      },
+      "Gemini": {
+       "pairs": 2125,
+       "day_pairs": 136,
+       "r": 0.612,
+       "ci95": [
+        0.558,
+        0.665
+       ],
+       "r_within_question": 0.367
+      },
+      "Claude-Web": {
+       "pairs": 2301,
+       "day_pairs": 55,
+       "r": 0.811,
+       "ci95": [
+        0.753,
+        0.869
+       ],
+       "r_within_question": 0.759
+      }
+     },
+     "identical_score_next_measuring_day": {
+      "Claude-Web": {
+       "pairs": 3177,
+       "identical": 2997,
+       "share_pct": 94.3
+      },
+      "Gemini": {
+       "pairs": 2176,
+       "identical": 1895,
+       "share_pct": 87.1
+      },
+      "OpenAI": {
+       "pairs": 1621,
+       "identical": 1404,
+       "share_pct": 86.6
+      }
+     }
+    }
+   },
+   {
+    "id": "H-Q0-INST-03",
+    "registered": "Mindestens ein Modell-Update bei mindestens einer der KI-Flaechen Bing-KI, Gemini, ChatGPT, Google AI Overviews wird mit CUSUM (h = 5, rollierende 30-Tage-Basis) detektiert",
+    "verdict": "not_testable",
+    "reason": "Fuer die registrierten Flaechen fehlen Modellversions-Protokolle (OpenAI, Gemini) bzw. Messungen (Bing-KI, AI Overviews); auf der nicht registrierten Flaeche Claude-Web faellt ein Alarm auf den ersten Messtag nach einem Modell-Etikettwechsel",
+    "evidence": {
+     "model_changes": [
+      {
+       "provider": "Claude-Web",
+       "unit": "claude-opus-4.7 (web)",
+       "first_day": "2026-05-23",
+       "last_day": "2026-05-25"
+      },
+      {
+       "provider": "Claude-Web",
+       "unit": "claude-sonnet-4.6 (web)",
+       "first_day": "2026-05-23",
+       "last_day": "2026-05-23"
+      },
+      {
+       "provider": "Claude-Web",
+       "unit": "claude-opus-4-8",
+       "first_day": "2026-07-02",
+       "last_day": "2026-09-30"
+      },
+      {
+       "provider": "Claude-Web",
+       "unit": "claude-haiku-4-5-20251001",
+       "first_day": "2026-07-02",
+       "last_day": "2026-09-30"
+      },
+      {
+       "provider": "Claude-Web",
+       "unit": "claude-opus-4-7",
+       "retired_after": "2026-06-21"
+      },
+      {
+       "provider": "Claude-Web",
+       "unit": "claude-haiku-4-5",
+       "retired_after": "2026-06-21"
+      }
+     ],
+     "detected_on_unregistered_surface": {
+      "M-Claude-Web-2026-07-02": [
+       [
+        "Claude-Web",
+        "2026-07-02"
+       ],
+       [
+        "Claude-Web",
+        "2026-07-04"
+       ]
+      ]
+     },
+     "rolling_alarms": {
+      "OpenAI": [
+       {
+        "d": "2026-06-12",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-07-20",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-09-30",
+        "direction": "down",
+        "level_events_7d_before": []
+       }
+      ],
+      "Gemini": [
+       {
+        "d": "2026-06-19",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-07-06",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-07-12",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-07-17",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-08-15",
+        "direction": "down",
+        "level_events_7d_before": []
+       }
+      ],
+      "Claude-Web": [
+       {
+        "d": "2026-06-07",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-06-13",
+        "direction": "up",
+        "level_events_7d_before": []
+       },
+       {
+        "d": "2026-07-02",
+        "direction": "up",
+        "level_events_7d_before": [
+         "M-Claude-Web-2026-07-02"
+        ]
+       },
+       {
+        "d": "2026-07-04",
+        "direction": "up",
+        "level_events_7d_before": [
+         "M-Claude-Web-2026-07-02"
+        ]
+       },
+       {
+        "d": "2026-09-19",
+        "direction": "down",
+        "level_events_7d_before": [
+         18
+        ]
+       }
+      ]
+     }
+    }
+   },
+   {
+    "id": "H-Q0-INST-04",
+    "registered": "Cronbachs alpha >= 0,7 fuer API-Flaechen; 0,5 <= alpha < 0,7 fuer KI-Flaechen",
+    "verdict": "not_confirmed",
+    "reason": "API-Teil nicht pruefbar (keine Fragen-Sets auf API-Flaechen); KI-Teil: Punktschaetzung im Band bei OpenAI, Claude-Web; ausserhalb: Gemini",
+    "evidence": {
+     "OpenAI": {
+      "alpha": 0.553,
+      "ci95": [
+       0.419,
+       0.636
+      ],
+      "cases": 72,
+      "zero_variance_items": 6,
+      "in_band_point": true
+     },
+     "Gemini": {
+      "alpha": 0.407,
+      "ci95": [
+       0.279,
+       0.5
+      ],
+      "cases": 129,
+      "zero_variance_items": 9,
+      "in_band_point": false
+     },
+     "Claude-Web": {
+      "alpha": 0.61,
+      "ci95": [
+       0.562,
+       0.651
+      ],
+      "cases": 195,
+      "zero_variance_items": 10,
+      "in_band_point": true
+     }
+    }
+   },
+   {
+    "id": "H-Q0-INST-05",
+    "registered": "Wikidata-Abdeckung des Person+Werk-Clusters bleibt ueber das Fenster stabil > 0,85 (Volatilitaet <= 0,1)",
+    "verdict": "not_confirmed",
+    "reason": "Beide registrierten Anker-Items wurden im Fenster geloescht; die Nachfolge-Items sind ab 2026-06-02 stabil, decken das Fenster aber nicht ab",
+    "evidence": {
+     "registered_anchor": {
+      "Q139720807": {
+       "snapshots": 1,
+       "deleted_detected": "2026-06-25"
+      },
+      "Q139720798": {
+       "snapshots": 1,
+       "deleted_detected": "2026-06-25"
+      }
+     },
+     "successor": {
+      "Q140004504": {
+       "entity_type": "author",
+       "first_day": "2026-06-02",
+       "last_day": "2026-09-30",
+       "days": 121,
+       "reference_properties": 14,
+       "coverage_mean": 1.0,
+       "coverage_min": 1.0,
+       "coverage_cv": 0.0,
+       "coverage_range": 0.0,
+       "claim_count_min": 14,
+       "claim_count_max": 16,
+       "claim_count_cv": 0.0541,
+       "consecutive_identical_claim_count_pct": 98.3
+      },
+      "Q140004740": {
+       "entity_type": "book",
+       "first_day": "2026-06-02",
+       "last_day": "2026-09-30",
+       "days": 121,
+       "reference_properties": 11,
+       "coverage_mean": 1.0,
+       "coverage_min": 1.0,
+       "coverage_cv": 0.0,
+       "coverage_range": 0.0,
+       "claim_count_min": 11,
+       "claim_count_max": 13,
+       "claim_count_cv": 0.0649,
+       "consecutive_identical_claim_count_pct": 98.3
+      }
+     }
+    }
+   },
+   {
+    "id": "H-Q0-INST-06",
+    "registered": "Cohens kappa >= 0,8 zwischen Wikidata und Google KG (binaere Trefferklassifikation)",
+    "verdict": "not_confirmed",
+    "reason": "kappa unter 0,5 (H0-Bereich); Wikidata fuehrt Autor und Buch an jedem Tag, der Knowledge Graph nur den Autor",
+    "evidence": {
+     "pairs": 242,
+     "p_observed": 0.5,
+     "p_expected": 0.5,
+     "kappa": 0.0,
+     "wd_hit_share": 1.0,
+     "kg_hit_share": 0.5
+    }
+   }
+  ],
+  "multiple_testing": "BH-FDR (q = 0,05) registriert; nicht angewandt, weil keine der sechs Pruefungen einen p-Wert liefert (Schwellen-Vergleiche, deskriptiv)",
+  "freeze_extra": {
+   "frozen_at_utc": "2026-10-04T19:45:00Z",
+   "window": [
+    "2026-05-11",
+    "2026-09-30"
+   ],
+   "database": "marin-research-data (D1), nur SELECT",
+   "purpose": "Etappe 3: Anker-Messflächen (H-Q0-INST-01, -05, -06) und Ereignis-Kodierung für den Alarm-Abgleich",
+   "files": {
+    "wikidata_snapshots.json": {
+     "rows": 262,
+     "sha256": "1f5f9da768c781339e3d1abebac582eb13597e4db16c17d410c8520ee54ee55c",
+     "query": "SELECT qid, entity_type, date(snapshot_at) d, snapshot_at, claim_count, claim_properties, sitelink_count, backlinks_count, CASE WHEN raw LIKE '%\"deleted\":true%' THEN 1 ELSE 0 END deleted FROM wikidata_snapshots WHERE date(snapshot_at) BETWEEN '2026-05-11' AND '2026-09-30' ORDER BY snapshot_at, qid"
+    },
+    "kg_snapshots.json": {
+     "rows": 680,
+     "sha256": "5baef17f1da4ca685a0f69da7fc0bd70e8bbbcee6f0943f0ccd9b892df73421c",
+     "query": "SELECT date(snapshot_at) d, snapshot_at, query, response_count, top_match_id, top_match_score FROM google_kg_search_snapshots WHERE date(snapshot_at) BETWEEN '2026-05-11' AND '2026-09-30' ORDER BY snapshot_at, query"
+    },
+    "bing_daily.json": {
+     "rows": 141,
+     "sha256": "09bb5f3eada03ced987de4b7ae4c5ac15c8bd6b968b2d870eee1e4f2cd4a460a",
+     "query": "SELECT date(snapshot_at) d, COUNT(*) n, SUM(CASE WHEN indexed IS NOT NULL THEN 1 ELSE 0 END) with_status, SUM(CASE WHEN indexed=1 THEN 1 ELSE 0 END) n_indexed FROM bing_ai_index_snapshots WHERE date(snapshot_at) BETWEEN '2026-05-11' AND '2026-09-30' GROUP BY date(snapshot_at) ORDER BY 1"
+    },
+    "gsc_daily.json": {
+     "rows": 139,
+     "sha256": "3e9f9d35b93f05dc1df04c64322558414745746e19ec22b9e1100ce95f6225f6",
+     "query": "SELECT date(snapshot_at) d, COUNT(*) n, SUM(stage_error IS NULL OR stage_error='') ok, MAX(total_impressions) impressions FROM google_search_console_snapshots WHERE date(snapshot_at) BETWEEN '2026-05-11' AND '2026-09-30' GROUP BY d ORDER BY d"
+    },
+    "event_codes.json": {
+     "rows": 25,
+     "sha256": "05c5199bda42b9af69c34ba715f6756540c84709ef7aca7fbb0d56c7b3d5f181",
+     "query": "manuelle Kodierung des Lückenregisters (Einträge 1–25), siehe Datei"
+    }
+   }
+  },
+  "dedupe": {
+   "rule": "Fehlerzeile verliert; sonst naechster Zeitstempel zum planmaessigen Laufzeitpunkt (run_at des fruehesten cron-Laufs des Tages bzw. run_ts des fruehesten Claude-Web-Laufs); Gleichstand: frueher, dann Abzugsreihenfolge",
+   "rows_dropped": 7534,
+   "planned_time_source_day_provider": {
+    "run": 2,
+    "cron": 278
+   }
+  }
+ },
+ "freeze": {
+  "frozen_at_utc": "2026-10-01T00:50:19Z",
+  "window": [
+   "2026-05-11",
+   "2026-09-30"
+  ],
+  "rows": {
+   "web_rows": 26674,
+   "claude_web_rows": 4143,
+   "runs": 261,
+   "data_gaps": 22
+  }
+ },
+ "rules": {
+  "one_row_per": "(UTC-Tag, Anbieter-Einheit, Frage); Fehlerzeile verliert, sonst naechster Zeitstempel zum planmaessigen Laufzeitpunkt (Kanon 04.09.2026)",
+  "claude_web_units": "Web-Tiers ohne Fremdmodelle im Werkzeug",
+  "retest": "identischer Rubrik-Score am naechsten Messtag mit Messwert",
+  "anchor_grid": "alle 3 Tage ab 2026-08-19",
+  "questions": 16
+ },
+ "coverage": {
+  "OpenAI": {
+   "measuring_days": 140,
+   "first": "2026-05-13",
+   "last": "2026-09-30",
+   "complete_days": 72,
+   "error_only_days": [
+    "2026-06-29",
+    "2026-07-24",
+    "2026-07-25",
+    "2026-07-26",
+    "2026-07-27",
+    "2026-07-28",
+    "2026-07-29",
+    "2026-07-30",
+    "2026-07-31",
+    "2026-08-01",
+    "2026-08-02",
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-18",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "partial_days": [
+    "2026-05-13",
+    "2026-05-28",
+    "2026-05-29",
+    "2026-05-30",
+    "2026-05-31",
+    "2026-06-01",
+    "2026-06-02",
+    "2026-06-03",
+    "2026-06-04",
+    "2026-06-05",
+    "2026-06-06",
+    "2026-06-07",
+    "2026-06-08",
+    "2026-06-09",
+    "2026-06-13",
+    "2026-06-15",
+    "2026-06-17",
+    "2026-06-19",
+    "2026-06-20",
+    "2026-06-21",
+    "2026-06-22",
+    "2026-07-01",
+    "2026-07-02",
+    "2026-07-04",
+    "2026-07-05",
+    "2026-07-07",
+    "2026-07-08",
+    "2026-07-09",
+    "2026-07-10",
+    "2026-07-11",
+    "2026-07-12",
+    "2026-07-14",
+    "2026-07-15",
+    "2026-07-17",
+    "2026-07-18",
+    "2026-07-19",
+    "2026-07-21",
+    "2026-07-22",
+    "2026-08-10",
+    "2026-08-11",
+    "2026-08-12",
+    "2026-08-23",
+    "2026-09-16"
+   ]
+  },
+  "Gemini": {
+   "measuring_days": 140,
+   "first": "2026-05-13",
+   "last": "2026-09-30",
+   "complete_days": 129,
+   "error_only_days": [
+    "2026-06-22"
+   ],
+   "partial_days": [
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15",
+    "2026-06-24",
+    "2026-07-05",
+    "2026-07-27",
+    "2026-08-01",
+    "2026-08-05",
+    "2026-08-07",
+    "2026-08-10"
+   ]
+  },
+  "Claude-Web": {
+   "measuring_days": 79,
+   "first": "2026-05-20",
+   "last": "2026-09-30",
+   "complete_days": 61,
+   "error_only_days": [
+    "2026-07-26",
+    "2026-08-01",
+    "2026-08-02",
+    "2026-08-23",
+    "2026-09-12",
+    "2026-09-27"
+   ],
+   "partial_days": [
+    "2026-05-20",
+    "2026-05-23",
+    "2026-05-29",
+    "2026-05-30",
+    "2026-06-03",
+    "2026-06-04",
+    "2026-06-06",
+    "2026-06-09",
+    "2026-06-16",
+    "2026-06-17",
+    "2026-06-19",
+    "2026-06-21"
+   ]
+  }
+ },
+ "anchors": [
+  "2026-08-19",
+  "2026-08-22",
+  "2026-08-25",
+  "2026-08-28",
+  "2026-08-31",
+  "2026-09-03",
+  "2026-09-06",
+  "2026-09-09",
+  "2026-09-12",
+  "2026-09-15",
+  "2026-09-18",
+  "2026-09-21",
+  "2026-09-24",
+  "2026-09-27",
+  "2026-09-30"
+ ],
+ "anchor_grid": {
+  "2026-08-19": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-08-22": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-08-25": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-08-28": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-08-31": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": null
+  },
+  "2026-09-03": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": null
+  },
+  "2026-09-06": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-09-09": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-09-12": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 0,
+    "error": 48,
+    "units": 3
+   }
+  },
+  "2026-09-15": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-09-18": {
+   "OpenAI": {
+    "valid": 0,
+    "error": 16,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": null
+  },
+  "2026-09-21": {
+   "OpenAI": {
+    "valid": 0,
+    "error": 16,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-09-24": {
+   "OpenAI": {
+    "valid": 0,
+    "error": 16,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  },
+  "2026-09-27": {
+   "OpenAI": {
+    "valid": 0,
+    "error": 16,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 0,
+    "error": 48,
+    "units": 3
+   }
+  },
+  "2026-09-30": {
+   "OpenAI": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Gemini": {
+    "valid": 16,
+    "error": 0,
+    "units": 1
+   },
+   "Claude-Web": {
+    "valid": 48,
+    "error": 0,
+    "units": 3
+   }
+  }
+ },
+ "anchor_complete": {
+  "OpenAI": 11,
+  "Gemini": 15,
+  "Claude-Web": 10
+ },
+ "off_anchor_measuring_days": {
+  "OpenAI": 21,
+  "Gemini": 27,
+  "Claude-Web": 6
+ },
+ "claude_web_anchor_missing_nearest": {
+  "2026-08-31": "2026-09-02",
+  "2026-09-03": "2026-09-02",
+  "2026-09-18": "2026-09-19"
+ },
+ "retest": {
+  "Claude-Web": {
+   "pairs": 3177,
+   "identical": 2997,
+   "share_pct": 94.3
+  },
+  "Gemini": {
+   "pairs": 2176,
+   "identical": 1895,
+   "share_pct": 87.1
+  },
+  "OpenAI": {
+   "pairs": 1621,
+   "identical": 1404,
+   "share_pct": 86.6
+  }
+ },
+ "retest_by_question": [
+  {
+   "provider": "Claude-Web",
+   "question_id": "C1",
+   "pairs": 196,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "C2",
+   "pairs": 196,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "D1",
+   "pairs": 202,
+   "share_pct": 73.8
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "D2",
+   "pairs": 202,
+   "share_pct": 90.1
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "D3",
+   "pairs": 200,
+   "share_pct": 84.5
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "G1",
+   "pairs": 196,
+   "share_pct": 95.4
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "G2",
+   "pairs": 196,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "GR1",
+   "pairs": 199,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "GR2",
+   "pairs": 195,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "GR3",
+   "pairs": 198,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "GR4",
+   "pairs": 202,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "GR5",
+   "pairs": 201,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "GR6",
+   "pairs": 200,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "L1",
+   "pairs": 197,
+   "share_pct": 92.9
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "L2",
+   "pairs": 196,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Claude-Web",
+   "question_id": "R1",
+   "pairs": 201,
+   "share_pct": 73.6
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "C1",
+   "pairs": 136,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "C2",
+   "pairs": 137,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "D1",
+   "pairs": 137,
+   "share_pct": 43.8
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "D2",
+   "pairs": 138,
+   "share_pct": 66.7
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "D3",
+   "pairs": 137,
+   "share_pct": 65.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "G1",
+   "pairs": 136,
+   "share_pct": 98.5
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "G2",
+   "pairs": 137,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "GR1",
+   "pairs": 134,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "GR2",
+   "pairs": 135,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "GR3",
+   "pairs": 136,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "GR4",
+   "pairs": 136,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "GR5",
+   "pairs": 134,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "GR6",
+   "pairs": 134,
+   "share_pct": 76.1
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "L1",
+   "pairs": 136,
+   "share_pct": 71.3
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "L2",
+   "pairs": 136,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "Gemini",
+   "question_id": "R1",
+   "pairs": 137,
+   "share_pct": 73.0
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "C1",
+   "pairs": 106,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "C2",
+   "pairs": 106,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "D1",
+   "pairs": 105,
+   "share_pct": 45.7
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "D2",
+   "pairs": 112,
+   "share_pct": 95.5
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "D3",
+   "pairs": 109,
+   "share_pct": 72.5
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "G1",
+   "pairs": 106,
+   "share_pct": 96.2
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "G2",
+   "pairs": 108,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "GR1",
+   "pairs": 101,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "GR2",
+   "pairs": 95,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "GR3",
+   "pairs": 91,
+   "share_pct": 95.6
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "GR4",
+   "pairs": 94,
+   "share_pct": 89.4
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "GR5",
+   "pairs": 91,
+   "share_pct": 100.0
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "GR6",
+   "pairs": 84,
+   "share_pct": 83.3
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "L1",
+   "pairs": 103,
+   "share_pct": 62.1
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "L2",
+   "pairs": 109,
+   "share_pct": 57.8
+  },
+  {
+   "provider": "OpenAI",
+   "question_id": "R1",
+   "pairs": 101,
+   "share_pct": 92.1
+  }
+ ],
+ "level_by_day": {
+  "OpenAI": {
+   "2026-05-14": 0.0,
+   "2026-05-15": 0.0,
+   "2026-05-16": 0.0,
+   "2026-05-17": 0.0,
+   "2026-05-18": 2.08,
+   "2026-05-19": 12.5,
+   "2026-05-20": 16.67,
+   "2026-05-21": 13.54,
+   "2026-05-22": 10.42,
+   "2026-05-23": 2.08,
+   "2026-05-24": 4.17,
+   "2026-05-25": 7.29,
+   "2026-05-26": 14.58,
+   "2026-05-27": 10.42,
+   "2026-06-10": 20.83,
+   "2026-06-11": 25.0,
+   "2026-06-12": 16.67,
+   "2026-06-14": 12.5,
+   "2026-06-16": 16.67,
+   "2026-06-18": 22.92,
+   "2026-06-23": 18.75,
+   "2026-06-24": 10.42,
+   "2026-06-25": 10.42,
+   "2026-06-26": 29.17,
+   "2026-06-27": 20.83,
+   "2026-06-28": 12.5,
+   "2026-06-30": 6.25,
+   "2026-07-03": 22.92,
+   "2026-07-06": 31.25,
+   "2026-07-13": 35.42,
+   "2026-07-16": 31.25,
+   "2026-07-20": 31.25,
+   "2026-07-23": 27.08,
+   "2026-08-06": 22.92,
+   "2026-08-07": 27.08,
+   "2026-08-08": 27.08,
+   "2026-08-09": 22.92,
+   "2026-08-13": 20.83,
+   "2026-08-14": 25.0,
+   "2026-08-15": 27.08,
+   "2026-08-16": 20.83,
+   "2026-08-17": 27.08,
+   "2026-08-19": 22.92,
+   "2026-08-20": 33.33,
+   "2026-08-21": 20.83,
+   "2026-08-22": 20.83,
+   "2026-08-24": 20.83,
+   "2026-08-25": 27.08,
+   "2026-08-26": 12.5,
+   "2026-08-27": 20.83,
+   "2026-08-28": 25.0,
+   "2026-08-29": 22.92,
+   "2026-08-30": 22.92,
+   "2026-08-31": 22.92,
+   "2026-09-01": 25.0,
+   "2026-09-02": 27.08,
+   "2026-09-03": 33.33,
+   "2026-09-05": 27.08,
+   "2026-09-06": 27.08,
+   "2026-09-07": 22.92,
+   "2026-09-08": 29.17,
+   "2026-09-09": 22.92,
+   "2026-09-10": 28.12,
+   "2026-09-11": 27.08,
+   "2026-09-12": 27.08,
+   "2026-09-13": 25.0,
+   "2026-09-14": 27.08,
+   "2026-09-15": 22.92,
+   "2026-09-17": 25.0,
+   "2026-09-28": 14.58,
+   "2026-09-29": 18.75,
+   "2026-09-30": 20.83
+  },
+  "Gemini": {
+   "2026-05-16": 2.08,
+   "2026-05-17": 2.08,
+   "2026-05-18": 1.04,
+   "2026-05-19": 2.08,
+   "2026-05-20": 7.29,
+   "2026-05-21": 1.04,
+   "2026-05-22": 1.04,
+   "2026-05-23": -5.21,
+   "2026-05-24": -5.21,
+   "2026-05-25": 14.58,
+   "2026-05-26": 1.04,
+   "2026-05-27": 1.04,
+   "2026-05-28": -2.08,
+   "2026-05-29": 1.04,
+   "2026-05-30": 7.29,
+   "2026-05-31": 1.04,
+   "2026-06-01": -3.12,
+   "2026-06-02": -11.46,
+   "2026-06-03": 0.0,
+   "2026-06-04": -2.08,
+   "2026-06-05": 6.25,
+   "2026-06-06": 8.33,
+   "2026-06-07": 0.0,
+   "2026-06-08": 6.25,
+   "2026-06-09": 0.0,
+   "2026-06-10": 6.25,
+   "2026-06-11": 12.5,
+   "2026-06-12": 6.25,
+   "2026-06-13": 6.25,
+   "2026-06-14": 12.5,
+   "2026-06-15": 6.25,
+   "2026-06-16": 6.25,
+   "2026-06-17": 6.25,
+   "2026-06-18": 6.25,
+   "2026-06-19": 10.42,
+   "2026-06-20": 4.17,
+   "2026-06-21": 12.5,
+   "2026-06-23": 4.17,
+   "2026-06-25": 6.25,
+   "2026-06-26": 4.17,
+   "2026-06-27": 6.25,
+   "2026-06-28": 14.58,
+   "2026-06-29": 10.42,
+   "2026-06-30": 10.42,
+   "2026-07-01": 18.75,
+   "2026-07-02": 0.0,
+   "2026-07-03": 6.25,
+   "2026-07-04": 16.67,
+   "2026-07-06": 22.92,
+   "2026-07-07": 4.17,
+   "2026-07-08": 14.58,
+   "2026-07-09": 16.67,
+   "2026-07-10": 11.46,
+   "2026-07-11": 23.96,
+   "2026-07-12": 27.08,
+   "2026-07-13": 17.71,
+   "2026-07-14": 29.17,
+   "2026-07-15": 25.0,
+   "2026-07-16": 22.92,
+   "2026-07-17": 20.83,
+   "2026-07-18": 16.67,
+   "2026-07-19": 14.58,
+   "2026-07-20": 16.67,
+   "2026-07-21": 18.75,
+   "2026-07-22": 16.67,
+   "2026-07-23": 22.92,
+   "2026-07-24": 12.5,
+   "2026-07-25": 22.92,
+   "2026-07-26": 18.75,
+   "2026-07-28": 20.83,
+   "2026-07-29": 22.92,
+   "2026-07-30": 16.67,
+   "2026-07-31": 19.79,
+   "2026-08-02": 28.12,
+   "2026-08-03": 23.96,
+   "2026-08-04": 20.83,
+   "2026-08-06": 0.0,
+   "2026-08-08": 16.67,
+   "2026-08-09": 26.04,
+   "2026-08-11": 16.67,
+   "2026-08-12": 16.67,
+   "2026-08-13": 12.5,
+   "2026-08-14": 8.33,
+   "2026-08-15": 0.0,
+   "2026-08-16": 10.42,
+   "2026-08-17": 12.5,
+   "2026-08-18": 16.67,
+   "2026-08-19": 4.17,
+   "2026-08-20": 4.17,
+   "2026-08-21": 10.42,
+   "2026-08-22": 25.0,
+   "2026-08-23": 16.67,
+   "2026-08-24": 22.92,
+   "2026-08-25": 4.17,
+   "2026-08-26": 16.67,
+   "2026-08-27": 4.17,
+   "2026-08-28": 16.67,
+   "2026-08-29": 23.96,
+   "2026-08-30": 17.71,
+   "2026-08-31": 20.83,
+   "2026-09-01": 4.17,
+   "2026-09-02": 30.21,
+   "2026-09-03": 15.62,
+   "2026-09-05": 6.25,
+   "2026-09-06": 16.67,
+   "2026-09-07": 23.96,
+   "2026-09-08": 23.96,
+   "2026-09-09": 20.83,
+   "2026-09-10": 22.92,
+   "2026-09-11": 22.92,
+   "2026-09-12": 7.29,
+   "2026-09-13": 12.5,
+   "2026-09-14": 16.67,
+   "2026-09-15": 18.75,
+   "2026-09-16": 20.83,
+   "2026-09-17": 10.42,
+   "2026-09-18": 25.0,
+   "2026-09-19": 22.92,
+   "2026-09-20": 20.83,
+   "2026-09-21": 10.42,
+   "2026-09-22": 10.42,
+   "2026-09-23": 14.58,
+   "2026-09-24": 20.83,
+   "2026-09-25": 10.42,
+   "2026-09-26": 18.75,
+   "2026-09-27": 22.92,
+   "2026-09-28": 25.0,
+   "2026-09-29": 25.0,
+   "2026-09-30": 20.83
+  },
+  "Claude-Web": {
+   "2026-05-20": -15.62,
+   "2026-05-23": -9.03,
+   "2026-05-25": -11.81,
+   "2026-05-26": -4.51,
+   "2026-05-27": -5.21,
+   "2026-05-28": -8.33,
+   "2026-05-29": -8.33,
+   "2026-05-30": -15.1,
+   "2026-05-31": -10.42,
+   "2026-06-01": -11.46,
+   "2026-06-02": -10.07,
+   "2026-06-03": -8.33,
+   "2026-06-04": -14.58,
+   "2026-06-05": -0.69,
+   "2026-06-06": 0.0,
+   "2026-06-07": -1.04,
+   "2026-06-08": -0.69,
+   "2026-06-09": 0.0,
+   "2026-06-10": -0.69,
+   "2026-06-11": 0.0,
+   "2026-06-12": 0.0,
+   "2026-06-13": 0.0,
+   "2026-06-14": 0.0,
+   "2026-06-15": 0.0,
+   "2026-06-16": 0.0,
+   "2026-06-17": 0.0,
+   "2026-06-18": 0.0,
+   "2026-06-19": 0.0,
+   "2026-06-20": 0.0,
+   "2026-06-21": 0.0,
+   "2026-07-02": 12.5,
+   "2026-07-03": 18.75,
+   "2026-07-04": 19.1,
+   "2026-07-22": 13.89,
+   "2026-07-23": 18.75,
+   "2026-07-24": 12.5,
+   "2026-07-27": 18.75,
+   "2026-07-28": 18.4,
+   "2026-07-29": 15.97,
+   "2026-07-30": 18.75,
+   "2026-07-31": 12.5,
+   "2026-08-03": 16.32,
+   "2026-08-04": 17.01,
+   "2026-08-05": 17.01,
+   "2026-08-06": 17.01,
+   "2026-08-07": 17.01,
+   "2026-08-08": 13.19,
+   "2026-08-09": 12.5,
+   "2026-08-10": 12.85,
+   "2026-08-11": 16.67,
+   "2026-08-12": 17.01,
+   "2026-08-13": 15.62,
+   "2026-08-14": 12.85,
+   "2026-08-15": 9.03,
+   "2026-08-16": 15.62,
+   "2026-08-17": 11.11,
+   "2026-08-18": 13.19,
+   "2026-08-19": 15.62,
+   "2026-08-22": 17.36,
+   "2026-08-24": 17.36,
+   "2026-08-25": 12.85,
+   "2026-08-26": 12.85,
+   "2026-08-27": 13.54,
+   "2026-08-28": 16.32,
+   "2026-09-02": 12.5,
+   "2026-09-04": 17.01,
+   "2026-09-06": 12.5,
+   "2026-09-09": 15.97,
+   "2026-09-15": 17.01,
+   "2026-09-19": -2.08,
+   "2026-09-21": -4.51,
+   "2026-09-24": 0.0,
+   "2026-09-30": -4.17
+  }
+ },
+ "level_partial_unit_days_excluded": {
+  "OpenAI": 43,
+  "Gemini": 10,
+  "Claude-Web": 15
+ },
+ "cusum": {
+  "OpenAI": {
+   "baseline_days": [
+    "2026-05-14",
+    "2026-05-23"
+   ],
+   "mu": 5.73,
+   "sd": 6.72,
+   "k": 3.36,
+   "h": 33.6,
+   "n_monitored": 62,
+   "alarms": [
+    {
+     "d": "2026-06-11",
+     "direction": "up",
+     "x": 25.0
+    },
+    {
+     "d": "2026-06-23",
+     "direction": "up",
+     "x": 18.75
+    },
+    {
+     "d": "2026-06-27",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-07-06",
+     "direction": "up",
+     "x": 31.25
+    },
+    {
+     "d": "2026-07-16",
+     "direction": "up",
+     "x": 31.25
+    },
+    {
+     "d": "2026-07-23",
+     "direction": "up",
+     "x": 27.08
+    },
+    {
+     "d": "2026-08-08",
+     "direction": "up",
+     "x": 27.08
+    },
+    {
+     "d": "2026-08-14",
+     "direction": "up",
+     "x": 25.0
+    },
+    {
+     "d": "2026-08-17",
+     "direction": "up",
+     "x": 27.08
+    },
+    {
+     "d": "2026-08-20",
+     "direction": "up",
+     "x": 33.33
+    },
+    {
+     "d": "2026-08-24",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-08-28",
+     "direction": "up",
+     "x": 25.0
+    },
+    {
+     "d": "2026-08-31",
+     "direction": "up",
+     "x": 22.92
+    },
+    {
+     "d": "2026-09-02",
+     "direction": "up",
+     "x": 27.08
+    },
+    {
+     "d": "2026-09-05",
+     "direction": "up",
+     "x": 27.08
+    },
+    {
+     "d": "2026-09-08",
+     "direction": "up",
+     "x": 29.17
+    },
+    {
+     "d": "2026-09-11",
+     "direction": "up",
+     "x": 27.08
+    },
+    {
+     "d": "2026-09-13",
+     "direction": "up",
+     "x": 25.0
+    },
+    {
+     "d": "2026-09-17",
+     "direction": "up",
+     "x": 25.0
+    }
+   ],
+   "path": [
+    {
+     "d": "2026-05-24",
+     "x": 4.17,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-25",
+     "x": 7.29,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-26",
+     "x": 14.58,
+     "s_up": 5.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-27",
+     "x": 10.42,
+     "s_up": 6.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-10",
+     "x": 20.83,
+     "s_up": 18.56,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-11",
+     "x": 25.0,
+     "s_up": 34.47,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-12",
+     "x": 16.67,
+     "s_up": 7.58,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-14",
+     "x": 12.5,
+     "s_up": 10.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-16",
+     "x": 16.67,
+     "s_up": 18.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-18",
+     "x": 22.92,
+     "s_up": 32.4,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-23",
+     "x": 18.75,
+     "s_up": 42.06,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-24",
+     "x": 10.42,
+     "s_up": 1.33,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-25",
+     "x": 10.42,
+     "s_up": 2.66,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-26",
+     "x": 29.17,
+     "s_up": 22.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-27",
+     "x": 20.83,
+     "s_up": 34.48,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-28",
+     "x": 12.5,
+     "s_up": 3.41,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-30",
+     "x": 6.25,
+     "s_up": 0.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-03",
+     "x": 22.92,
+     "s_up": 14.4,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-06",
+     "x": 31.25,
+     "s_up": 36.56,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-13",
+     "x": 35.42,
+     "s_up": 26.33,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-16",
+     "x": 31.25,
+     "s_up": 48.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-20",
+     "x": 31.25,
+     "s_up": 22.16,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-23",
+     "x": 27.08,
+     "s_up": 40.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-06",
+     "x": 22.92,
+     "s_up": 13.83,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-07",
+     "x": 27.08,
+     "s_up": 31.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-08",
+     "x": 27.08,
+     "s_up": 49.81,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-09",
+     "x": 22.92,
+     "s_up": 13.83,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-13",
+     "x": 20.83,
+     "s_up": 25.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-14",
+     "x": 25.0,
+     "s_up": 41.48,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-15",
+     "x": 27.08,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-16",
+     "x": 20.83,
+     "s_up": 29.73,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-17",
+     "x": 27.08,
+     "s_up": 47.72,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-19",
+     "x": 22.92,
+     "s_up": 13.83,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-20",
+     "x": 33.33,
+     "s_up": 38.07,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-21",
+     "x": 20.83,
+     "s_up": 11.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-22",
+     "x": 20.83,
+     "s_up": 23.48,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-24",
+     "x": 20.83,
+     "s_up": 35.22,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-25",
+     "x": 27.08,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-26",
+     "x": 12.5,
+     "s_up": 21.4,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-27",
+     "x": 20.83,
+     "s_up": 33.14,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-28",
+     "x": 25.0,
+     "s_up": 49.05,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-29",
+     "x": 22.92,
+     "s_up": 13.83,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-30",
+     "x": 22.92,
+     "s_up": 27.66,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-31",
+     "x": 22.92,
+     "s_up": 41.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-01",
+     "x": 25.0,
+     "s_up": 15.91,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-02",
+     "x": 27.08,
+     "s_up": 33.9,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-03",
+     "x": 33.33,
+     "s_up": 24.24,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-05",
+     "x": 27.08,
+     "s_up": 42.23,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-06",
+     "x": 27.08,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-07",
+     "x": 22.92,
+     "s_up": 31.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-08",
+     "x": 29.17,
+     "s_up": 51.9,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-09",
+     "x": 22.92,
+     "s_up": 13.83,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-10",
+     "x": 28.12,
+     "s_up": 32.86,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-11",
+     "x": 27.08,
+     "s_up": 50.85,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-12",
+     "x": 27.08,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-13",
+     "x": 25.0,
+     "s_up": 33.9,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-14",
+     "x": 27.08,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-15",
+     "x": 22.92,
+     "s_up": 31.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-17",
+     "x": 25.0,
+     "s_up": 47.73,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-28",
+     "x": 14.58,
+     "s_up": 5.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-29",
+     "x": 18.75,
+     "s_up": 15.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-30",
+     "x": 20.83,
+     "s_up": 26.89,
+     "s_down": 0.0
+    }
+   ]
+  },
+  "Gemini": {
+   "baseline_days": [
+    "2026-05-16",
+    "2026-05-25"
+   ],
+   "mu": 2.08,
+   "sd": 5.71,
+   "k": 2.85,
+   "h": 28.53,
+   "n_monitored": 119,
+   "alarms": [
+    {
+     "d": "2026-06-19",
+     "direction": "up",
+     "x": 10.42
+    },
+    {
+     "d": "2026-06-30",
+     "direction": "up",
+     "x": 10.42
+    },
+    {
+     "d": "2026-07-06",
+     "direction": "up",
+     "x": 22.92
+    },
+    {
+     "d": "2026-07-11",
+     "direction": "up",
+     "x": 23.96
+    },
+    {
+     "d": "2026-07-13",
+     "direction": "up",
+     "x": 17.71
+    },
+    {
+     "d": "2026-07-15",
+     "direction": "up",
+     "x": 25.0
+    },
+    {
+     "d": "2026-07-17",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-07-20",
+     "direction": "up",
+     "x": 16.67
+    },
+    {
+     "d": "2026-07-23",
+     "direction": "up",
+     "x": 22.92
+    },
+    {
+     "d": "2026-07-26",
+     "direction": "up",
+     "x": 18.75
+    },
+    {
+     "d": "2026-07-29",
+     "direction": "up",
+     "x": 22.92
+    },
+    {
+     "d": "2026-08-02",
+     "direction": "up",
+     "x": 28.12
+    },
+    {
+     "d": "2026-08-04",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-08-09",
+     "direction": "up",
+     "x": 26.04
+    },
+    {
+     "d": "2026-08-13",
+     "direction": "up",
+     "x": 12.5
+    },
+    {
+     "d": "2026-08-21",
+     "direction": "up",
+     "x": 10.42
+    },
+    {
+     "d": "2026-08-23",
+     "direction": "up",
+     "x": 16.67
+    },
+    {
+     "d": "2026-08-26",
+     "direction": "up",
+     "x": 16.67
+    },
+    {
+     "d": "2026-08-29",
+     "direction": "up",
+     "x": 23.96
+    },
+    {
+     "d": "2026-08-31",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-09-03",
+     "direction": "up",
+     "x": 15.62
+    },
+    {
+     "d": "2026-09-07",
+     "direction": "up",
+     "x": 23.96
+    },
+    {
+     "d": "2026-09-09",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-09-11",
+     "direction": "up",
+     "x": 22.92
+    },
+    {
+     "d": "2026-09-15",
+     "direction": "up",
+     "x": 18.75
+    },
+    {
+     "d": "2026-09-18",
+     "direction": "up",
+     "x": 25.0
+    },
+    {
+     "d": "2026-09-20",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-09-24",
+     "direction": "up",
+     "x": 20.83
+    },
+    {
+     "d": "2026-09-27",
+     "direction": "up",
+     "x": 22.92
+    },
+    {
+     "d": "2026-09-29",
+     "direction": "up",
+     "x": 25.0
+    }
+   ],
+   "path": [
+    {
+     "d": "2026-05-26",
+     "x": 1.04,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-27",
+     "x": 1.04,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-28",
+     "x": -2.08,
+     "s_up": 0.0,
+     "s_down": 1.31
+    },
+    {
+     "d": "2026-05-29",
+     "x": 1.04,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-30",
+     "x": 7.29,
+     "s_up": 2.36,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-05-31",
+     "x": 1.04,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-01",
+     "x": -3.12,
+     "s_up": 0.0,
+     "s_down": 2.35
+    },
+    {
+     "d": "2026-06-02",
+     "x": -11.46,
+     "s_up": 0.0,
+     "s_down": 13.04
+    },
+    {
+     "d": "2026-06-03",
+     "x": 0.0,
+     "s_up": 0.0,
+     "s_down": 12.27
+    },
+    {
+     "d": "2026-06-04",
+     "x": -2.08,
+     "s_up": 0.0,
+     "s_down": 13.57
+    },
+    {
+     "d": "2026-06-05",
+     "x": 6.25,
+     "s_up": 1.32,
+     "s_down": 6.55
+    },
+    {
+     "d": "2026-06-06",
+     "x": 8.33,
+     "s_up": 4.71,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-07",
+     "x": 0.0,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-08",
+     "x": 6.25,
+     "s_up": 1.32,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-09",
+     "x": 0.0,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-10",
+     "x": 6.25,
+     "s_up": 1.32,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-11",
+     "x": 12.5,
+     "s_up": 8.88,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-12",
+     "x": 6.25,
+     "s_up": 10.2,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-13",
+     "x": 6.25,
+     "s_up": 11.52,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-14",
+     "x": 12.5,
+     "s_up": 19.08,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-15",
+     "x": 6.25,
+     "s_up": 20.4,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-16",
+     "x": 6.25,
+     "s_up": 21.72,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-17",
+     "x": 6.25,
+     "s_up": 23.03,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-18",
+     "x": 6.25,
+     "s_up": 24.35,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-19",
+     "x": 10.42,
+     "s_up": 29.83,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-20",
+     "x": 4.17,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-21",
+     "x": 12.5,
+     "s_up": 7.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-23",
+     "x": 4.17,
+     "s_up": 6.8,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-25",
+     "x": 6.25,
+     "s_up": 8.12,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-26",
+     "x": 4.17,
+     "s_up": 7.36,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-27",
+     "x": 6.25,
+     "s_up": 8.67,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-28",
+     "x": 14.58,
+     "s_up": 18.32,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-29",
+     "x": 10.42,
+     "s_up": 23.81,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-30",
+     "x": 10.42,
+     "s_up": 29.29,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-01",
+     "x": 18.75,
+     "s_up": 13.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-02",
+     "x": 0.0,
+     "s_up": 8.88,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-03",
+     "x": 6.25,
+     "s_up": 10.2,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-04",
+     "x": 16.67,
+     "s_up": 21.94,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-06",
+     "x": 22.92,
+     "s_up": 39.92,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-07",
+     "x": 4.17,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-08",
+     "x": 14.58,
+     "s_up": 9.65,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-09",
+     "x": 16.67,
+     "s_up": 21.38,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-10",
+     "x": 11.46,
+     "s_up": 27.91,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-11",
+     "x": 23.96,
+     "s_up": 46.94,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-12",
+     "x": 27.08,
+     "s_up": 22.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-13",
+     "x": 17.71,
+     "s_up": 34.92,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-14",
+     "x": 29.17,
+     "s_up": 24.24,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-15",
+     "x": 25.0,
+     "s_up": 44.3,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-16",
+     "x": 22.92,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-17",
+     "x": 20.83,
+     "s_up": 33.88,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-18",
+     "x": 16.67,
+     "s_up": 11.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-19",
+     "x": 14.58,
+     "s_up": 21.38,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-20",
+     "x": 16.67,
+     "s_up": 33.12,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-21",
+     "x": 18.75,
+     "s_up": 13.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-22",
+     "x": 16.67,
+     "s_up": 25.55,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-23",
+     "x": 22.92,
+     "s_up": 43.54,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-24",
+     "x": 12.5,
+     "s_up": 7.57,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-25",
+     "x": 22.92,
+     "s_up": 25.55,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-26",
+     "x": 18.75,
+     "s_up": 39.37,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-28",
+     "x": 20.83,
+     "s_up": 15.9,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-29",
+     "x": 22.92,
+     "s_up": 33.88,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-30",
+     "x": 16.67,
+     "s_up": 11.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-31",
+     "x": 19.79,
+     "s_up": 26.59,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-02",
+     "x": 28.12,
+     "s_up": 49.78,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-03",
+     "x": 23.96,
+     "s_up": 19.03,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-04",
+     "x": 20.83,
+     "s_up": 34.92,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-06",
+     "x": 0.0,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-08",
+     "x": 16.67,
+     "s_up": 11.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-09",
+     "x": 26.04,
+     "s_up": 32.84,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-11",
+     "x": 16.67,
+     "s_up": 11.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-12",
+     "x": 16.67,
+     "s_up": 23.47,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-13",
+     "x": 12.5,
+     "s_up": 31.04,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-14",
+     "x": 8.33,
+     "s_up": 3.4,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-15",
+     "x": 0.0,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-16",
+     "x": 10.42,
+     "s_up": 5.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-17",
+     "x": 12.5,
+     "s_up": 13.05,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-18",
+     "x": 16.67,
+     "s_up": 24.79,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-19",
+     "x": 4.17,
+     "s_up": 24.03,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-20",
+     "x": 4.17,
+     "s_up": 23.26,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-21",
+     "x": 10.42,
+     "s_up": 28.75,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-22",
+     "x": 25.0,
+     "s_up": 20.07,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-23",
+     "x": 16.67,
+     "s_up": 31.8,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-24",
+     "x": 22.92,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-25",
+     "x": 4.17,
+     "s_up": 17.22,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-26",
+     "x": 16.67,
+     "s_up": 28.96,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-27",
+     "x": 4.17,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-28",
+     "x": 16.67,
+     "s_up": 11.74,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-29",
+     "x": 23.96,
+     "s_up": 30.76,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-30",
+     "x": 17.71,
+     "s_up": 12.78,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-31",
+     "x": 20.83,
+     "s_up": 28.67,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-01",
+     "x": 4.17,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-02",
+     "x": 30.21,
+     "s_up": 25.28,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-03",
+     "x": 15.62,
+     "s_up": 35.96,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-05",
+     "x": 6.25,
+     "s_up": 1.32,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-06",
+     "x": 16.67,
+     "s_up": 13.05,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-07",
+     "x": 23.96,
+     "s_up": 32.08,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-08",
+     "x": 23.96,
+     "s_up": 19.03,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-09",
+     "x": 20.83,
+     "s_up": 34.92,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-10",
+     "x": 22.92,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-11",
+     "x": 22.92,
+     "s_up": 35.97,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-12",
+     "x": 7.29,
+     "s_up": 2.36,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-13",
+     "x": 12.5,
+     "s_up": 9.92,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-14",
+     "x": 16.67,
+     "s_up": 21.66,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-15",
+     "x": 18.75,
+     "s_up": 35.48,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-16",
+     "x": 20.83,
+     "s_up": 15.9,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-17",
+     "x": 10.42,
+     "s_up": 21.38,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-18",
+     "x": 25.0,
+     "s_up": 41.45,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-19",
+     "x": 22.92,
+     "s_up": 17.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-20",
+     "x": 20.83,
+     "s_up": 33.88,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-21",
+     "x": 10.42,
+     "s_up": 5.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-22",
+     "x": 10.42,
+     "s_up": 10.97,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-23",
+     "x": 14.58,
+     "s_up": 20.62,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-24",
+     "x": 20.83,
+     "s_up": 36.52,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-25",
+     "x": 10.42,
+     "s_up": 5.49,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-26",
+     "x": 18.75,
+     "s_up": 19.3,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-27",
+     "x": 22.92,
+     "s_up": 37.29,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-28",
+     "x": 25.0,
+     "s_up": 20.07,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-29",
+     "x": 25.0,
+     "s_up": 40.13,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-30",
+     "x": 20.83,
+     "s_up": 15.9,
+     "s_down": 0.0
+    }
+   ]
+  },
+  "Claude-Web": {
+   "baseline_days": [
+    "2026-05-20",
+    "2026-06-01"
+   ],
+   "mu": -9.98,
+   "sd": 3.69,
+   "k": 1.85,
+   "h": 18.47,
+   "n_monitored": 63,
+   "alarms": [
+    {
+     "d": "2026-06-07",
+     "direction": "up",
+     "x": -1.04
+    },
+    {
+     "d": "2026-06-10",
+     "direction": "up",
+     "x": -0.69
+    },
+    {
+     "d": "2026-06-13",
+     "direction": "up",
+     "x": 0.0
+    },
+    {
+     "d": "2026-06-16",
+     "direction": "up",
+     "x": 0.0
+    },
+    {
+     "d": "2026-06-19",
+     "direction": "up",
+     "x": 0.0
+    },
+    {
+     "d": "2026-07-02",
+     "direction": "up",
+     "x": 12.5
+    },
+    {
+     "d": "2026-07-03",
+     "direction": "up",
+     "x": 18.75
+    },
+    {
+     "d": "2026-07-04",
+     "direction": "up",
+     "x": 19.1
+    },
+    {
+     "d": "2026-07-22",
+     "direction": "up",
+     "x": 13.89
+    },
+    {
+     "d": "2026-07-23",
+     "direction": "up",
+     "x": 18.75
+    },
+    {
+     "d": "2026-07-24",
+     "direction": "up",
+     "x": 12.5
+    },
+    {
+     "d": "2026-07-27",
+     "direction": "up",
+     "x": 18.75
+    },
+    {
+     "d": "2026-07-28",
+     "direction": "up",
+     "x": 18.4
+    },
+    {
+     "d": "2026-07-29",
+     "direction": "up",
+     "x": 15.97
+    },
+    {
+     "d": "2026-07-30",
+     "direction": "up",
+     "x": 18.75
+    },
+    {
+     "d": "2026-07-31",
+     "direction": "up",
+     "x": 12.5
+    },
+    {
+     "d": "2026-08-03",
+     "direction": "up",
+     "x": 16.32
+    },
+    {
+     "d": "2026-08-04",
+     "direction": "up",
+     "x": 17.01
+    },
+    {
+     "d": "2026-08-05",
+     "direction": "up",
+     "x": 17.01
+    },
+    {
+     "d": "2026-08-06",
+     "direction": "up",
+     "x": 17.01
+    },
+    {
+     "d": "2026-08-07",
+     "direction": "up",
+     "x": 17.01
+    },
+    {
+     "d": "2026-08-08",
+     "direction": "up",
+     "x": 13.19
+    },
+    {
+     "d": "2026-08-09",
+     "direction": "up",
+     "x": 12.5
+    },
+    {
+     "d": "2026-08-10",
+     "direction": "up",
+     "x": 12.85
+    },
+    {
+     "d": "2026-08-11",
+     "direction": "up",
+     "x": 16.67
+    },
+    {
+     "d": "2026-08-12",
+     "direction": "up",
+     "x": 17.01
+    },
+    {
+     "d": "2026-08-13",
+     "direction": "up",
+     "x": 15.62
+    },
+    {
+     "d": "2026-08-14",
+     "direction": "up",
+     "x": 12.85
+    },
+    {
+     "d": "2026-08-16",
+     "direction": "up",
+     "x": 15.62
+    },
+    {
+     "d": "2026-08-17",
+     "direction": "up",
+     "x": 11.11
+    },
+    {
+     "d": "2026-08-18",
+     "direction": "up",
+     "x": 13.19
+    },
+    {
+     "d": "2026-08-19",
+     "direction": "up",
+     "x": 15.62
+    },
+    {
+     "d": "2026-08-22",
+     "direction": "up",
+     "x": 17.36
+    },
+    {
+     "d": "2026-08-24",
+     "direction": "up",
+     "x": 17.36
+    },
+    {
+     "d": "2026-08-25",
+     "direction": "up",
+     "x": 12.85
+    },
+    {
+     "d": "2026-08-26",
+     "direction": "up",
+     "x": 12.85
+    },
+    {
+     "d": "2026-08-27",
+     "direction": "up",
+     "x": 13.54
+    },
+    {
+     "d": "2026-08-28",
+     "direction": "up",
+     "x": 16.32
+    },
+    {
+     "d": "2026-09-02",
+     "direction": "up",
+     "x": 12.5
+    },
+    {
+     "d": "2026-09-04",
+     "direction": "up",
+     "x": 17.01
+    },
+    {
+     "d": "2026-09-06",
+     "direction": "up",
+     "x": 12.5
+    },
+    {
+     "d": "2026-09-09",
+     "direction": "up",
+     "x": 15.97
+    },
+    {
+     "d": "2026-09-15",
+     "direction": "up",
+     "x": 17.01
+    },
+    {
+     "d": "2026-09-30",
+     "direction": "up",
+     "x": -4.17
+    }
+   ],
+   "path": [
+    {
+     "d": "2026-06-02",
+     "x": -10.07,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-03",
+     "x": -8.33,
+     "s_up": 0.0,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-04",
+     "x": -14.58,
+     "s_up": 0.0,
+     "s_down": 2.75
+    },
+    {
+     "d": "2026-06-05",
+     "x": -0.69,
+     "s_up": 7.45,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-06",
+     "x": 0.0,
+     "s_up": 15.58,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-07",
+     "x": -1.04,
+     "s_up": 22.68,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-08",
+     "x": -0.69,
+     "s_up": 7.45,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-09",
+     "x": 0.0,
+     "s_up": 15.58,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-10",
+     "x": -0.69,
+     "s_up": 23.03,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-11",
+     "x": 0.0,
+     "s_up": 8.14,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-12",
+     "x": 0.0,
+     "s_up": 16.27,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-13",
+     "x": 0.0,
+     "s_up": 24.41,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-14",
+     "x": 0.0,
+     "s_up": 8.14,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-15",
+     "x": 0.0,
+     "s_up": 16.27,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-16",
+     "x": 0.0,
+     "s_up": 24.41,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-17",
+     "x": 0.0,
+     "s_up": 8.14,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-18",
+     "x": 0.0,
+     "s_up": 16.27,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-19",
+     "x": 0.0,
+     "s_up": 24.41,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-20",
+     "x": 0.0,
+     "s_up": 8.14,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-06-21",
+     "x": 0.0,
+     "s_up": 16.27,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-02",
+     "x": 12.5,
+     "s_up": 36.91,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-03",
+     "x": 18.75,
+     "s_up": 26.89,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-04",
+     "x": 19.1,
+     "s_up": 27.24,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-22",
+     "x": 13.89,
+     "s_up": 22.03,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-23",
+     "x": 18.75,
+     "s_up": 26.89,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-24",
+     "x": 12.5,
+     "s_up": 20.64,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-27",
+     "x": 18.75,
+     "s_up": 26.89,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-28",
+     "x": 18.4,
+     "s_up": 26.54,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-29",
+     "x": 15.97,
+     "s_up": 24.11,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-30",
+     "x": 18.75,
+     "s_up": 26.89,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-07-31",
+     "x": 12.5,
+     "s_up": 20.64,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-03",
+     "x": 16.32,
+     "s_up": 24.46,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-04",
+     "x": 17.01,
+     "s_up": 25.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-05",
+     "x": 17.01,
+     "s_up": 25.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-06",
+     "x": 17.01,
+     "s_up": 25.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-07",
+     "x": 17.01,
+     "s_up": 25.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-08",
+     "x": 13.19,
+     "s_up": 21.33,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-09",
+     "x": 12.5,
+     "s_up": 20.64,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-10",
+     "x": 12.85,
+     "s_up": 20.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-11",
+     "x": 16.67,
+     "s_up": 24.81,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-12",
+     "x": 17.01,
+     "s_up": 25.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-13",
+     "x": 15.62,
+     "s_up": 23.76,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-14",
+     "x": 12.85,
+     "s_up": 20.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-15",
+     "x": 9.03,
+     "s_up": 17.17,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-16",
+     "x": 15.62,
+     "s_up": 40.92,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-17",
+     "x": 11.11,
+     "s_up": 19.25,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-18",
+     "x": 13.19,
+     "s_up": 21.33,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-19",
+     "x": 15.62,
+     "s_up": 23.76,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-22",
+     "x": 17.36,
+     "s_up": 25.5,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-24",
+     "x": 17.36,
+     "s_up": 25.5,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-25",
+     "x": 12.85,
+     "s_up": 20.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-26",
+     "x": 12.85,
+     "s_up": 20.99,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-27",
+     "x": 13.54,
+     "s_up": 21.68,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-08-28",
+     "x": 16.32,
+     "s_up": 24.46,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-02",
+     "x": 12.5,
+     "s_up": 20.64,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-04",
+     "x": 17.01,
+     "s_up": 25.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-06",
+     "x": 12.5,
+     "s_up": 20.64,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-09",
+     "x": 15.97,
+     "s_up": 24.11,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-15",
+     "x": 17.01,
+     "s_up": 25.15,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-19",
+     "x": -2.08,
+     "s_up": 6.06,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-21",
+     "x": -4.51,
+     "s_up": 9.68,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-24",
+     "x": 0.0,
+     "s_up": 17.82,
+     "s_down": 0.0
+    },
+    {
+     "d": "2026-09-30",
+     "x": -4.17,
+     "s_up": 21.78,
+     "s_down": 0.0
+    }
+   ]
+  }
+ },
+ "cusum_rebase": {
+  "OpenAI": [
+   {
+    "baseline_days": [
+     "2026-05-14",
+     "2026-05-23"
+    ],
+    "mu": 5.73,
+    "sd": 6.72,
+    "first_alarm": {
+     "d": "2026-06-11",
+     "direction": "up",
+     "x": 25.0
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-06-12",
+     "2026-06-28"
+    ],
+    "mu": 17.09,
+    "sd": 6.04,
+    "first_alarm": {
+     "d": "2026-07-16",
+     "direction": "up",
+     "x": 31.25
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-07-20",
+     "2026-08-16"
+    ],
+    "mu": 25.21,
+    "sd": 3.32,
+    "first_alarm": {
+     "d": "2026-08-27",
+     "direction": "down",
+     "x": 20.83
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-08-28",
+     "2026-09-07"
+    ],
+    "mu": 25.62,
+    "sd": 3.26,
+    "first_alarm": {
+     "d": "2026-09-30",
+     "direction": "down",
+     "x": 20.83
+    }
+   }
+  ],
+  "Gemini": [
+   {
+    "baseline_days": [
+     "2026-05-16",
+     "2026-05-25"
+    ],
+    "mu": 2.08,
+    "sd": 5.71,
+    "first_alarm": {
+     "d": "2026-06-19",
+     "direction": "up",
+     "x": 10.42
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-06-20",
+     "2026-07-01"
+    ],
+    "mu": 9.17,
+    "sd": 5.03,
+    "first_alarm": {
+     "d": "2026-07-11",
+     "direction": "up",
+     "x": 23.96
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-07-12",
+     "2026-07-21"
+    ],
+    "mu": 20.94,
+    "sd": 4.92,
+    "first_alarm": {
+     "d": "2026-08-14",
+     "direction": "down",
+     "x": 8.33
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-08-15",
+     "2026-08-24"
+    ],
+    "mu": 12.29,
+    "sd": 8.18,
+    "first_alarm": {
+     "d": "2026-09-20",
+     "direction": "up",
+     "x": 20.83
+    }
+   }
+  ],
+  "Claude-Web": [
+   {
+    "baseline_days": [
+     "2026-05-20",
+     "2026-06-01"
+    ],
+    "mu": -9.98,
+    "sd": 3.69,
+    "first_alarm": {
+     "d": "2026-06-07",
+     "direction": "up",
+     "x": -1.04
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-06-08",
+     "2026-06-17"
+    ],
+    "mu": -0.14,
+    "sd": 0.29,
+    "first_alarm": {
+     "d": "2026-07-02",
+     "direction": "up",
+     "x": 12.5
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-07-03",
+     "2026-07-31"
+    ],
+    "mu": 16.74,
+    "sd": 2.77,
+    "first_alarm": {
+     "d": "2026-08-17",
+     "direction": "down",
+     "x": 11.11
+    }
+   },
+   {
+    "baseline_days": [
+     "2026-08-18",
+     "2026-09-04"
+    ],
+    "mu": 14.86,
+    "sd": 2.06,
+    "first_alarm": {
+     "d": "2026-09-19",
+     "direction": "down",
+     "x": -2.08
+    }
+   }
+  ]
+ },
+ "consistency_by_category": {
+  "OpenAI|CompCluster": {
+   "items_with_variance": 0,
+   "alpha": null
+  },
+  "OpenAI|Direct": {
+   "items_with_variance": 3,
+   "cases": 72,
+   "alpha": 0.292
+  },
+  "OpenAI|Genre": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "OpenAI|GenreRecommend": {
+   "items_with_variance": 3,
+   "cases": 72,
+   "alpha": 0.092
+  },
+  "OpenAI|LongTail": {
+   "items_with_variance": 2,
+   "cases": 72,
+   "alpha": 0.579
+  },
+  "OpenAI|Research": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "Gemini|CompCluster": {
+   "items_with_variance": 0,
+   "alpha": null
+  },
+  "Gemini|Direct": {
+   "items_with_variance": 3,
+   "cases": 129,
+   "alpha": 0.357
+  },
+  "Gemini|Genre": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "Gemini|GenreRecommend": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "Gemini|LongTail": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "Gemini|Research": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "Claude-Web|CompCluster": {
+   "items_with_variance": 0,
+   "alpha": null
+  },
+  "Claude-Web|Direct": {
+   "items_with_variance": 3,
+   "cases": 195,
+   "alpha": 0.784
+  },
+  "Claude-Web|Genre": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "Claude-Web|GenreRecommend": {
+   "items_with_variance": 0,
+   "alpha": null
+  },
+  "Claude-Web|LongTail": {
+   "items_with_variance": 1,
+   "alpha": null
+  },
+  "Claude-Web|Research": {
+   "items_with_variance": 1,
+   "alpha": null
+  }
+ },
+ "cusum_rule": {
+  "reference_days": 10,
+  "k_sd": 0.5,
+  "h_sd": 5.0,
+  "restart_after_alarm": true
+ },
+ "consistency": {
+  "OpenAI": {
+   "cases": 72,
+   "items": 16,
+   "alpha": 0.553,
+   "ci95": [
+    0.419,
+    0.636
+   ],
+   "zero_variance_items": [
+    "C1",
+    "C2",
+    "G2",
+    "GR1",
+    "GR2",
+    "GR5"
+   ]
+  },
+  "Gemini": {
+   "cases": 129,
+   "items": 16,
+   "alpha": 0.407,
+   "ci95": [
+    0.279,
+    0.5
+   ],
+   "zero_variance_items": [
+    "C1",
+    "C2",
+    "G2",
+    "GR1",
+    "GR2",
+    "GR3",
+    "GR4",
+    "GR5",
+    "L2"
+   ]
+  },
+  "Claude-Web": {
+   "cases": 195,
+   "items": 16,
+   "alpha": 0.61,
+   "ci95": [
+    0.562,
+    0.651
+   ],
+   "zero_variance_items": [
+    "C1",
+    "C2",
+    "G2",
+    "GR1",
+    "GR2",
+    "GR3",
+    "GR4",
+    "GR5",
+    "GR6",
+    "L2"
+   ]
+  }
+ },
+ "prereg_chronicle": [
+  {
+   "id": "prereg-q0-wikidata-to-google-kg-latency",
+   "file": "Q0.yaml",
+   "start": "2026-05-11",
+   "end": "2026-09-22",
+   "status_as_registered": "active (latency ≈ 40 h observed T+0 → T+2)",
+   "sampling_end_passed_by_window_end": true
+  },
+  {
+   "id": "prereg-q1-wikidata-co-occurrence",
+   "file": "Q1.yaml",
+   "start": "2026-05-14",
+   "end": "2026-12-31",
+   "status_as_registered": "registered (execution Q3 / 2026)",
+   "sampling_end_passed_by_window_end": false
+  },
+  {
+   "id": "prereg-q2-common-crawl-snapshot-inclusion",
+   "file": "Q2.yaml",
+   "start": "2026-05-13",
+   "end": "2026-12-31",
+   "status_as_registered": "active (files deployed T+2)",
+   "sampling_end_passed_by_window_end": false
+  },
+  {
+   "id": "prereg-q3-cross-llm-trust-graph-drift",
+   "file": "Q3.yaml",
+   "start": "2026-05-14",
+   "end": "2026-08-14",
+   "status_as_registered": "active (live from T+3 after cron 04:00 UTC)",
+   "sampling_end_passed_by_window_end": true
+  },
+  {
+   "id": "prereg-q4-reddit-karma-mention-cluster",
+   "file": "Q4.yaml",
+   "start": "2026-05-11",
+   "end": "2026-08-09",
+   "status_as_registered": "active (running in r/Fantasy since T+0; 7 more subs from T+3)",
+   "sampling_end_passed_by_window_end": true
+  },
+  {
+   "id": "prereg-q5-zenodo-doi-cadence-wikipedia-notability",
+   "file": "Q5.yaml",
+   "start": "2026-05-11",
+   "end": "2027-09-30",
+   "status_as_registered": "registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15)",
+   "sampling_end_passed_by_window_end": false
+  },
+  {
+   "id": "Q6",
+   "file": "Q6_hardcover_reader_activity.yaml",
+   "start": "2026-05-14",
+   "end": null,
+   "status_as_registered": "active",
+   "sampling_end_passed_by_window_end": false
+  }
+ ],
+ "dated_events": [
+  {
+   "id": 4,
+   "channel": "method_cadence",
+   "date": "2026-08-19",
+   "recorded_at": "2026-08-19 09:57:13"
+  },
+  {
+   "id": 5,
+   "channel": "intervention_third_party_listing",
+   "date": "2026-08-27",
+   "recorded_at": "2026-08-27 20:05:08"
+  },
+  {
+   "id": 7,
+   "channel": "method_dedupe",
+   "date": "2026-08-22",
+   "recorded_at": "2026-09-03T12:20:32Z"
+  },
+  {
+   "id": 9,
+   "channel": "method_dedupe",
+   "date": "2026-05-13",
+   "recorded_at": "2026-09-04 14:40:27"
+  },
+  {
+   "id": 10,
+   "channel": "method_metric",
+   "date": "2026-09-04",
+   "recorded_at": "2026-09-04T15:16:05Z"
+  },
+  {
+   "id": 11,
+   "channel": "method_dedupe",
+   "date": "2026-05-13",
+   "recorded_at": "2026-09-04T15:16:05Z"
+  },
+  {
+   "id": 12,
+   "channel": "intervention_book_launch",
+   "date": "2026-09-22",
+   "recorded_at": "2026-09-05 14:39:56"
+  },
+  {
+   "id": 18,
+   "channel": "intervention_book_launch",
+   "date": "2026-10-08",
+   "recorded_at": "2026-09-23 14:57:37"
+  }
+ ],
+ "preregs_frozen_at": "2026-10-04T16:09:37Z",
+ "gaps_in_window": [
+  {
+   "id": 1,
+   "channel": "claude_web",
+   "from": "2026-07-05",
+   "to": "2026-07-21"
+  },
+  {
+   "id": 2,
+   "channel": "openai_search",
+   "from": "2026-07-24",
+   "to": "2026-08-06"
+  },
+  {
+   "id": 3,
+   "channel": "openai_search",
+   "from": "2026-08-18",
+   "to": "2026-08-19"
+  },
+  {
+   "id": 4,
+   "channel": "method_cadence",
+   "from": "2026-08-19",
+   "to": "2026-08-19"
+  },
+  {
+   "id": 5,
+   "channel": "intervention_third_party_listing",
+   "from": "2026-08-27",
+   "to": "2026-08-27"
+  },
+  {
+   "id": 6,
+   "channel": "openai_search",
+   "from": "2026-09-03",
+   "to": "2026-09-03"
+  },
+  {
+   "id": 7,
+   "channel": "method_dedupe",
+   "from": "2026-08-22",
+   "to": "2026-09-03"
+  },
+  {
+   "id": 8,
+   "channel": "claude_web",
+   "from": "2026-06-01",
+   "to": "2026-09-04"
+  },
+  {
+   "id": 9,
+   "channel": "method_dedupe",
+   "from": "2026-05-13",
+   "to": "2026-08-21"
+  },
+  {
+   "id": 10,
+   "channel": "method_metric",
+   "from": "2026-09-04",
+   "to": "2026-09-04"
+  },
+  {
+   "id": 11,
+   "channel": "method_dedupe",
+   "from": "2026-05-13",
+   "to": "2026-09-04"
+  },
+  {
+   "id": 12,
+   "channel": "intervention_book_launch",
+   "from": "2026-09-22",
+   "to": "2026-09-22"
+  },
+  {
+   "id": 13,
+   "channel": "claude_web",
+   "from": "2026-08-23",
+   "to": "2026-08-23"
+  },
+  {
+   "id": 14,
+   "channel": "bing_index",
+   "from": "2026-08-01",
+   "to": "2026-09-15"
+  },
+  {
+   "id": 15,
+   "channel": "claude_web",
+   "from": "2026-08-31",
+   "to": "2026-09-03"
+  },
+  {
+   "id": 16,
+   "channel": "claude_web",
+   "from": "2026-09-12",
+   "to": "2026-09-12"
+  },
+  {
+   "id": 17,
+   "channel": "openai_search",
+   "from": "2026-09-18",
+   "to": "2026-09-27"
+  },
+  {
+   "id": 19,
+   "channel": "claude_web",
+   "from": "2026-09-24",
+   "to": "2026-09-24"
+  },
+  {
+   "id": 20,
+   "channel": "gsc_sitemap_indexed",
+   "from": "2026-05-15",
+   "to": "2026-09-25"
+  },
+  {
+   "id": 21,
+   "channel": "claude_web",
+   "from": "2026-09-27",
+   "to": "2026-09-27"
+  },
+  {
+   "id": 22,
+   "channel": "ai_citation_batch_anthropic",
+   "from": "2026-09-18",
+   "to": "2026-09-30"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "frozen_at_utc": "2026-10-01T00:50:19Z",
+ "window": [
+  "2026-05-11",
+  "2026-09-30"
+ ],
+ "rows": {
+  "web_rows": 26674,
+  "claude_web_rows": 4143,
+  "runs": 261,
+  "data_gaps": 22
+ }
+}
