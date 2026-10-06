@@ -9,7 +9,7 @@ from pathlib import Path
 import pandas as pd
 ROOT=Path(os.environ.get('MARIN_ENV_DIR', '.')); ENV=(ROOT/'.env').read_text()
 env=lambda k:(re.search(rf'^{k}=(.*)$',ENV,re.M) or [None,None])[1].strip().strip('"\'') if re.search(rf'^{k}=(.*)$',ENV,re.M) else None
-CF=env('CLOUDFLARE_API_TOKEN_FULL'); HF=env('HF_TOKEN'); ACC='3cff4d60f16032d78a178305caf97264'; DB='000680ce-e50d-46b5-b95c-bedddaa590a3'
+CF=env('CLOUDFLARE_API_TOKEN_FULL'); HF=env('HF_TOKEN'); ACC=env('MEASUREMENT_DB_ACCOUNT_ID'); DB=env('MEASUREMENT_DB_ID')
 REPO='marintkael/ai-citation-fidelity'; R=Path(__file__).resolve().parent.parent; DRY='--dry' in sys.argv
 def d1(sql):
     req=urllib.request.Request(f'https://api.cloudflare.com/client/v4/accounts/{ACC}/d1/database/{DB}/query',data=json.dumps({'sql':sql}).encode(),headers={'Authorization':f'Bearer {CF}','Content-Type':'application/json'},method='POST')

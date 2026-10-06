@@ -43,7 +43,7 @@ node scripts/patch-wasm-to-cdn.mjs   # rewrite WASM URLs to jsDelivr CDN
 
 ```bash
 CLOUDFLARE_API_TOKEN=$CF_TOKEN \
-CLOUDFLARE_ACCOUNT_ID=3cff4d60f16032d78a178305caf97264 \
+CLOUDFLARE_ACCOUNT_ID=$CF_ACCOUNT_ID \
 npx wrangler@3 pages deploy build --project-name=marin-dashboard --branch=main
 ```
 

@@ -44,7 +44,7 @@ import marin_models  # noqa: F401
 from lm_eval import simple_evaluate
 from lm_eval.tasks import TaskManager
 
-GATEWAY_BASE = "https://gateway.ai.cloudflare.com/v1/3cff4d60f16032d78a178305caf97264/marin-ai-citation"
+GATEWAY_BASE = f"https://gateway.ai.cloudflare.com/v1/{os.environ['CLOUDFLARE_ACCOUNT_ID']}/marin-ai-citation"
 
 MODEL_CONFIGS = [
     # 2026-05-25 v4.2: OpenAI entry REMOVED from Action.
