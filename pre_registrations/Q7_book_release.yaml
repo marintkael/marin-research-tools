@@ -33,6 +33,19 @@ amendment_2026-10-07: |
       2026-10-08. A sensitivity baseline 2026-09-08..2026-09-29 without early availability is reported in addition.
   (4) No effect on the primary analysis from the scoring correction of 2026-10-07 (Claude rows only) or from
       showing the trend on anchor days only.
+amendment2_2026-10-07: |
+  Fixed on 2026-10-07, before the event and without effect data.
+  (a) Correction to amendment point (4): the release-date fix in the scoring scheme (register entry
+      method_scorer_termin) also touched OpenAI and Gemini (8 answers). The baseline could only be partly rescored
+      (evidence from 500-character excerpts), the effect window is fully scored under the new rule, so the
+      point-based Direct channel may be biased upwards.
+  (b) Robustness metric added: HIT RATE = share of answers that correctly name the author (score > 0), per provider
+      and channel; independent of the partial/full threshold. A Direct-channel effect is reported only if it appears
+      in points AND in the hit rate.
+  (c) Analysis details: baseline drift per provider = linear slope over all anchor days from 2026-08-19; effect per
+      channel = mean of provider effects (OpenAI, Gemini), 95 % bootstrap over anchor days (10,000 draws, fixed seed);
+      first deviation per channel = first alarm of a one-sided CUSUM (k = 0.5, h = 5) in the effect window.
+      Last anchor day in the effect window: 2026-11-05.
 report: Report 04, planned for 2026-11-07 (paper DE + EN, Zenodo DOI)
 status: registered, effect window opens 2026-10-08
-version: v1.1 · 2026-10-07
+version: v1.2 · 2026-10-07
