@@ -14,4 +14,10 @@ sampling:
 stopping_rule: 134 surveys or saturation (no new hit in 14 days)
 analysis: descriptive statistics · visualisation of latency distribution
 status: active (latency ≈ 40 h observed T+0 → T+2)
+status_amendment_2026-10-07: >-
+  Data collection window ended on 2026-09-22 (registered end). Collection of the Knowledge Graph
+  probe continues as part of the daily pipeline, but no longer counts towards this pre-registration.
+  Status: closed for data collection, analysis pending. The Validation Report Q3 / 2026
+  (doi:10.5281/zenodo.23145378) reports the observed Knowledge Graph hits (author 140 of 141 days,
+  book 0 of 139) but does not yet test the latency hypothesis. Original status line above is kept unchanged.
 version: v1.0 · 2026-05-13

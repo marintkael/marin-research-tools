@@ -31,4 +31,8 @@ stopping_rule: 90 days post-start or karma-target reached in all 6 subs
 analysis: per-subreddit karma curve · mention-cluster ITS with subreddit
   onboarding events as known interventions
 status: active (running in r/Fantasy since T+0; 7 more subs from T+3)
+status_amendment_2026-10-07: >-
+  Registered end 2026-08-09 has passed; this status line was not updated at the time (noted in the
+  Validation Report Q3 / 2026, doi:10.5281/zenodo.23145378). Status: closed for data collection,
+  analysis pending (planned with Report 04). Original status line above is kept unchanged.
 version: v1.0 · 2026-05-13
