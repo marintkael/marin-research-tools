@@ -1,0 +1,38 @@
+id: prereg-q7-book-release-effect
+field: 2
+title: Effect of the book release (Das vierte Feld, Band I) on AI citation behaviour
+registered: 2026-09-15 (first version, release then planned for 2026-09-22; public log entry in the data-gap register, id 12)
+re_dated: 2026-09-15 (release moved to 2026-10-08 before the event; register entry id 18)
+hypothesis: |
+  Retail availability creates, for the first time, machine-readable evidence maintained by third parties
+  (retailer catalogues, library metadata, ISBN registers). Search-grounded models are expected to retrieve
+  this evidence, so that the hit rate in the Direct channel (questions D1-D3) rises earlier than in the
+  Recommendation channel (GR1-GR6), because recommendations additionally need reception signals.
+null_hypothesis: No difference between the measurement windows.
+intervention_date: 2026-10-08
+windows:
+  baseline: 2026-09-08 .. 2026-10-07 (anchor days of the three-day cadence)
+  effect: 2026-10-08 .. 2026-11-07
+  delayed_effects_observation: until 2027-01-06
+metric: headline per anchor day plus the three channels Direct / Saga knowledge / Recommendation
+analysis: before/after comparison with CUSUM baseline drift removed, so that a running trend is not read as an effect
+unchanged: 16 fixed questions and three-day cadence
+amendment_2026-10-07: |
+  Fixed on 2026-10-07, BEFORE the event. Prompted by measurement changes that touch the original commitment
+  "the provider panel is not adjusted"; justified by measurement problems, not by interim results
+  (register entries claude_web 2026-09-16..2026-10-06, method_claude_modell, intervention_book_launch_amendment).
+  (1) PRIMARY analysis only on providers with an unchanged panel since 2026-08-19: OpenAI search and Gemini;
+      headline = simple mean of these two per anchor day, plus the three channels. Baseline as registered:
+      Gemini on 10 anchor days, OpenAI on 6 (2026-09-09, -12, -15, -30, 2026-10-03, -06; outage 2026-09-18..27 registered).
+      Hypothesis, null hypothesis and analysis unchanged.
+  (2) Claude SECONDARY and descriptive only: from 2026-10-07 measured with the newest Opus model on claude.ai
+      in an incognito chat; the earlier series (Haiku 4.5, Sonnet 4.6, Opus 4.8) is not comparable. Only baseline
+      of the new configuration: one measurement on 2026-10-07 before release (outside the grid, for this purpose
+      only), then anchor days from 2026-10-09. No significance judgement for Claude.
+  (3) Early availability: paperback and hardcover orderable since 2026-09-30; official release and ebook on
+      2026-10-08. A sensitivity baseline 2026-09-08..2026-09-29 without early availability is reported in addition.
+  (4) No effect on the primary analysis from the scoring correction of 2026-10-07 (Claude rows only) or from
+      showing the trend on anchor days only.
+report: Report 04, planned for 2026-11-07 (paper DE + EN, Zenodo DOI)
+status: registered, effect window opens 2026-10-08
+version: v1.1 · 2026-10-07
