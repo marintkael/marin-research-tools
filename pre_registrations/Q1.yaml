@@ -24,4 +24,12 @@ stopping_rule: 90 days post statement publication or saturation
 analysis: descriptive statistics · per-LLM delta plot · Bayesian
   Structural Time Series with statement-publication date as intervention
 status: registered (execution Q3 / 2026)
+status_amendment_2026-10-07: >-
+  Not executed. The registered intervention (6-8 P-statements, among them P136 genre, on the author
+  entity Q139720807) could not be carried out as registered: that Wikidata item was deleted in
+  May 2026 and the comparator set of nine models (including the locally run open models) is no
+  longer operated. The current author item Q140004504 carries no P136 statement; genre (P136) is
+  recorded on the book item Q140004740, which is a different intervention and is not evaluated
+  under this pre-registration. No data were analysed and no effect is claimed. Status: closed,
+  not executed. Original status line above is kept unchanged.
 version: v1.0 · 2026-05-13

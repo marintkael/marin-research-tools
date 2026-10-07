@@ -1,5 +1,5 @@
 # Pre-Registration Q6 · Hardcover Reader-Activity-Volume
-# Methodology Note 01 v3.0 §4.1 (DOI 10.5281/zenodo.20262362)
+# Methodology Note 01 §4.1 (concept DOI 10.5281/zenodo.20125933; the v3.0 record was withdrawn)
 #
 # Refactor v0.3 (2026-05-17): Activity volume is the variable.
 # Attributes of individual reviews (rating distribution, length, voice)
@@ -8,9 +8,9 @@
 id: Q6
 title: "Hardcover Reader-Activity-Volume"
 introduced_in_version: v2.3
-methodology_note_doi: "10.5281/zenodo.20262362"
+methodology_note_doi: "10.5281/zenodo.20125933"  # concept DOI; v3.0 record withdrawn (amended 2026-10-07)
 superseded_by_version: v3.0
-current_methodology_note_doi: "10.5281/zenodo.20262362"
+current_methodology_note_doi: "10.5281/zenodo.20364173"  # Methodology Note 01 v4.0
 status: active
 start_date: 2026-05-14
 expected_evaluation_window_days: 90

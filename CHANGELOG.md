@@ -75,7 +75,7 @@ permanently citable; v0.4.3+ point to the v4.0 Note DOI.
 
 ### Zenodo
 - Published as DOI `10.5281/zenodo.20364157` (new version of the v0.4
-  concept; supersedes `10.5281/zenodo.20360519`).
+  concept; supersedes `10.5281/zenodo.20360519`, a record that has since been withdrawn).
 
 ## v0.4.1 — 2026-05-24
 
@@ -96,7 +96,7 @@ permanently citable; v0.4.3+ point to the v4.0 Note DOI.
 
 ### Note for v0.4
 
-v0.4 (DOI 10.5281/zenodo.20360519) is the same toolchain and produces
+v0.4 (DOI 10.5281/zenodo.20360519, record since withdrawn) is the same toolchain and produces
 the same scores; v0.4.1 only cleans up presentation. Cite v0.4.1 for any
 new replication work.
 
@@ -139,7 +139,7 @@ five minutes.
   **activity volume is the variable; attributes of individual public-write
   events (rating distribution, length, voice, tone) are author-form and
   outside the research design.** See Methodology Note 01 v3.0 (DOI
-  10.5281/zenodo.20262362) §4.1 Q4 and Q6 for the current operationalisation.
+  10.5281/zenodo.20262362, record since withdrawn; concept DOI 10.5281/zenodo.20125933) §4.1 Q4 and Q6 for the current operationalisation.
 
 ### Changed
 - `pre_registrations/Q6_hardcover_reader_activity.yaml` — refactored
@@ -152,7 +152,7 @@ five minutes.
   "Hardcover Reader-Activity-Engineering" to "Hardcover
   Reader-Activity-Volume" to make the focus on volume explicit.
 - `pre_registrations/Q6_hardcover_reader_activity.yaml` —
-  `methodology_note_doi` updated to v3.0 (10.5281/zenodo.20262362).
+  `methodology_note_doi` updated to v3.0 (10.5281/zenodo.20262362, record since withdrawn).
 - `README.md` — Q6 row in the pre-registrations table refactored;
   usage examples generalised accordingly.
 

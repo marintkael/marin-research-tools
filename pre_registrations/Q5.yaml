@@ -31,4 +31,17 @@ stopping_rule: Wikipedia article published OR end of Phase 1 (Q3 / 2027)
 analysis: cumulative-DOI-count vs. notability-threshold curve · qualitative
   audit of any Wikipedia article-deletion discussion
 status: registered (MN-01 v2.0 live T+2; MN-02 ca. 2026-07-15)
+status_amendment_2026-10-07: >-
+  Deviation from the registered cadence. Methodology Note 02 (planned ca. 2026-07-15) and
+  Methodology Note 03 (planned Q4 / 2026) were not published. Methodology Note 01 was
+  versioned instead, and the programme's DOI releases continued as Report 03
+  (doi:10.5281/zenodo.22015495, 2026-08-19) and the Validation Report Q3 / 2026
+  (doi:10.5281/zenodo.23145378, 2026-10-04); method changes since July are recorded in the
+  public data-gap register rather than in a separate note. The content planned for MN-02 / MN-03
+  is folded into Report 04 (book release, planned November 2026) and the Activity Report
+  Q4 / 2026 (planned January 2027). Some earlier record versions were withdrawn from Zenodo;
+  the cumulative DOI count for this study counts published records only. The Wikidata entity
+  named above (Q139720807) no longer exists; the current author item is Q140004504. The
+  monthly Wikipedia probe and the notability analysis remain as registered.
+  Original status line above is kept unchanged.
 version: v1.0 · 2026-05-13
