@@ -53,6 +53,15 @@ amendment3_2026-10-07: |
   Direct channel the hit rate is a SIGN CHECK - a Direct effect in points is reported if its interval excludes zero and
   the hit-rate estimate has the same sign; a contradicting sign marks the effect as not robust. In all other channels
   the hit rate stays a full robustness metric.
+amendment4_2026-10-15: |
+  Fixed on 2026-10-15, DURING the effect window (after anchor days 2026-10-09, -12, -15), disclosed as such.
+  Scoring correction found while reading answers: the scheme required the author name as a mandatory anchor, so an
+  answer naming the book correctly without the author name scored 0. From now on the book or series title
+  ("Das vierte Feld", "Prägungen des Reiches") also counts as an anchor when it is not part of the question (all
+  questions except Direct; only D2 and D3 contain the title); the non-fiction book of the same title by another author
+  remains a collision without points. Applied retroactively to all rows since 2026-08-19 under the same rule: two
+  answers change, both on 2026-10-12, question L1 (Gemini 0 to 2; Claude Opus, descriptive only, 0 to 2). No baseline
+  row is affected, so baseline and effect window are scored under the same rule. Register entry method_scorer_buchtitel.
 report: Report 04, planned for 2026-11-07 (paper DE + EN, Zenodo DOI)
 status: registered, effect window opens 2026-10-08
-version: v1.3 · 2026-10-07
+version: v1.4 · 2026-10-15
