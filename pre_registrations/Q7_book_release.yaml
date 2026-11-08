@@ -85,4 +85,10 @@ extension_2026-11-08: |
   Register entry intervention_book_launch_extension (id 83).
 report: Report 04, planned for 2026-11-07 (paper DE + EN, Zenodo DOI)
 status: registered, effect window opens 2026-10-08
+status_amendment_2026-11-08: >-
+  Dated status note, added on 2026-11-08. The effect window closed on 2026-11-07 (last anchor day 2026-11-05);
+  its data pull was frozen on 2026-11-08. Report 04 (paper DE + EN, Zenodo DOI) had not been released on
+  2026-11-08. The delayed-effect observation runs until 2027-01-06 and will be reported descriptively as an
+  addendum. The non-pre-registered extension to anchor day 2026-11-08 is described above. Original report and
+  status lines above are kept unchanged.
 version: v1.4 · 2026-10-15
