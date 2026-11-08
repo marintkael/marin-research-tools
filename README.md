@@ -125,7 +125,9 @@ registered texts stay as published.
 - **`reports/`**, analysis code, figure builds and frozen results per report:
   `03-found-not-recommended/` (Report 03, 19 August 2026) and
   `q3-2026-validation/` (Validation Report Q3 / 2026, tests the six instrument
-  hypotheses of Q0-INST; DOI [10.5281/zenodo.23145378](https://doi.org/10.5281/zenodo.23145378)).
+  hypotheses of Q0-INST; DOI [10.5281/zenodo.23145378](https://doi.org/10.5281/zenodo.23145378)) and
+  `04-book-launch/` (Report 04 · Book Launch and AI Citation, tests pre-registration Q7, frozen pulls included;
+  DOI [10.5281/zenodo.24063460](https://doi.org/10.5281/zenodo.24063460)).
 
 ## What is *not* in this repository
 

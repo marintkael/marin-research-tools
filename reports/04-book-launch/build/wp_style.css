@@ -1,0 +1,25 @@
+
+    main.wp { padding: 48px 0 80px; }
+    main.wp .container { max-width: 760px; margin: 0 auto; padding: 0 24px; font-family: var(--serif); color: var(--ink); line-height: 1.7; }
+    .wp-head { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid var(--rule); }
+    .wp-num { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ink-soft); margin: 0 0 12px; }
+    .wp-head h1 { font-size: 36px; line-height: 1.2; margin: 0 0 12px; }
+    .wp-subtitle { font-size: 18px; color: var(--ink-soft); margin: 0 0 16px; font-style: italic; }
+    .wp-meta { font-size: 13px; color: var(--ink-soft); margin: 0; }
+    .wp-abstract { background: var(--wax-light, #faf8f3); padding: 24px 28px; border-left: 3px solid var(--wax); margin: 0 0 40px; }
+    .wp-abstract h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 12px; }
+    .wp-abstract p { margin: 0; font-size: 16px; }
+    section { margin: 40px 0; }
+    section h2 { font-size: 26px; margin: 8px 0 16px; }
+    section h3 { font-size: 18px; margin: 24px 0 8px; }
+    .section-num { font-size: 11px; color: var(--ink-soft); margin: 0; letter-spacing: 2px; }
+    .wp-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
+    .wp-table th, .wp-table td { padding: 8px 10px; border-bottom: 1px solid var(--rule); text-align: left; }
+    .wp-table th { font-weight: 600; background: var(--wax-light, #faf8f3); }
+    .cite-text { font-size: 13px; color: var(--ink-soft); padding: 16px 20px; background: var(--wax-light, #faf8f3); border-radius: 2px; }
+    @media (max-width: 720px) {
+      .wp-head h1 { font-size: 28px; }
+      .wp-table { font-size: 12px; }
+      .wp-table th, .wp-table td { padding: 6px 8px; }
+    }
+  

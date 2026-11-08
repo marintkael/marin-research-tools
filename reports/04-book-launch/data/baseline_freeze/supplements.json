@@ -1,0 +1,53 @@
+[
+ {
+  "checked_at_utc": "2026-10-07T12:01:03Z",
+  "added": {
+   "claude_web_rows": 16,
+   "data_gaps": 1
+  },
+  "integrity": {
+   "web_rows": {
+    "changed_since_freeze": 8,
+    "missing_since_freeze": 0
+   }
+  }
+ },
+ {
+  "checked_at_utc": "2026-10-07T12:01:57Z",
+  "added": {},
+  "integrity": {},
+  "corrected": {
+   "web_rows": 8
+  }
+ },
+ {
+  "checked_at_utc": "2026-10-07T15:07:21Z",
+  "added": {
+   "claude_web_rows": 32,
+   "data_gaps": 5
+  },
+  "integrity": {},
+  "corrected": {
+   "web_rows": 9,
+   "claude_web_rows": 2
+  }
+ },
+ {
+  "checked_at_utc": "2026-10-07T15:16:02Z",
+  "added": {
+   "data_gaps": 1
+  },
+  "integrity": {},
+  "corrected": {
+   "web_rows": 1,
+   "claude_web_rows": 1
+  }
+ },
+ {
+  "checked_at_utc": "2026-10-09T16:39:37Z",
+  "added": {
+   "data_gaps": 1
+  },
+  "integrity": {}
+ }
+]

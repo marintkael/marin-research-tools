@@ -1,0 +1,31 @@
+{
+ "frozen_at_utc": "2026-10-07T11:47:30Z",
+ "cutoff_utc": "2026-10-07T23:59:59Z",
+ "window": [
+  "2026-08-19",
+  "2026-10-07"
+ ],
+ "baseline_window": [
+  "2026-09-08",
+  "2026-10-07"
+ ],
+ "panel": [
+  "openai_search",
+  "gemini"
+ ],
+ "rows": {
+  "web_rows": 1504,
+  "runs": 53,
+  "claude_web_rows": 1008,
+  "questions": 16,
+  "data_gaps": 35
+ },
+ "sha256": {
+  "web_rows": "7cb359c318330c0e9b1b95a12ff39157eba6224495a6653651644645db5d0f40",
+  "runs": "3898ab16ad708718c57b13d7b23a33c9e85333cfc462b187ee13eacadccc7892",
+  "claude_web_rows": "5f068ca3f2eb07bdb4fa095af27c0eced6507a4e4595cad20926e00f2187ba48",
+  "questions": "534bfb5e49ee14d0a07f7d5211dda7df4b4338f4107e5c1a104feac84be4a9c4",
+  "data_gaps": "43927f8e378f1d3e2ef05251534a9b820d8eb1cec4e7f6369ef23d50e89b793e"
+ },
+ "preregistration": "Q7_book_release v1.1 (2026-10-07)"
+}

@@ -1,0 +1,589 @@
+{
+ "beschreibung": "Methoden-Nachtrag Bewertungsregeln vom 02.11.2026 (Lückenregister method_scorer_regeln_1102). Hauptanalyse: vorregistrierte Regeln in Grundlinie und Wirkungsfenster (Fensterzeilen auf score_vorregistriert zurückgesetzt). Sensitivität (--regeln nachtrag): neue Regeln in beiden (Grundlinienzeilen auf score_nachtrag). Grundlinienzeilen am gespeicherten Auszug von 500 Zeichen neu bewertet; vor dem 15.09.2026 bleibt der damals gültige Termin 22.09. gewertet.",
+ "window": [
+  {
+   "table": "claude_web_rows",
+   "rid": 4537,
+   "score_vorregistriert": 3,
+   "status_vorregistriert": "full_citation",
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4585,
+   "score_vorregistriert": 3,
+   "status_vorregistriert": "full_citation",
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4770,
+   "score_vorregistriert": 0.5,
+   "status_vorregistriert": "name_only_echo",
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4825,
+   "score_vorregistriert": 0,
+   "status_vorregistriert": "collision",
+   "score_nachtrag": 1,
+   "status_nachtrag": "minimal_match"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4841,
+   "score_vorregistriert": 0,
+   "status_vorregistriert": "collision",
+   "score_nachtrag": 1,
+   "status_nachtrag": "minimal_match"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4866,
+   "score_vorregistriert": 0.5,
+   "status_vorregistriert": "name_only_echo",
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4873,
+   "score_vorregistriert": 0,
+   "status_vorregistriert": "collision",
+   "score_nachtrag": 1,
+   "status_nachtrag": "minimal_match"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4889,
+   "score_vorregistriert": 0,
+   "status_vorregistriert": "collision",
+   "score_nachtrag": 1,
+   "status_nachtrag": "minimal_match"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4914,
+   "score_vorregistriert": 0.5,
+   "status_vorregistriert": "name_only_echo",
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 27400,
+   "score_vorregistriert": 3,
+   "status_vorregistriert": "full_citation",
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 27724,
+   "score_vorregistriert": 0.5,
+   "status_vorregistriert": "name_only_echo",
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor",
+   "d": "2026-11-08",
+   "anbieter": "openai_search",
+   "question_id": "R1",
+   "fenster": "erweiterung_0811",
+   "grundlage": "Volltext (Vollarchiv der Antworten)",
+   "nachgetragen": "2026-11-08"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4937,
+   "score_vorregistriert": 0,
+   "status_vorregistriert": "collision",
+   "score_nachtrag": 1,
+   "status_nachtrag": "minimal_match",
+   "d": "2026-11-05",
+   "anbieter": "claude-sonnet-5-5",
+   "question_id": "D1",
+   "fenster": "wirkung",
+   "grundlage": "Volltext (gespeicherte Claude-Antwort)",
+   "nachgetragen": "2026-11-08"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4985,
+   "score_vorregistriert": 0,
+   "status_vorregistriert": "collision",
+   "score_nachtrag": 1,
+   "status_nachtrag": "minimal_match",
+   "d": "2026-11-08",
+   "anbieter": "claude-sonnet-5-5",
+   "question_id": "D1",
+   "fenster": "erweiterung_0811",
+   "grundlage": "Volltext (gespeicherte Claude-Antwort)",
+   "nachgetragen": "2026-11-08"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 5010,
+   "score_vorregistriert": 0.5,
+   "status_vorregistriert": "name_only_echo",
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor",
+   "d": "2026-11-08",
+   "anbieter": "claude-haiku-5-5",
+   "question_id": "R1",
+   "fenster": "erweiterung_0811",
+   "grundlage": "Volltext (gespeicherte Claude-Antwort)",
+   "nachgetragen": "2026-11-08"
+  }
+ ],
+ "baseline": [
+  {
+   "table": "claude_web_rows",
+   "rid": 3474,
+   "d": "2026-08-19",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3490,
+   "d": "2026-08-22",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3522,
+   "d": "2026-08-22",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3586,
+   "d": "2026-08-24",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3618,
+   "d": "2026-08-24",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3666,
+   "d": "2026-08-25",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3682,
+   "d": "2026-08-26",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3730,
+   "d": "2026-08-27",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3778,
+   "d": "2026-08-28",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 3874,
+   "d": "2026-09-04",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4057,
+   "d": "2026-09-15",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "D1",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4098,
+   "d": "2026-09-15",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4114,
+   "d": "2026-09-19",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4146,
+   "d": "2026-09-19",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4194,
+   "d": "2026-09-21",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4203,
+   "d": "2026-09-24",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "D3",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4210,
+   "d": "2026-09-24",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4242,
+   "d": "2026-09-24",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4306,
+   "d": "2026-09-30",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4338,
+   "d": "2026-09-30",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4402,
+   "d": "2026-10-06",
+   "model": "claude-haiku-4-5-20251001",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4434,
+   "d": "2026-10-06",
+   "model": "claude-opus-4-8",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "claude_web_rows",
+   "rid": 4441,
+   "d": "2026-10-07",
+   "model": "claude-opus-5-5",
+   "question_id": "D1",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 25468,
+   "d": "2026-08-29",
+   "model": "gemini",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 25500,
+   "d": "2026-08-30",
+   "model": "gemini",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 25676,
+   "d": "2026-09-02",
+   "model": "gemini",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 25708,
+   "d": "2026-09-03",
+   "model": "gemini",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 25996,
+   "d": "2026-09-07",
+   "model": "gemini",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26028,
+   "d": "2026-09-08",
+   "model": "gemini",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26268,
+   "d": "2026-09-12",
+   "model": "gemini",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26435,
+   "d": "2026-09-15",
+   "model": "gemini",
+   "question_id": "D1",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26437,
+   "d": "2026-09-15",
+   "model": "gemini",
+   "question_id": "D3",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26517,
+   "d": "2026-09-16",
+   "model": "gemini",
+   "question_id": "D3",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26613,
+   "d": "2026-09-18",
+   "model": "gemini",
+   "question_id": "D3",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26677,
+   "d": "2026-09-20",
+   "model": "gemini",
+   "question_id": "D3",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26933,
+   "d": "2026-09-26",
+   "model": "gemini",
+   "question_id": "D3",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26997,
+   "d": "2026-09-27",
+   "model": "gemini",
+   "question_id": "D3",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 27000,
+   "d": "2026-09-27",
+   "model": "gemini",
+   "question_id": "L1",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 27251,
+   "d": "2026-10-03",
+   "model": "gemini",
+   "question_id": "D1",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  },
+  {
+   "table": "web_rows",
+   "rid": 26188,
+   "d": "2026-09-10",
+   "model": "openai_search",
+   "question_id": "R1",
+   "score_vorregistriert": 0.5,
+   "score_nachtrag": 0,
+   "status_nachtrag": "not_found_no_anchor"
+  },
+  {
+   "table": "web_rows",
+   "rid": 27336,
+   "d": "2026-10-06",
+   "model": "openai_search",
+   "question_id": "L1",
+   "score_vorregistriert": 3,
+   "score_nachtrag": 2,
+   "status_nachtrag": "partial_book"
+  }
+ ],
+ "nachtrag_2026-11-08": {
+  "beschreibung": "Nachtrag 08.11.2026: Die Datenbank trägt ab der Messung vom 05.11.2026 die Bewertungsregeln vom 02.11.2026. Damit die Hauptanalyse durchgehend mit den vorregistrierten Regeln rechnet (Fassung 1.4, Bewerter in der Fassung vor dem 02.11.2026, dieselben Regeln wie in der Grundlinie), wurden alle gewerteten Antworten des Ankertags 05.11.2026 und der nicht vorregistrierten Erweiterung bis einschließlich Ankertag 08.11.2026 am Volltext mit dem Bewerter in der vorregistrierten Fassung neu bewertet. Abweichungen stehen datiert im Teil window (Felder d, fenster, nachgetragen); analyze.py setzt sie in der Hauptanalyse ein, die Sensitivität (--regeln nachtrag) behält die Datenbankwerte. Kontrolle: Derselbe Volltext mit den Regeln vom 02.11.2026 bewertet ergibt in allen geprüften Zeilen den gespeicherten Wert.",
+  "geprueft": {
+   "2026-11-05": {
+    "openai_search": 16,
+    "claude": 48,
+    "gemini": 0,
+    "hinweis": "Gemini: 16 Fehlerzeilen (Guthaben), nicht gewertet und nicht nachgemessen"
+   },
+   "2026-11-08": {
+    "openai_search": 16,
+    "claude": 48,
+    "gemini": 16,
+    "hinweis": "OpenAI nachgemessen 14:24 UTC, Gemini nachgemessen 15:48 UTC (Nachhol-Regeln, je innerhalb 36 h)"
+   }
+  },
+  "abweichungen": {
+   "2026-11-05": {
+    "anzahl": 1,
+    "zeilen": [
+     "Claude Sonnet D1: 1 (minimal_match) -> 0 (collision)"
+    ],
+    "unveraendert": "alle 16 OpenAI-Antworten, darunter D1, D2, L1 und GR6 mit 3 Punkten"
+   },
+   "2026-11-08": {
+    "anzahl": 3,
+    "zeilen": [
+     "OpenAI R1: 0 -> 0,5 (name_only_echo)",
+     "Claude Sonnet D1: 1 (minimal_match) -> 0 (collision)",
+     "Claude Haiku R1: 0 -> 0,5 (name_only_echo)"
+    ],
+    "unveraendert": "alle 16 Gemini-Antworten und die übrigen 15 OpenAI-Antworten"
+   }
+  },
+  "von_hand_gelesen": "05.11.2026: OpenAI D1, D2, L1 und GR6 (je 3 Punkte, keine der Regeln vom 02.11.2026 berührt sie) sowie Claude Opus, Sonnet und Haiku je D1; 08.11.2026: die drei abweichenden Antworten sowie Gemini D3, L2, R1 und GR6."
+ }
+}

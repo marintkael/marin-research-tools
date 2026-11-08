@@ -1,0 +1,57 @@
+{
+ "frozen_at_utc": "2026-11-08T15:54:40Z",
+ "cutoff_utc": "2026-11-08T23:59:59Z",
+ "window": [
+  "2026-08-19",
+  "2026-11-08"
+ ],
+ "baseline_window": [
+  "2026-09-08",
+  "2026-10-07"
+ ],
+ "panel": [
+  "openai_search",
+  "gemini"
+ ],
+ "rows": {
+  "web_rows": 1856,
+  "runs": 85,
+  "claude_web_rows": 1584,
+  "questions": 16,
+  "data_gaps": 82
+ },
+ "sha256": {
+  "web_rows": "0c7686eaea08917bf0065441c1e6f7058616aa1b213c8f3d7645f8a16e62d260",
+  "runs": "7d96c18bd5ee858200f259af872d6ab71f36c5583613f239451bb37c5bd00ebf",
+  "claude_web_rows": "7808629faba2f3fc127853fd6a9784aa302a068bc47498debed0db25f9e94a39",
+  "questions": "534bfb5e49ee14d0a07f7d5211dda7df4b4338f4107e5c1a104feac84be4a9c4",
+  "data_gaps": "c64a0dad7fc2d3906e9107d06730fba06cab95815eaac0fd414f06e7b62814c2"
+ },
+ "preregistration": "Q7_book_release v1.1 (2026-10-07)",
+ "zweck": "Nicht vorregistrierte Erweiterung des Wirkungsfensters bis einschließlich Ankertag 2026-11-08 (Lückenregister id 83, intervention_book_launch_extension). Die primäre Auswertung nutzt weiterhin data/effect_freeze (Stichtag 2026-11-07).",
+ "abzug": "Gezogen am 2026-11-08 um 15:54:40 UTC (frozen_at_utc) mit build/fetch.py, nach Abschluss aller Messungen des Ankertags 2026-11-08: Claude 07:24 UTC, OpenAI nachgemessen 14:24 UTC, Gemini nachgemessen 15:48 UTC (Nachhol-Regeln, Register id 44 und 82). Zeilen mit Zeitstempel nach dem Abzugszeitpunkt und vor dem Stichtag sind nicht enthalten.",
+ "abgleich_effect_freeze": {
+  "web_rows": {
+   "gemeinsam": 1824,
+   "geaendert": 0,
+   "fehlend": 0,
+   "neu": 32,
+   "neu_am": "2026-11-08 (16 OpenAI, 16 Gemini, keine Fehlerzeile)"
+  },
+  "claude_web_rows": {
+   "gemeinsam": 1536,
+   "geaendert": 0,
+   "fehlend": 0,
+   "neu": 48,
+   "neu_am": "2026-11-08"
+  },
+  "runs": {
+   "gemeinsam": 84,
+   "geaendert": 0,
+   "fehlend": 0,
+   "neu": 1,
+   "neu_am": "2026-11-08"
+  }
+ },
+ "preregistration_fassung": "Q7_book_release v1.4 (2026-10-15) mit datierten Vermerken vom 2026-11-08; das Feld preregistration ist der in build/fetch.py fest eingetragene Text"
+}

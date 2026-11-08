@@ -1,0 +1,344 @@
+{
+ "beschreibung": "Leere Antworten im Panel OpenAI-Websuche und Gemini (Lückenregister 66, Sensitivität in Bericht 04): gewertete Zeilen (Status nicht error) mit leerem Antworttext. Der Bewerter vergibt dafür den Status not_found und 0 Punkte. Seit dem 01.11.2026 gilt eine leere Antwort als Fehlmessung, seit dem 05.11.2026 wird sie wiederholt (Einträge 66 und 70); die Zeilen bis dahin gehen in die Hauptanalyse mit 0 Punkten ein.",
+ "kriterium": "ai_citation_results: llm in (openai_search, gemini), date(asked_at) >= 2026-08-19, asked_at <= 2026-11-08 23:59:59 UTC, status != 'error', length(trim(answer_excerpt)) = 0",
+ "abgefragt_utc": "2026-11-08T16:25:41Z",
+ "n": 56,
+ "rows": [
+  {
+   "rid": 24860,
+   "d": "2026-08-19",
+   "llm": "gemini",
+   "question_id": "R1"
+  },
+  {
+   "rid": 24890,
+   "d": "2026-08-20",
+   "llm": "gemini",
+   "question_id": "C1"
+  },
+  {
+   "rid": 24971,
+   "d": "2026-08-21",
+   "llm": "gemini",
+   "question_id": "C2"
+  },
+  {
+   "rid": 24974,
+   "d": "2026-08-21",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 25120,
+   "d": "2026-08-23",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 25178,
+   "d": "2026-08-25",
+   "llm": "gemini",
+   "question_id": "C1"
+  },
+  {
+   "rid": 25182,
+   "d": "2026-08-25",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 25184,
+   "d": "2026-08-25",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 25294,
+   "d": "2026-08-26",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 25326,
+   "d": "2026-08-27",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 25356,
+   "d": "2026-08-28",
+   "llm": "gemini",
+   "question_id": "R1"
+  },
+  {
+   "rid": 25469,
+   "d": "2026-08-29",
+   "llm": "gemini",
+   "question_id": "GR1"
+  },
+  {
+   "rid": 25501,
+   "d": "2026-08-30",
+   "llm": "gemini",
+   "question_id": "GR1"
+  },
+  {
+   "rid": 25502,
+   "d": "2026-08-30",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 25504,
+   "d": "2026-08-30",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 25534,
+   "d": "2026-08-31",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 25648,
+   "d": "2026-09-01",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 25674,
+   "d": "2026-09-02",
+   "llm": "gemini",
+   "question_id": "C1"
+  },
+  {
+   "rid": 25680,
+   "d": "2026-09-02",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 25711,
+   "d": "2026-09-03",
+   "llm": "gemini",
+   "question_id": "GR3"
+  },
+  {
+   "rid": 25998,
+   "d": "2026-09-07",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 26022,
+   "d": "2026-09-08",
+   "llm": "gemini",
+   "question_id": "G1"
+  },
+  {
+   "rid": 26029,
+   "d": "2026-09-08",
+   "llm": "gemini",
+   "question_id": "GR1"
+  },
+  {
+   "rid": 26203,
+   "d": "2026-09-11",
+   "llm": "gemini",
+   "question_id": "C2"
+  },
+  {
+   "rid": 26269,
+   "d": "2026-09-12",
+   "llm": "gemini",
+   "question_id": "GR1"
+  },
+  {
+   "rid": 26271,
+   "d": "2026-09-12",
+   "llm": "gemini",
+   "question_id": "GR3"
+  },
+  {
+   "rid": 26272,
+   "d": "2026-09-12",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 26348,
+   "d": "2026-09-13",
+   "llm": "gemini",
+   "question_id": "R1"
+  },
+  {
+   "rid": 26349,
+   "d": "2026-09-13",
+   "llm": "gemini",
+   "question_id": "GR1"
+  },
+  {
+   "rid": 26562,
+   "d": "2026-09-17",
+   "llm": "gemini",
+   "question_id": "GR6"
+  },
+  {
+   "rid": 26646,
+   "d": "2026-09-19",
+   "llm": "gemini",
+   "question_id": "G1"
+  },
+  {
+   "rid": 26652,
+   "d": "2026-09-19",
+   "llm": "gemini",
+   "question_id": "R1"
+  },
+  {
+   "rid": 26655,
+   "d": "2026-09-19",
+   "llm": "gemini",
+   "question_id": "GR3"
+  },
+  {
+   "rid": 26676,
+   "d": "2026-09-20",
+   "llm": "gemini",
+   "question_id": "D2"
+  },
+  {
+   "rid": 26686,
+   "d": "2026-09-20",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 26687,
+   "d": "2026-09-20",
+   "llm": "gemini",
+   "question_id": "GR3"
+  },
+  {
+   "rid": 26784,
+   "d": "2026-09-22",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 26818,
+   "d": "2026-09-23",
+   "llm": "gemini",
+   "question_id": "GR6"
+  },
+  {
+   "rid": 26878,
+   "d": "2026-09-24",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 26910,
+   "d": "2026-09-25",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 26911,
+   "d": "2026-09-25",
+   "llm": "gemini",
+   "question_id": "GR3"
+  },
+  {
+   "rid": 26914,
+   "d": "2026-09-25",
+   "llm": "gemini",
+   "question_id": "GR6"
+  },
+  {
+   "rid": 26942,
+   "d": "2026-09-26",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 27006,
+   "d": "2026-09-27",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 27038,
+   "d": "2026-09-28",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 27062,
+   "d": "2026-09-29",
+   "llm": "gemini",
+   "question_id": "G1"
+  },
+  {
+   "rid": 27065,
+   "d": "2026-09-29",
+   "llm": "gemini",
+   "question_id": "L2"
+  },
+  {
+   "rid": 27165,
+   "d": "2026-10-01",
+   "llm": "gemini",
+   "question_id": "GR1"
+  },
+  {
+   "rid": 27258,
+   "d": "2026-10-03",
+   "llm": "gemini",
+   "question_id": "C1"
+  },
+  {
+   "rid": 27296,
+   "d": "2026-10-04",
+   "llm": "gemini",
+   "question_id": "GR4"
+  },
+  {
+   "rid": 27318,
+   "d": "2026-10-06",
+   "llm": "gemini",
+   "question_id": "G1"
+  },
+  {
+   "rid": 27358,
+   "d": "2026-10-09",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 27387,
+   "d": "2026-10-12",
+   "llm": "gemini",
+   "question_id": "C2"
+  },
+  {
+   "rid": 27391,
+   "d": "2026-10-12",
+   "llm": "gemini",
+   "question_id": "GR3"
+  },
+  {
+   "rid": 27422,
+   "d": "2026-10-15",
+   "llm": "gemini",
+   "question_id": "GR2"
+  },
+  {
+   "rid": 27458,
+   "d": "2026-10-18",
+   "llm": "gemini",
+   "question_id": "GR6"
+  }
+ ]
+}
