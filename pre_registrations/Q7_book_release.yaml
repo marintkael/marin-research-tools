@@ -91,4 +91,10 @@ status_amendment_2026-11-08: >-
   2026-11-08. The delayed-effect observation runs until 2027-01-06 and will be reported descriptively as an
   addendum. The non-pre-registered extension to anchor day 2026-11-08 is described above. Original report and
   status lines above are kept unchanged.
+status_release_2026-11-09: >-
+  Dated status note, added on 2026-11-09. Report 04 was released on 2026-11-09: papers DE + EN on Zenodo,
+  DOI 10.5281/zenodo.24063460; code, frozen pulls and results in reports/04-book-launch/ of this repository
+  (release report-04). Main analysis as pre-registered: drift-adjusted headline difference +1.38 percentage points
+  (95 % bootstrap interval −3.59 to 6.68); the null hypothesis is not rejected and the order hypothesis receives
+  no support. The delayed-effect observation continues until 2027-01-06. Lines above are kept unchanged.
 version: v1.4 · 2026-10-15
