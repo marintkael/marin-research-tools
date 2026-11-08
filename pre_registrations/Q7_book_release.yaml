@@ -62,6 +62,27 @@ amendment4_2026-10-15: |
   remains a collision without points. Applied retroactively to all rows since 2026-08-19 under the same rule: two
   answers change, both on 2026-10-12, question L1 (Gemini 0 to 2; Claude Opus, descriptive only, 0 to 2). No baseline
   row is affected, so baseline and effect window are scored under the same rule. Register entry method_scorer_buchtitel.
+correction_2026-11-08: |
+  Dated correction, added on 2026-11-08 after a review of Report 04. The lines "registered" and "re_dated" above are
+  kept unchanged; their dates do not match the record times in the public data-gap register. The first version was
+  recorded on 2026-09-05 (entry id 12; release then planned for 2026-09-22). The release was moved publicly on
+  2026-09-15 from 2026-09-22 to 2026-10-08. The re-dated version was recorded on 2026-09-23 (entry id 18), eight days
+  after the public change of date. This file was added to the repository on 2026-10-07 together with amendments 1 to 3;
+  amendment 4 followed on 2026-10-15. Both register entries predate the event on 2026-10-08, so the registration
+  remains prior to the event.
+extension_2026-11-08: |
+  Recorded on 2026-11-08, AFTER the end of the effect window (2026-11-07); NOT pre-registered.
+  The effect window closed on 2026-11-07 and its data pull was frozen on 2026-11-08. In addition to the pre-registered
+  main analysis, Report 04 reports an extension of the effect window up to and including anchor day 2026-11-08.
+  Reason: a decision by the author after the end of the effect window to include the Gemini measurement of that day.
+  Gemini was missing on the last five anchor days of the effect window (2026-10-24 .. 2026-11-05, credit exhausted);
+  these gaps are not re-measured. On 2026-11-08 OpenAI and Gemini were re-measured on the same day under the fixed
+  catch-up rules (register entries method_openai_nachholung and method_gemini_nachholung). The extension rests on a
+  separate data pull (cut-off 2026-11-08 23:59:59 UTC) and is scored under the pre-registered rules of this version;
+  the frozen baseline and effect-window pulls stay unchanged. Hypothesis, null hypothesis, metrics, drift removal and
+  decision rule are unchanged, and the hypotheses are decided by the main analysis alone (effect window as registered,
+  last anchor day 2026-11-05). The extension is reported as a separately labelled sensitivity analysis.
+  Register entry intervention_book_launch_extension (id 83).
 report: Report 04, planned for 2026-11-07 (paper DE + EN, Zenodo DOI)
 status: registered, effect window opens 2026-10-08
 version: v1.4 · 2026-10-15
