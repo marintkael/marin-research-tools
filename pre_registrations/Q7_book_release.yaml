@@ -108,3 +108,12 @@ amendment_gemini_model_2026-11-15: >-
   the extension above are not affected. The delayed-effect observation (until 2027-01-06) crosses the break and
   will report Gemini before and after 2026-12-01 separately, with the overlap per model (score, channels, share of
   answers with a web search). Register entry method_gemini_nachfolge (id 86). Lines above are kept unchanged.
+amendment_gemini_length_2026-11-18: >-
+  Dated note, added on 2026-11-19 for a decision of 2026-11-18, before the first calibration day. A parity test on
+  2026-11-17 showed that gemini-3.8-flash truncates 14 of 16 answers at the previous limit of 800 output tokens,
+  because its thinking counts towards the limit; at 4096 no answer was truncated. gemini-3.8-flash therefore measures
+  with maxOutputTokens 4096, in the calibration arm (2026-11-20, 2026-11-23) and in the series from 2026-12-01.
+  gemini-2.5-pro keeps 800 until 2026-11-30. Model and length change fall on the same dated break; the overlap
+  compares old setting against new setting and cannot separate the two effects. This corrects "with the same
+  settings" in the note of 2026-11-15 as regards answer length. Main analysis and extension are not affected.
+  Register entry method_gemini_antwortlaenge (id 91). Lines above are kept unchanged.
